@@ -1,0 +1,360 @@
+{
+  "response_variables_accessed": false,
+  "ranks": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "seeds": [
+    11,
+    29,
+    47,
+    71,
+    101
+  ],
+  "max_iter": 500,
+  "metrics": [
+    {
+      "rank": 4,
+      "seed": 11,
+      "reconstruction_error": 3536.49951171875,
+      "iterations": 151,
+      "max_within_model_component_cosine": 0.5173532366752625,
+      "stability_to_seed_11": 0.9999998807907104
+    },
+    {
+      "rank": 4,
+      "seed": 29,
+      "reconstruction_error": 3536.81689453125,
+      "iterations": 128,
+      "max_within_model_component_cosine": 0.5777497291564941,
+      "stability_to_seed_11": 0.7696762681007385
+    },
+    {
+      "rank": 4,
+      "seed": 47,
+      "reconstruction_error": 3536.499267578125,
+      "iterations": 149,
+      "max_within_model_component_cosine": 0.5168413519859314,
+      "stability_to_seed_11": 0.9999994039535522
+    },
+    {
+      "rank": 4,
+      "seed": 71,
+      "reconstruction_error": 3536.49951171875,
+      "iterations": 149,
+      "max_within_model_component_cosine": 0.5167889595031738,
+      "stability_to_seed_11": 0.9999997615814209
+    },
+    {
+      "rank": 4,
+      "seed": 101,
+      "reconstruction_error": 3536.499267578125,
+      "iterations": 186,
+      "max_within_model_component_cosine": 0.5167962312698364,
+      "stability_to_seed_11": 0.9999996423721313
+    },
+    {
+      "rank": 5,
+      "seed": 11,
+      "reconstruction_error": 3520.129150390625,
+      "iterations": 155,
+      "max_within_model_component_cosine": 0.5762847661972046,
+      "stability_to_seed_11": 0.9999996423721313
+    },
+    {
+      "rank": 5,
+      "seed": 29,
+      "reconstruction_error": 3520.129150390625,
+      "iterations": 106,
+      "max_within_model_component_cosine": 0.5750700831413269,
+      "stability_to_seed_11": 0.9999951124191284
+    },
+    {
+      "rank": 5,
+      "seed": 47,
+      "reconstruction_error": 3523.09814453125,
+      "iterations": 78,
+      "max_within_model_component_cosine": 0.6794464588165283,
+      "stability_to_seed_11": 0.871269702911377
+    },
+    {
+      "rank": 5,
+      "seed": 71,
+      "reconstruction_error": 3520.129150390625,
+      "iterations": 157,
+      "max_within_model_component_cosine": 0.5748224854469299,
+      "stability_to_seed_11": 0.9999917149543762
+    },
+    {
+      "rank": 5,
+      "seed": 101,
+      "reconstruction_error": 3523.097900390625,
+      "iterations": 126,
+      "max_within_model_component_cosine": 0.680010199546814,
+      "stability_to_seed_11": 0.8715325593948364
+    },
+    {
+      "rank": 6,
+      "seed": 11,
+      "reconstruction_error": 3506.753662109375,
+      "iterations": 119,
+      "max_within_model_component_cosine": 0.5485531687736511,
+      "stability_to_seed_11": 0.9999997615814209
+    },
+    {
+      "rank": 6,
+      "seed": 29,
+      "reconstruction_error": 3506.75390625,
+      "iterations": 115,
+      "max_within_model_component_cosine": 0.5485413074493408,
+      "stability_to_seed_11": 1.0
+    },
+    {
+      "rank": 6,
+      "seed": 47,
+      "reconstruction_error": 3506.7978515625,
+      "iterations": 190,
+      "max_within_model_component_cosine": 0.6744946837425232,
+      "stability_to_seed_11": 0.8928937315940857
+    },
+    {
+      "rank": 6,
+      "seed": 71,
+      "reconstruction_error": 3506.797607421875,
+      "iterations": 130,
+      "max_within_model_component_cosine": 0.674604058265686,
+      "stability_to_seed_11": 0.8929306864738464
+    },
+    {
+      "rank": 6,
+      "seed": 101,
+      "reconstruction_error": 3506.7978515625,
+      "iterations": 119,
+      "max_within_model_component_cosine": 0.6746736764907837,
+      "stability_to_seed_11": 0.8929561972618103
+    },
+    {
+      "rank": 7,
+      "seed": 11,
+      "reconstruction_error": 3493.75732421875,
+      "iterations": 91,
+      "max_within_model_component_cosine": 0.6765957474708557,
+      "stability_to_seed_11": 1.0000001192092896
+    },
+    {
+      "rank": 7,
+      "seed": 29,
+      "reconstruction_error": 3493.757080078125,
+      "iterations": 90,
+      "max_within_model_component_cosine": 0.6765334606170654,
+      "stability_to_seed_11": 0.9999993443489075
+    },
+    {
+      "rank": 7,
+      "seed": 47,
+      "reconstruction_error": 3494.951171875,
+      "iterations": 106,
+      "max_within_model_component_cosine": 0.6579784154891968,
+      "stability_to_seed_11": 0.8702303171157837
+    },
+    {
+      "rank": 7,
+      "seed": 71,
+      "reconstruction_error": 3493.757080078125,
+      "iterations": 126,
+      "max_within_model_component_cosine": 0.6767955422401428,
+      "stability_to_seed_11": 0.9999985098838806
+    },
+    {
+      "rank": 7,
+      "seed": 101,
+      "reconstruction_error": 3494.951171875,
+      "iterations": 198,
+      "max_within_model_component_cosine": 0.6580296158790588,
+      "stability_to_seed_11": 0.8702349066734314
+    },
+    {
+      "rank": 8,
+      "seed": 11,
+      "reconstruction_error": 3482.0859375,
+      "iterations": 176,
+      "max_within_model_component_cosine": 0.6590125560760498,
+      "stability_to_seed_11": 1.0000001192092896
+    },
+    {
+      "rank": 8,
+      "seed": 29,
+      "reconstruction_error": 3482.0859375,
+      "iterations": 158,
+      "max_within_model_component_cosine": 0.6591513752937317,
+      "stability_to_seed_11": 1.000000238418579
+    },
+    {
+      "rank": 8,
+      "seed": 47,
+      "reconstruction_error": 3482.0859375,
+      "iterations": 126,
+      "max_within_model_component_cosine": 0.6592074036598206,
+      "stability_to_seed_11": 0.9999998211860657
+    },
+    {
+      "rank": 8,
+      "seed": 71,
+      "reconstruction_error": 3483.80126953125,
+      "iterations": 119,
+      "max_within_model_component_cosine": 0.6730093955993652,
+      "stability_to_seed_11": 0.8852512240409851
+    },
+    {
+      "rank": 8,
+      "seed": 101,
+      "reconstruction_error": 3485.713623046875,
+      "iterations": 500,
+      "max_within_model_component_cosine": 0.6718618273735046,
+      "stability_to_seed_11": 0.9187679290771484
+    },
+    {
+      "rank": 9,
+      "seed": 11,
+      "reconstruction_error": 3472.9921875,
+      "iterations": 324,
+      "max_within_model_component_cosine": 0.675009548664093,
+      "stability_to_seed_11": 1.0000004768371582
+    },
+    {
+      "rank": 9,
+      "seed": 29,
+      "reconstruction_error": 3472.279052734375,
+      "iterations": 109,
+      "max_within_model_component_cosine": 0.6465375423431396,
+      "stability_to_seed_11": 0.9437357783317566
+    },
+    {
+      "rank": 9,
+      "seed": 47,
+      "reconstruction_error": 3472.279296875,
+      "iterations": 233,
+      "max_within_model_component_cosine": 0.6463818550109863,
+      "stability_to_seed_11": 0.9437651038169861
+    },
+    {
+      "rank": 9,
+      "seed": 71,
+      "reconstruction_error": 3472.224365234375,
+      "iterations": 96,
+      "max_within_model_component_cosine": 0.65761399269104,
+      "stability_to_seed_11": 0.9132084250450134
+    },
+    {
+      "rank": 9,
+      "seed": 101,
+      "reconstruction_error": 3472.9921875,
+      "iterations": 300,
+      "max_within_model_component_cosine": 0.6750847101211548,
+      "stability_to_seed_11": 1.0000001192092896
+    },
+    {
+      "rank": 10,
+      "seed": 11,
+      "reconstruction_error": 3463.458740234375,
+      "iterations": 311,
+      "max_within_model_component_cosine": 0.6931393146514893,
+      "stability_to_seed_11": 1.0000001192092896
+    },
+    {
+      "rank": 10,
+      "seed": 29,
+      "reconstruction_error": 3463.458740234375,
+      "iterations": 278,
+      "max_within_model_component_cosine": 0.6932042837142944,
+      "stability_to_seed_11": 0.9999998211860657
+    },
+    {
+      "rank": 10,
+      "seed": 47,
+      "reconstruction_error": 3463.458740234375,
+      "iterations": 312,
+      "max_within_model_component_cosine": 0.6931790113449097,
+      "stability_to_seed_11": 0.9999998211860657
+    },
+    {
+      "rank": 10,
+      "seed": 71,
+      "reconstruction_error": 3463.907470703125,
+      "iterations": 122,
+      "max_within_model_component_cosine": 0.6572731733322144,
+      "stability_to_seed_11": 0.8300063014030457
+    },
+    {
+      "rank": 10,
+      "seed": 101,
+      "reconstruction_error": 3464.696044921875,
+      "iterations": 337,
+      "max_within_model_component_cosine": 0.6807559728622437,
+      "stability_to_seed_11": 0.9012702703475952
+    }
+  ],
+  "rank_summary": [
+    {
+      "rank": 4,
+      "mean_reconstruction_error": 3536.562890625,
+      "sd_reconstruction_error": 0.14199255270301,
+      "mean_stability_to_seed_11": 0.9539349913597107,
+      "min_stability_to_seed_11": 0.7696762681007385,
+      "mean_max_redundancy": 0.5291059017181396
+    },
+    {
+      "rank": 5,
+      "mean_reconstruction_error": 3521.31669921875,
+      "sd_reconstruction_error": 1.6261182055481296,
+      "mean_stability_to_seed_11": 0.9485577464103698,
+      "min_stability_to_seed_11": 0.871269702911377,
+      "mean_max_redundancy": 0.6171267986297607
+    },
+    {
+      "rank": 6,
+      "mean_reconstruction_error": 3506.78017578125,
+      "sd_reconstruction_error": 0.024092486634139418,
+      "mean_stability_to_seed_11": 0.9357560753822327,
+      "min_stability_to_seed_11": 0.8928937315940857,
+      "mean_max_redundancy": 0.624173378944397
+    },
+    {
+      "rank": 7,
+      "mean_reconstruction_error": 3494.234765625,
+      "sd_reconstruction_error": 0.6539864466995164,
+      "mean_stability_to_seed_11": 0.9480926394462585,
+      "min_stability_to_seed_11": 0.8702303171157837,
+      "mean_max_redundancy": 0.6691865563392639
+    },
+    {
+      "rank": 8,
+      "mean_reconstruction_error": 3483.154541015625,
+      "sd_reconstruction_error": 1.6119009768288708,
+      "mean_stability_to_seed_11": 0.9608038663864136,
+      "min_stability_to_seed_11": 0.8852512240409851,
+      "mean_max_redundancy": 0.6644485116004943
+    },
+    {
+      "rank": 9,
+      "mean_reconstruction_error": 3472.55341796875,
+      "sd_reconstruction_error": 0.4011644802879172,
+      "mean_stability_to_seed_11": 0.9601419806480408,
+      "min_stability_to_seed_11": 0.9132084250450134,
+      "mean_max_redundancy": 0.6601255297660827
+    },
+    {
+      "rank": 10,
+      "mean_reconstruction_error": 3463.795947265625,
+      "sd_reconstruction_error": 0.539383679228403,
+      "mean_stability_to_seed_11": 0.9462552666664124,
+      "min_stability_to_seed_11": 0.8300063014030457,
+      "mean_max_redundancy": 0.6835103511810303
+    }
+  ]
+}

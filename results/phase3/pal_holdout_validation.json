@@ -1,0 +1,375 @@
+{
+  "construction_atlas_sha256": "af13be95eaa1b4291f927035e6c8ea6535e92ab41c48cef6cb6ebee123f645de",
+  "holdout_input_sha256": "aadf757b6e81e6e479c9c7d9577002ea5d435b019407cde874332ba4cb48675b",
+  "pal_selected_rank": 9,
+  "pal_stability_median": 0.824751615524292,
+  "assignments": [
+    {
+      "construction_cohort": "GSE246613",
+      "construction_candidate": "GSE246613_P01",
+      "pal_candidate": "PAL_GSE161529_C03",
+      "spearman": 0.43043727541777843,
+      "jaccard_top50": 0.02040816326530612,
+      "top50_overlap": 2,
+      "null_spearman_p95": 0.24923442599631573,
+      "null_jaccard_p95": 0.06382978723404255,
+      "passes": false
+    },
+    {
+      "construction_cohort": "GSE246613",
+      "construction_candidate": "GSE246613_P02",
+      "pal_candidate": "PAL_GSE161529_C05",
+      "spearman": 0.17459297133259727,
+      "jaccard_top50": 0.02040816326530612,
+      "top50_overlap": 2,
+      "null_spearman_p95": 0.24923442599631573,
+      "null_jaccard_p95": 0.06382978723404255,
+      "passes": false
+    },
+    {
+      "construction_cohort": "GSE246613",
+      "construction_candidate": "GSE246613_P03",
+      "pal_candidate": "PAL_GSE161529_C07",
+      "spearman": 0.23835376458103072,
+      "jaccard_top50": 0.06382978723404255,
+      "top50_overlap": 6,
+      "null_spearman_p95": 0.24923442599631573,
+      "null_jaccard_p95": 0.06382978723404255,
+      "passes": false
+    },
+    {
+      "construction_cohort": "GSE246613",
+      "construction_candidate": "GSE246613_P04",
+      "pal_candidate": "PAL_GSE161529_C02",
+      "spearman": 0.3030898964690587,
+      "jaccard_top50": 0.010101010101010102,
+      "top50_overlap": 1,
+      "null_spearman_p95": 0.24923442599631573,
+      "null_jaccard_p95": 0.06382978723404255,
+      "passes": false
+    },
+    {
+      "construction_cohort": "GSE246613",
+      "construction_candidate": "GSE246613_P05",
+      "pal_candidate": "PAL_GSE161529_C08",
+      "spearman": 0.5023766098085134,
+      "jaccard_top50": 0.030927835051546393,
+      "top50_overlap": 3,
+      "null_spearman_p95": 0.24923442599631573,
+      "null_jaccard_p95": 0.06382978723404255,
+      "passes": false
+    },
+    {
+      "construction_cohort": "GSE246613",
+      "construction_candidate": "GSE246613_P06",
+      "pal_candidate": "PAL_GSE161529_C06",
+      "spearman": -0.00676797663390299,
+      "jaccard_top50": 0.010101010101010102,
+      "top50_overlap": 1,
+      "null_spearman_p95": 0.24923442599631573,
+      "null_jaccard_p95": 0.06382978723404255,
+      "passes": false
+    },
+    {
+      "construction_cohort": "GSE246613",
+      "construction_candidate": "GSE246613_P07",
+      "pal_candidate": "PAL_GSE161529_C09",
+      "spearman": 0.39256689785850063,
+      "jaccard_top50": 0.08695652173913043,
+      "top50_overlap": 8,
+      "null_spearman_p95": 0.24923442599631573,
+      "null_jaccard_p95": 0.06382978723404255,
+      "passes": false
+    },
+    {
+      "construction_cohort": "GSE246613",
+      "construction_candidate": "GSE246613_P08",
+      "pal_candidate": "PAL_GSE161529_C01",
+      "spearman": 0.4712109333079963,
+      "jaccard_top50": 0.0989010989010989,
+      "top50_overlap": 9,
+      "null_spearman_p95": 0.24923442599631573,
+      "null_jaccard_p95": 0.06382978723404255,
+      "passes": false
+    },
+    {
+      "construction_cohort": "GSE246613",
+      "construction_candidate": "GSE246613_P09",
+      "pal_candidate": "PAL_GSE161529_C04",
+      "spearman": 0.5211311932140515,
+      "jaccard_top50": 0.0989010989010989,
+      "top50_overlap": 9,
+      "null_spearman_p95": 0.24923442599631573,
+      "null_jaccard_p95": 0.06382978723404255,
+      "passes": false
+    },
+    {
+      "construction_cohort": "ARTEMIS",
+      "construction_candidate": "ARTEMIS_C01",
+      "pal_candidate": "PAL_GSE161529_C05",
+      "spearman": 0.6095571517944336,
+      "jaccard_top50": 0.12359550595283508,
+      "top50_overlap": 11,
+      "null_spearman_p95": 0.5666120886802674,
+      "null_jaccard_p95": 0.13636363636363635,
+      "passes": false
+    },
+    {
+      "construction_cohort": "ARTEMIS",
+      "construction_candidate": "ARTEMIS_C02",
+      "pal_candidate": "PAL_GSE161529_C06",
+      "spearman": 0.5835124850273132,
+      "jaccard_top50": 0.1764705926179886,
+      "top50_overlap": 15,
+      "null_spearman_p95": 0.5666120886802674,
+      "null_jaccard_p95": 0.13636363636363635,
+      "passes": true
+    },
+    {
+      "construction_cohort": "ARTEMIS",
+      "construction_candidate": "ARTEMIS_C03",
+      "pal_candidate": "PAL_GSE161529_C07",
+      "spearman": 0.6829655766487122,
+      "jaccard_top50": 0.1627907007932663,
+      "top50_overlap": 14,
+      "null_spearman_p95": 0.5666120886802674,
+      "null_jaccard_p95": 0.13636363636363635,
+      "passes": true
+    },
+    {
+      "construction_cohort": "ARTEMIS",
+      "construction_candidate": "ARTEMIS_C04",
+      "pal_candidate": "PAL_GSE161529_C01",
+      "spearman": 0.6198338270187378,
+      "jaccard_top50": 0.190476194024086,
+      "top50_overlap": 16,
+      "null_spearman_p95": 0.5666120886802674,
+      "null_jaccard_p95": 0.13636363636363635,
+      "passes": true
+    },
+    {
+      "construction_cohort": "ARTEMIS",
+      "construction_candidate": "ARTEMIS_C05",
+      "pal_candidate": "PAL_GSE161529_C08",
+      "spearman": 0.5858360528945923,
+      "jaccard_top50": 0.20481927692890167,
+      "top50_overlap": 17,
+      "null_spearman_p95": 0.5666120886802674,
+      "null_jaccard_p95": 0.13636363636363635,
+      "passes": true
+    },
+    {
+      "construction_cohort": "WU_GSE176078",
+      "construction_candidate": "WU_GSE176078_C01",
+      "pal_candidate": "PAL_GSE161529_C01",
+      "spearman": 0.5680978894233704,
+      "jaccard_top50": 0.14942528307437897,
+      "top50_overlap": 13,
+      "null_spearman_p95": 0.5063729166984556,
+      "null_jaccard_p95": 0.12359550561797752,
+      "passes": false
+    },
+    {
+      "construction_cohort": "WU_GSE176078",
+      "construction_candidate": "WU_GSE176078_C02",
+      "pal_candidate": "PAL_GSE161529_C06",
+      "spearman": 0.4696961045265198,
+      "jaccard_top50": 0.09890110045671463,
+      "top50_overlap": 9,
+      "null_spearman_p95": 0.5063729166984556,
+      "null_jaccard_p95": 0.12359550561797752,
+      "passes": false
+    },
+    {
+      "construction_cohort": "WU_GSE176078",
+      "construction_candidate": "WU_GSE176078_C03",
+      "pal_candidate": "PAL_GSE161529_C05",
+      "spearman": 0.5065204501152039,
+      "jaccard_top50": 0.12359550595283508,
+      "top50_overlap": 11,
+      "null_spearman_p95": 0.5063729166984556,
+      "null_jaccard_p95": 0.12359550561797752,
+      "passes": false
+    },
+    {
+      "construction_cohort": "WU_GSE176078",
+      "construction_candidate": "WU_GSE176078_C04",
+      "pal_candidate": "PAL_GSE161529_C03",
+      "spearman": 0.41373875737190247,
+      "jaccard_top50": 0.1111111119389534,
+      "top50_overlap": 10,
+      "null_spearman_p95": 0.5063729166984556,
+      "null_jaccard_p95": 0.12359550561797752,
+      "passes": false
+    },
+    {
+      "construction_cohort": "WU_GSE176078",
+      "construction_candidate": "WU_GSE176078_C05",
+      "pal_candidate": "PAL_GSE161529_C07",
+      "spearman": 0.6277148723602295,
+      "jaccard_top50": 0.12359550595283508,
+      "top50_overlap": 11,
+      "null_spearman_p95": 0.5063729166984556,
+      "null_jaccard_p95": 0.12359550561797752,
+      "passes": false
+    },
+    {
+      "construction_cohort": "WU_GSE176078",
+      "construction_candidate": "WU_GSE176078_C06",
+      "pal_candidate": "PAL_GSE161529_C08",
+      "spearman": 0.49770987033843994,
+      "jaccard_top50": 0.12359550595283508,
+      "top50_overlap": 11,
+      "null_spearman_p95": 0.5063729166984556,
+      "null_jaccard_p95": 0.12359550561797752,
+      "passes": false
+    },
+    {
+      "construction_cohort": "WU_GSE176078",
+      "construction_candidate": "WU_GSE176078_C07",
+      "pal_candidate": "PAL_GSE161529_C02",
+      "spearman": 0.3897477984428406,
+      "jaccard_top50": 0.0416666679084301,
+      "top50_overlap": 4,
+      "null_spearman_p95": 0.5063729166984556,
+      "null_jaccard_p95": 0.12359550561797752,
+      "passes": false
+    },
+    {
+      "construction_cohort": "WU_GSE176078",
+      "construction_candidate": "WU_GSE176078_C08",
+      "pal_candidate": "PAL_GSE161529_C09",
+      "spearman": 0.6212735772132874,
+      "jaccard_top50": 0.1111111119389534,
+      "top50_overlap": 10,
+      "null_spearman_p95": 0.5063729166984556,
+      "null_jaccard_p95": 0.12359550561797752,
+      "passes": false
+    },
+    {
+      "construction_cohort": "KARAAYVAZ_GSE118389",
+      "construction_candidate": "KARAAYVAZ_GSE118389_C01",
+      "pal_candidate": "PAL_GSE161529_C04",
+      "spearman": 0.6057727336883545,
+      "jaccard_top50": 0.1111111119389534,
+      "top50_overlap": 10,
+      "null_spearman_p95": 0.42144014388322826,
+      "null_jaccard_p95": 0.07526881720430108,
+      "passes": false
+    },
+    {
+      "construction_cohort": "KARAAYVAZ_GSE118389",
+      "construction_candidate": "KARAAYVAZ_GSE118389_C02",
+      "pal_candidate": "PAL_GSE161529_C09",
+      "spearman": 0.5049355030059814,
+      "jaccard_top50": 0.05263157933950424,
+      "top50_overlap": 5,
+      "null_spearman_p95": 0.42144014388322826,
+      "null_jaccard_p95": 0.07526881720430108,
+      "passes": false
+    },
+    {
+      "construction_cohort": "KARAAYVAZ_GSE118389",
+      "construction_candidate": "KARAAYVAZ_GSE118389_C03",
+      "pal_candidate": "PAL_GSE161529_C02",
+      "spearman": 0.4419168531894684,
+      "jaccard_top50": 0.07526881992816925,
+      "top50_overlap": 7,
+      "null_spearman_p95": 0.42144014388322826,
+      "null_jaccard_p95": 0.07526881720430108,
+      "passes": false
+    },
+    {
+      "construction_cohort": "KARAAYVAZ_GSE118389",
+      "construction_candidate": "KARAAYVAZ_GSE118389_C04",
+      "pal_candidate": "PAL_GSE161529_C03",
+      "spearman": 0.5049254298210144,
+      "jaccard_top50": 0.08695652335882187,
+      "top50_overlap": 8,
+      "null_spearman_p95": 0.42144014388322826,
+      "null_jaccard_p95": 0.07526881720430108,
+      "passes": false
+    },
+    {
+      "construction_cohort": "KARAAYVAZ_GSE118389",
+      "construction_candidate": "KARAAYVAZ_GSE118389_C05",
+      "pal_candidate": "PAL_GSE161529_C01",
+      "spearman": 0.4835754632949829,
+      "jaccard_top50": 0.0416666679084301,
+      "top50_overlap": 4,
+      "null_spearman_p95": 0.42144014388322826,
+      "null_jaccard_p95": 0.07526881720430108,
+      "passes": false
+    }
+  ],
+  "states": [
+    {
+      "state_id": "State_01",
+      "status": "INDETERMINADO",
+      "pal_candidate": null,
+      "independent_member_matches": 0,
+      "matches": [],
+      "reason": "fewer than two member matches; absence not called without bootstrap power"
+    },
+    {
+      "state_id": "State_02",
+      "status": "INDETERMINADO",
+      "pal_candidate": "PAL_GSE161529_C01",
+      "independent_member_matches": 1,
+      "matches": [
+        {
+          "construction_cohort": "ARTEMIS",
+          "construction_candidate": "ARTEMIS_C04",
+          "pal_candidate": "PAL_GSE161529_C01",
+          "spearman": 0.6198338270187378,
+          "jaccard_top50": 0.190476194024086,
+          "top50_overlap": 16,
+          "null_spearman_p95": 0.5666120886802674,
+          "null_jaccard_p95": 0.13636363636363635,
+          "passes": true
+        }
+      ],
+      "reason": "fewer than two member matches; absence not called without bootstrap power"
+    },
+    {
+      "state_id": "State_03",
+      "status": "INDETERMINADO",
+      "pal_candidate": "PAL_GSE161529_C07",
+      "independent_member_matches": 1,
+      "matches": [
+        {
+          "construction_cohort": "ARTEMIS",
+          "construction_candidate": "ARTEMIS_C03",
+          "pal_candidate": "PAL_GSE161529_C07",
+          "spearman": 0.6829655766487122,
+          "jaccard_top50": 0.1627907007932663,
+          "top50_overlap": 14,
+          "null_spearman_p95": 0.5666120886802674,
+          "null_jaccard_p95": 0.13636363636363635,
+          "passes": true
+        }
+      ],
+      "reason": "fewer than two member matches; absence not called without bootstrap power"
+    },
+    {
+      "state_id": "State_04",
+      "status": "INDETERMINADO",
+      "pal_candidate": "PAL_GSE161529_C08",
+      "independent_member_matches": 1,
+      "matches": [
+        {
+          "construction_cohort": "ARTEMIS",
+          "construction_candidate": "ARTEMIS_C05",
+          "pal_candidate": "PAL_GSE161529_C08",
+          "spearman": 0.5858360528945923,
+          "jaccard_top50": 0.20481927692890167,
+          "top50_overlap": 17,
+          "null_spearman_p95": 0.5666120886802674,
+          "null_jaccard_p95": 0.13636363636363635,
+          "passes": true
+        }
+      ],
+      "reason": "fewer than two member matches; absence not called without bootstrap power"
+    }
+  ]
+}

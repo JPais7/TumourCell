@@ -1,0 +1,19 @@
+{
+  "response_variables_accessed": false,
+  "models": [
+    {
+      "selected_genes": 1500,
+      "rank": 9,
+      "seed": 11,
+      "reconstruction_error": 3011.374755859375,
+      "iterations": 266
+    },
+    {
+      "selected_genes": 2500,
+      "rank": 9,
+      "seed": 11,
+      "reconstruction_error": 3882.386962890625,
+      "iterations": 348
+    }
+  ]
+}

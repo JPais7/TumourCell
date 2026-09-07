@@ -1,0 +1,49 @@
+project: dynamic_tumour_cell
+phase: phase1_analysis_complete
+primary_context: TNBC
+primary_unit: patient
+state_representation: interpretable_gene_program_usage
+primary_question: longitudinal_malignant_program_redistribution_by_response_trajectory
+continuous_dynamics_allowed: false
+cell_level_random_split_allowed: false
+discovery_study: SHIAO_2024
+locked_validation_studies:
+  - YAN_ARTEMIS_2026
+future_clone_aware_extension_study: KIM_2018
+immune_mechanism_validation_study: ZHANG_2021
+negative_control_study: HRNAC_2024
+required_covariates:
+  - patient
+  - timepoint
+  - treatment
+  - biopsy_site
+  - cell_cycle
+  - stress
+  - hypoxia
+  - detection_depth
+decision_gate: passed_for_gse246613_malignant_discovery
+gse246613:
+  patients: 34
+  response_groups:
+    R1: 9
+    R2: 14
+    NR: 11
+  malignant_cells: 50185
+  primary_min_malignant_cells_per_timepoint: 50
+  sensitivity_thresholds: [1, 10, 25, 50, 100]
+  expression_analysis_unlocked: true
+  frozen_program_definition: results/phase1/blind_discovery/program_definitions_v1.npz
+  frozen_program_sha256: c353b2b5edb47c18e960aeb10622dc673e6f6fdf24342deebd784a3982371aec
+  nmf_rank: 9
+  nmf_seed: 11
+  primary_response_inference: R2_vs_NR
+  r1_primary_n: 1
+  selection_vs_plasticity: not_identifiable
+  phase1_decision: stop_complexity_escalation
+gse169246:
+  patients: 22
+  rna_samples: 78
+  cd45_cells: 489490
+  tumour_pre_post_pairs: 12
+  malignant_analysis_allowed: false
+  expression_analysis_unlocked: false

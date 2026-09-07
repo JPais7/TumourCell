@@ -1,0 +1,561 @@
+{
+  "diagnostic_only": true,
+  "atlas_modified": false,
+  "recovery_threshold": 0.6,
+  "patient_bootstraps": 20,
+  "cell_replicates_per_fraction": 5,
+  "summary": [
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C01",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.816155344247818,
+      "q10": 0.7203203737735748,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C01",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.8375139236450195,
+      "q10": 0.7515210032463073,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C01",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.8099783957004547,
+      "q10": 0.8039397537708283,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C02",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.6759503483772278,
+      "q10": 0.584056270122528,
+      "pass_fraction": 0.85
+    },
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C02",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.7188577651977539,
+      "q10": 0.6600903511047364,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C02",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.38105282187461853,
+      "q10": 0.07621056437492371,
+      "pass_fraction": 0.5
+    },
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C03",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.7824222445487976,
+      "q10": 0.7177394330501556,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C03",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.890338122844696,
+      "q10": 0.722489309310913,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C03",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.8459762632846832,
+      "q10": 0.8413878738880157,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C04",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.8077232241630554,
+      "q10": 0.7311688959598541,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C04",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.8857519626617432,
+      "q10": 0.7819270610809326,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C04",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.870326042175293,
+      "q10": 0.8404375553131104,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C05",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.7887147068977356,
+      "q10": 0.5985489189624786,
+      "pass_fraction": 0.9
+    },
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C05",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.8951132297515869,
+      "q10": 0.7314923286437989,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "ARTEMIS",
+      "candidate": "ARTEMIS_C05",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.8332223892211914,
+      "q10": 0.7687064647674561,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C01",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.6948862969875336,
+      "q10": 0.36786588132381437,
+      "pass_fraction": 0.5
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C01",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.9118923544883728,
+      "q10": 0.8717489004135132,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C01",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.9362744987010956,
+      "q10": 0.9343380868434906,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C02",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.7512145340442657,
+      "q10": 0.5568935245275498,
+      "pass_fraction": 0.8
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C02",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.7563858032226562,
+      "q10": 0.659649920463562,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C02",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.770334780216217,
+      "q10": 0.7350116848945618,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C03",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.7379532158374786,
+      "q10": 0.6573879897594452,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C03",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.7865128517150879,
+      "q10": 0.5629636645317078,
+      "pass_fraction": 0.7333333333333333
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C03",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.38370370864868164,
+      "q10": 0.07674074172973633,
+      "pass_fraction": 0.5
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C04",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.9217030107975006,
+      "q10": 0.2707744836807251,
+      "pass_fraction": 0.65
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C04",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.9500001668930054,
+      "q10": 0.8689146757125854,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C04",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.9449801445007324,
+      "q10": 0.9399332523345947,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C05",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.7754943370819092,
+      "q10": 0.32742334604263307,
+      "pass_fraction": 0.55
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C05",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.8878000974655151,
+      "q10": 0.8427738666534423,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C05",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.8907310664653778,
+      "q10": 0.8778753697872161,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C06",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.8557813763618469,
+      "q10": 0.4468938767910004,
+      "pass_fraction": 0.8
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C06",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.8900460004806519,
+      "q10": 0.8581335425376893,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C06",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.8712405562400818,
+      "q10": 0.8652552008628845,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C07",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.7273818552494049,
+      "q10": 0.5149791806936264,
+      "pass_fraction": 0.8
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C07",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.8565488457679749,
+      "q10": 0.6916943430900574,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C07",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.8634972274303436,
+      "q10": 0.8370609223842621,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C08",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.6404991149902344,
+      "q10": 0.5243051290512085,
+      "pass_fraction": 0.7
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C08",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.7577171325683594,
+      "q10": 0.6100887537002564,
+      "pass_fraction": 0.8666666666666667
+    },
+    {
+      "cohort": "WU_GSE176078",
+      "candidate": "WU_GSE176078_C08",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.7611694931983948,
+      "q10": 0.7332392811775208,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C01",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.7693787813186646,
+      "q10": 0.569849780201912,
+      "pass_fraction": 0.85
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C01",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.8199685215950012,
+      "q10": 0.7187452435493469,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C01",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.8495844304561615,
+      "q10": 0.8167493045330048,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C02",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.909000426530838,
+      "q10": 0.6989994466304779,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C02",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.9426360130310059,
+      "q10": 0.8492858171463012,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C02",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.9423440396785736,
+      "q10": 0.9321144759654999,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C03",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.8730544447898865,
+      "q10": 0.743376260995865,
+      "pass_fraction": 0.9
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C03",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.8579093217849731,
+      "q10": 0.7850874423980713,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C03",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.9504858553409576,
+      "q10": 0.9205569565296173,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C04",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.546343207359314,
+      "q10": 0.44273302555084226,
+      "pass_fraction": 0.2
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C04",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.5295609831809998,
+      "q10": 0.4309123337268829,
+      "pass_fraction": 0.2
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C04",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.2697575092315674,
+      "q10": 0.05395150184631348,
+      "pass_fraction": 0.0
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C05",
+      "test": "patient_bootstrap",
+      "n": 20,
+      "median": 0.8503748178482056,
+      "q10": 0.7199408829212188,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C05",
+      "test": "cell_subsample",
+      "n": 15,
+      "median": 0.8878769874572754,
+      "q10": 0.8024075984954834,
+      "pass_fraction": 1.0
+    },
+    {
+      "cohort": "KARAAYVAZ_GSE118389",
+      "candidate": "KARAAYVAZ_GSE118389_C05",
+      "test": "adjacent_rank",
+      "n": 2,
+      "median": 0.8679118454456329,
+      "q10": 0.8387816488742829,
+      "pass_fraction": 1.0
+    }
+  ],
+  "top10_removed_edges": [
+    {
+      "state_id": "State_01",
+      "candidate_a": "ARTEMIS_C01",
+      "candidate_b": "WU_GSE176078_C03",
+      "genes_remaining": 968,
+      "spearman_without_union_top10": 0.6007483601570129,
+      "passes_rho_0_30": true
+    },
+    {
+      "state_id": "State_01",
+      "candidate_a": "ARTEMIS_C01",
+      "candidate_b": "KARAAYVAZ_GSE118389_C04",
+      "genes_remaining": 621,
+      "spearman_without_union_top10": 0.5692793130874634,
+      "passes_rho_0_30": true
+    },
+    {
+      "state_id": "State_01",
+      "candidate_a": "WU_GSE176078_C03",
+      "candidate_b": "KARAAYVAZ_GSE118389_C04",
+      "genes_remaining": 661,
+      "spearman_without_union_top10": 0.5511088371276855,
+      "passes_rho_0_30": true
+    },
+    {
+      "state_id": "State_02",
+      "candidate_a": "GSE246613_P08",
+      "candidate_b": "ARTEMIS_C04",
+      "genes_remaining": 805,
+      "spearman_without_union_top10": 0.5430235589342931,
+      "passes_rho_0_30": true
+    },
+    {
+      "state_id": "State_02",
+      "candidate_a": "GSE246613_P08",
+      "candidate_b": "WU_GSE176078_C05",
+      "genes_remaining": 764,
+      "spearman_without_union_top10": 0.4191165967522831,
+      "passes_rho_0_30": true
+    },
+    {
+      "state_id": "State_02",
+      "candidate_a": "ARTEMIS_C04",
+      "candidate_b": "WU_GSE176078_C05",
+      "genes_remaining": 967,
+      "spearman_without_union_top10": 0.6123393177986145,
+      "passes_rho_0_30": true
+    },
+    {
+      "state_id": "State_03",
+      "candidate_a": "ARTEMIS_C03",
+      "candidate_b": "WU_GSE176078_C08",
+      "genes_remaining": 967,
+      "spearman_without_union_top10": 0.6374410390853882,
+      "passes_rho_0_30": true
+    },
+    {
+      "state_id": "State_04",
+      "candidate_a": "ARTEMIS_C05",
+      "candidate_b": "WU_GSE176078_C06",
+      "genes_remaining": 967,
+      "spearman_without_union_top10": 0.650704026222229,
+      "passes_rho_0_30": true
+    }
+  ]
+}

@@ -1,0 +1,667 @@
+cohort,candidate,test,level,replicate,spearman_recovery
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,1,0.8316266536712646
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,1,0.6888831257820129
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,1,0.7716401219367981
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,1,0.7469236254692078
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,1,0.7464317083358765
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,2,0.8452104330062866
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,2,0.6558398604393005
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,2,0.9317296147346497
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,2,0.797668993473053
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,2,0.8698950409889221
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,3,0.8276828527450562
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,3,0.6023913025856018
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,3,0.8419333100318909
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,3,0.838347315788269
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,3,0.6091356873512268
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,4,0.8478332161903381
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,4,0.7556026577949524
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,4,0.7947037816047668
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,4,0.8619863986968994
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,4,0.797666609287262
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,5,0.7678653597831726
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,5,0.536708414554596
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,5,0.7188219428062439
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,5,0.8524765372276306
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,5,0.684593677520752
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,6,0.8550237417221069
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,6,0.6494640707969666
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,6,0.8788561820983887
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,6,0.7381641268730164
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,6,0.7797628045082092
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,7,0.8451260924339294
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,7,0.7074883580207825
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,7,0.7795450091362
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,7,0.7489054203033447
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,7,0.8593236804008484
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,8,0.8147745132446289
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,8,0.7598925232887268
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,8,0.7820373773574829
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,8,0.8458592891693115
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,8,0.8357651829719543
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,9,0.6867117881774902
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,9,0.6685469150543213
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,9,0.7564305067062378
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,9,0.7598016262054443
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,9,0.8882205486297607
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,10,0.7482304573059082
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,10,0.6977593302726746
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,10,0.8161546587944031
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,10,0.7940051555633545
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,10,0.5032680034637451
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,11,0.7531288862228394
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,11,0.6734908819198608
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,11,0.7828071117401123
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,11,0.7644187808036804
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,11,0.7373034358024597
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,12,0.7949514389038086
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,12,0.7253261804580688
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,12,0.9191749691963196
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,12,0.8424618244171143
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,12,0.7704376578330994
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,13,0.7482067942619324
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,13,0.5361092686653137
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,13,0.7079968452453613
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,13,0.8530811071395874
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,13,0.8370257019996643
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,14,0.8385262489318848
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,14,0.5893171429634094
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,14,0.7232912182807922
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,14,0.815277636051178
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,14,0.8338781595230103
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,15,0.8039138317108154
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,15,0.625342607498169
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,15,0.8386188745498657
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,15,0.6606539487838745
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,15,0.7493681311607361
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,16,0.7211076021194458
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,16,0.7350364327430725
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,16,0.7240539789199829
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,16,0.668211817741394
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,16,0.629826009273529
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,17,0.8175361752510071
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,17,0.6536032557487488
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,17,0.70424485206604
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,17,0.8095549941062927
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,17,0.8439313173294067
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,18,0.8411849737167358
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,18,0.6784098148345947
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,18,0.8313294053077698
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,18,0.8241152167320251
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,18,0.4385325014591217
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,19,0.7132353186607361
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,19,0.8083731532096863
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,19,0.8817064762115479
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,19,0.8058914542198181
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,19,0.8547860383987427
+ARTEMIS,ARTEMIS_C01,patient_bootstrap,100% patients with replacement,20,0.8818635940551758
+ARTEMIS,ARTEMIS_C02,patient_bootstrap,100% patients with replacement,20,0.6860591173171997
+ARTEMIS,ARTEMIS_C03,patient_bootstrap,100% patients with replacement,20,0.738452136516571
+ARTEMIS,ARTEMIS_C04,patient_bootstrap,100% patients with replacement,20,0.8127186298370361
+ARTEMIS,ARTEMIS_C05,patient_bootstrap,100% patients with replacement,20,0.9061015248298645
+ARTEMIS,ARTEMIS_C01,cell_subsample,25% per patient,1,0.8522230982780457
+ARTEMIS,ARTEMIS_C02,cell_subsample,25% per patient,1,0.7328205108642578
+ARTEMIS,ARTEMIS_C03,cell_subsample,25% per patient,1,0.9369441270828247
+ARTEMIS,ARTEMIS_C04,cell_subsample,25% per patient,1,0.8807522058486938
+ARTEMIS,ARTEMIS_C05,cell_subsample,25% per patient,1,0.9384354948997498
+ARTEMIS,ARTEMIS_C01,cell_subsample,25% per patient,2,0.7290124297142029
+ARTEMIS,ARTEMIS_C02,cell_subsample,25% per patient,2,0.7641561031341553
+ARTEMIS,ARTEMIS_C03,cell_subsample,25% per patient,2,0.8795536160469055
+ARTEMIS,ARTEMIS_C04,cell_subsample,25% per patient,2,0.9194878935813904
+ARTEMIS,ARTEMIS_C05,cell_subsample,25% per patient,2,0.9060871601104736
+ARTEMIS,ARTEMIS_C01,cell_subsample,25% per patient,3,0.8375139236450195
+ARTEMIS,ARTEMIS_C02,cell_subsample,25% per patient,3,0.7077499628067017
+ARTEMIS,ARTEMIS_C03,cell_subsample,25% per patient,3,0.7915311455726624
+ARTEMIS,ARTEMIS_C04,cell_subsample,25% per patient,3,0.8962775468826294
+ARTEMIS,ARTEMIS_C05,cell_subsample,25% per patient,3,0.7082743644714355
+ARTEMIS,ARTEMIS_C01,cell_subsample,25% per patient,4,0.7107287645339966
+ARTEMIS,ARTEMIS_C02,cell_subsample,25% per patient,4,0.763943612575531
+ARTEMIS,ARTEMIS_C03,cell_subsample,25% per patient,4,0.7582308650016785
+ARTEMIS,ARTEMIS_C04,cell_subsample,25% per patient,4,0.8866780400276184
+ARTEMIS,ARTEMIS_C05,cell_subsample,25% per patient,4,0.8951132297515869
+ARTEMIS,ARTEMIS_C01,cell_subsample,25% per patient,5,0.865536093711853
+ARTEMIS,ARTEMIS_C02,cell_subsample,25% per patient,5,0.6776947379112244
+ARTEMIS,ARTEMIS_C03,cell_subsample,25% per patient,5,0.9338260889053345
+ARTEMIS,ARTEMIS_C04,cell_subsample,25% per patient,5,0.8774423003196716
+ARTEMIS,ARTEMIS_C05,cell_subsample,25% per patient,5,0.9196850061416626
+ARTEMIS,ARTEMIS_C01,cell_subsample,50% per patient,1,0.8872343301773071
+ARTEMIS,ARTEMIS_C02,cell_subsample,50% per patient,1,0.7188577651977539
+ARTEMIS,ARTEMIS_C03,cell_subsample,50% per patient,1,0.682603120803833
+ARTEMIS,ARTEMIS_C04,cell_subsample,50% per patient,1,0.7954192161560059
+ARTEMIS,ARTEMIS_C05,cell_subsample,50% per patient,1,0.8537153601646423
+ARTEMIS,ARTEMIS_C01,cell_subsample,50% per patient,2,0.7852838635444641
+ARTEMIS,ARTEMIS_C02,cell_subsample,50% per patient,2,0.6679274439811707
+ARTEMIS,ARTEMIS_C03,cell_subsample,50% per patient,2,0.8257792592048645
+ARTEMIS,ARTEMIS_C04,cell_subsample,50% per patient,2,0.7729322910308838
+ARTEMIS,ARTEMIS_C05,cell_subsample,50% per patient,2,0.8646311163902283
+ARTEMIS,ARTEMIS_C01,cell_subsample,50% per patient,3,0.8675558567047119
+ARTEMIS,ARTEMIS_C02,cell_subsample,50% per patient,3,0.7780594229698181
+ARTEMIS,ARTEMIS_C03,cell_subsample,50% per patient,3,0.890338122844696
+ARTEMIS,ARTEMIS_C04,cell_subsample,50% per patient,3,0.8681624531745911
+ARTEMIS,ARTEMIS_C05,cell_subsample,50% per patient,3,0.6676413416862488
+ARTEMIS,ARTEMIS_C01,cell_subsample,50% per patient,4,0.8069237470626831
+ARTEMIS,ARTEMIS_C02,cell_subsample,50% per patient,4,0.6695345044136047
+ARTEMIS,ARTEMIS_C03,cell_subsample,50% per patient,4,0.8963521718978882
+ARTEMIS,ARTEMIS_C04,cell_subsample,50% per patient,4,0.9055407047271729
+ARTEMIS,ARTEMIS_C05,cell_subsample,50% per patient,4,0.9391345977783203
+ARTEMIS,ARTEMIS_C01,cell_subsample,50% per patient,5,0.8775966763496399
+ARTEMIS,ARTEMIS_C02,cell_subsample,50% per patient,5,0.6294185519218445
+ARTEMIS,ARTEMIS_C03,cell_subsample,50% per patient,5,0.7480242252349854
+ARTEMIS,ARTEMIS_C04,cell_subsample,50% per patient,5,0.8297637104988098
+ARTEMIS,ARTEMIS_C05,cell_subsample,50% per patient,5,0.8727734088897705
+ARTEMIS,ARTEMIS_C01,cell_subsample,75% per patient,1,0.8893552422523499
+ARTEMIS,ARTEMIS_C02,cell_subsample,75% per patient,1,0.7075432538986206
+ARTEMIS,ARTEMIS_C03,cell_subsample,75% per patient,1,0.9007982015609741
+ARTEMIS,ARTEMIS_C04,cell_subsample,75% per patient,1,0.8942262530326843
+ARTEMIS,ARTEMIS_C05,cell_subsample,75% per patient,1,0.7663192749023438
+ARTEMIS,ARTEMIS_C01,cell_subsample,75% per patient,2,0.9183855056762695
+ARTEMIS,ARTEMIS_C02,cell_subsample,75% per patient,2,0.8191474676132202
+ARTEMIS,ARTEMIS_C03,cell_subsample,75% per patient,2,0.899748682975769
+ARTEMIS,ARTEMIS_C04,cell_subsample,75% per patient,2,0.9037954807281494
+ARTEMIS,ARTEMIS_C05,cell_subsample,75% per patient,2,0.9237143397331238
+ARTEMIS,ARTEMIS_C01,cell_subsample,75% per patient,3,0.8313634395599365
+ARTEMIS,ARTEMIS_C02,cell_subsample,75% per patient,3,0.7714527249336243
+ARTEMIS,ARTEMIS_C03,cell_subsample,75% per patient,3,0.8926622271537781
+ARTEMIS,ARTEMIS_C04,cell_subsample,75% per patient,3,0.7379759550094604
+ARTEMIS,ARTEMIS_C05,cell_subsample,75% per patient,3,0.9393341541290283
+ARTEMIS,ARTEMIS_C01,cell_subsample,75% per patient,4,0.8335379362106323
+ARTEMIS,ARTEMIS_C02,cell_subsample,75% per patient,4,0.6548656225204468
+ARTEMIS,ARTEMIS_C03,cell_subsample,75% per patient,4,0.7054660320281982
+ARTEMIS,ARTEMIS_C04,cell_subsample,75% per patient,4,0.9193262457847595
+ARTEMIS,ARTEMIS_C05,cell_subsample,75% per patient,4,0.890524685382843
+ARTEMIS,ARTEMIS_C01,cell_subsample,75% per patient,5,0.8289117813110352
+ARTEMIS,ARTEMIS_C02,cell_subsample,75% per patient,5,0.7316239476203918
+ARTEMIS,ARTEMIS_C03,cell_subsample,75% per patient,5,0.944009006023407
+ARTEMIS,ARTEMIS_C04,cell_subsample,75% per patient,5,0.8857519626617432
+ARTEMIS,ARTEMIS_C05,cell_subsample,75% per patient,5,0.9656040072441101
+ARTEMIS,ARTEMIS_C01,adjacent_rank,rank=4,1,0.8024300932884216
+ARTEMIS,ARTEMIS_C02,adjacent_rank,rank=4,1,0.0
+ARTEMIS,ARTEMIS_C03,adjacent_rank,rank=4,1,0.8517117500305176
+ARTEMIS,ARTEMIS_C04,adjacent_rank,rank=4,1,0.8329654335975647
+ARTEMIS,ARTEMIS_C05,adjacent_rank,rank=4,1,0.9138672947883606
+ARTEMIS,ARTEMIS_C01,adjacent_rank,rank=6,1,0.8175266981124878
+ARTEMIS,ARTEMIS_C02,adjacent_rank,rank=6,1,0.7621056437492371
+ARTEMIS,ARTEMIS_C03,adjacent_rank,rank=6,1,0.8402407765388489
+ARTEMIS,ARTEMIS_C04,adjacent_rank,rank=6,1,0.9076866507530212
+ARTEMIS,ARTEMIS_C05,adjacent_rank,rank=6,1,0.7525774836540222
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,1,0.8525865077972412
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,1,0.7240033745765686
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,1,0.703093409538269
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,1,0.9718531370162964
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,1,0.8814747333526611
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,1,0.8913710117340088
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,1,0.9021420478820801
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,1,0.844185471534729
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,2,0.9133334755897522
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,2,0.7996891736984253
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,2,0.8093441128730774
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,2,0.9322667717933655
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,2,0.45780423283576965
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,2,0.8729753494262695
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,2,0.7646936178207397
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,2,0.688820481300354
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,3,0.42902064323425293
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,3,0.8030509948730469
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,3,0.7378737926483154
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,3,0.32871297001838684
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,3,0.2198030650615692
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,3,0.8141477108001709
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,3,0.6690829992294312
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,3,0.5254145264625549
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,4,0.5499327778816223
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,4,0.46937355399131775
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,4,0.6671907305717468
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,4,0.9353598356246948
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,4,0.8422206044197083
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,4,0.6002954244613647
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,4,0.6934787034988403
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,4,0.6279929876327515
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,5,0.5344083905220032
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,5,0.5902593731880188
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,5,0.7326639890670776
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,5,0.9312121868133545
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,5,0.8665158748626709
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,5,0.40449196100234985
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,5,0.8117978572845459
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,5,0.7912141680717468
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,6,0.5113270878791809
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,6,0.47227248549461365
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,6,0.6106078028678894
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,6,0.4201289415359497
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,6,0.7868241667747498
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,6,0.4516052007675171
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,6,0.4431314468383789
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,6,0.7574243545532227
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,7,0.36300966143608093
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,7,0.8388397693634033
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,7,0.852445662021637
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,7,0.9379960894584656
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,7,0.8460603952407837
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,7,0.856970489025116
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,7,0.9097209572792053
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,7,0.5143205523490906
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,8,0.36840546131134033
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,8,0.7527071237564087
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,8,0.6880270838737488
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,8,0.3560974597930908
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,8,0.8474440574645996
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,8,0.8704208135604858
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,8,0.8255691528320312
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,8,0.8397021293640137
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,9,0.9524369835853577
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,9,0.8404408097267151
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,9,0.817290723323822
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,9,0.9207834601402283
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,9,0.2465706765651703
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,9,0.8545922636985779
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,9,0.6081671118736267
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,9,0.6248404383659363
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,10,0.9205260872840881
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,10,0.6870935559272766
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,10,0.7300024628639221
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,10,0.922622561454773
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,10,0.33640697598457336
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,10,0.8738676309585571
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,10,0.6026775240898132
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,10,0.6777271032333374
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,11,0.9479131698608398
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,11,0.7825406193733215
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,11,0.7380326390266418
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,11,0.9745615124702454
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,11,0.47162559628486633
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,11,0.8946845531463623
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,11,0.6761728525161743
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,11,0.5262348055839539
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,12,0.9140041470527649
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,12,0.6437415480613708
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,12,0.7655062675476074
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,12,0.9367996454238892
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,12,0.8660017251968384
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,12,0.3829202950000763
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,12,0.8591641783714294
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,12,0.6458742022514343
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,13,0.9141998291015625
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,13,0.8044221997261047
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,13,0.7586698532104492
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,13,0.2597358524799347
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,13,0.8381062150001526
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,13,0.8891741037368774
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,13,0.8229120373725891
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,13,0.8056169748306274
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,14,0.8398398160934448
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,14,0.566295862197876
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,14,0.8979622721672058
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,14,0.8978204131126404
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,14,0.7641645073890686
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,14,0.5299419164657593
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,14,0.7612850069999695
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,14,0.5937740206718445
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,15,0.45263299345970154
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,15,0.7618118524551392
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,15,0.660399317741394
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,15,0.4043895900249481
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,15,0.8927368521690369
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,15,0.7887168526649475
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,15,0.628121018409729
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,15,0.7547802329063416
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,16,0.3059352934360504
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,16,0.7497219443321228
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,16,0.6302860379219055
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,16,0.8901264071464539
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,16,0.4392790198326111
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,16,0.8930209875106812
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,16,0.8145605325698853
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,16,0.6351240277290344
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,17,0.9089986681938171
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,17,0.7203963398933411
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,17,0.7575487494468689
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,17,0.2720009982585907
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,17,0.5788393020629883
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,17,0.8494594693183899
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,17,0.5183729529380798
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,17,0.6713172793388367
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,18,0.4369155168533325
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,18,0.7287595868110657
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,18,0.7978273630142212
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,18,0.9550085067749023
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,18,0.47812482714653015
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,18,0.8739235401153564
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,18,0.5437596440315247
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,18,0.567851185798645
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,19,0.45220863819122314
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,19,0.8153744339942932
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,19,0.6899212002754211
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,19,0.9347053170204163
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,19,0.47446224093437195
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,19,0.858666181564331
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,19,0.8464195132255554
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,19,0.6284250020980835
+WU_GSE176078,WU_GSE176078_C01,patient_bootstrap,100% patients with replacement,20,0.9576417803764343
+WU_GSE176078,WU_GSE176078_C02,patient_bootstrap,100% patients with replacement,20,0.764400839805603
+WU_GSE176078,WU_GSE176078_C03,patient_bootstrap,100% patients with replacement,20,0.8112807869911194
+WU_GSE176078,WU_GSE176078_C04,patient_bootstrap,100% patients with replacement,20,0.196097731590271
+WU_GSE176078,WU_GSE176078_C05,patient_bootstrap,100% patients with replacement,20,0.9339783191680908
+WU_GSE176078,WU_GSE176078_C06,patient_bootstrap,100% patients with replacement,20,0.8317744731903076
+WU_GSE176078,WU_GSE176078_C07,patient_bootstrap,100% patients with replacement,20,0.48443523049354553
+WU_GSE176078,WU_GSE176078_C08,patient_bootstrap,100% patients with replacement,20,0.4934687614440918
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,25% per patient,1,0.925346314907074
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,25% per patient,1,0.848923921585083
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,25% per patient,1,0.8792849779129028
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,25% per patient,1,0.952436089515686
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,25% per patient,1,0.880062460899353
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,25% per patient,1,0.8900460004806519
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,25% per patient,1,0.8739737868309021
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,25% per patient,1,0.44668906927108765
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,25% per patient,2,0.9118923544883728
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,25% per patient,2,0.7524219751358032
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,25% per patient,2,0.46864789724349976
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,25% per patient,2,0.9623575806617737
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,25% per patient,2,0.8974328637123108
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,25% per patient,2,0.8645368814468384
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,25% per patient,2,0.8330122828483582
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,25% per patient,2,0.8055780529975891
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,25% per patient,3,0.8775193691253662
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,25% per patient,3,0.7120762467384338
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,25% per patient,3,0.78481125831604
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,25% per patient,3,0.9639123678207397
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,25% per patient,3,0.8697835803031921
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,25% per patient,3,0.945767343044281
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,25% per patient,3,0.9016112089157104
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,25% per patient,3,0.7859151363372803
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,25% per patient,4,0.8966415524482727
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,25% per patient,4,0.8543552756309509
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,25% per patient,4,0.8681129217147827
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,25% per patient,4,0.9629296064376831
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,25% per patient,4,0.7304043769836426
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,25% per patient,4,0.7816604375839233
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,25% per patient,4,0.8565488457679749
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,25% per patient,4,0.8322876691818237
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,25% per patient,5,0.7226218581199646
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,25% per patient,5,0.6814817786216736
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,25% per patient,5,0.8418287634849548
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,25% per patient,5,0.8644921779632568
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,25% per patient,5,0.8702029585838318
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,25% per patient,5,0.9231302738189697
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,25% per patient,5,0.7184897661209106
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,25% per patient,5,0.6828117370605469
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,50% per patient,1,0.8800265192985535
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,50% per patient,1,0.820032000541687
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,50% per patient,1,0.7299551963806152
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,50% per patient,1,0.9765915274620056
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,50% per patient,1,0.8878000974655151
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,50% per patient,1,0.9065573811531067
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,50% per patient,1,0.8750530481338501
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,50% per patient,1,0.5862928628921509
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,50% per patient,2,0.9601948857307434
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,50% per patient,2,0.7563858032226562
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,50% per patient,2,0.8025837540626526
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,50% per patient,2,0.9858188033103943
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,50% per patient,2,0.8420568704605103
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,50% per patient,2,0.9102840423583984
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,50% per patient,2,0.9048052430152893
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,50% per patient,2,0.7781006097793579
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,50% per patient,3,0.9452136754989624
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,50% per patient,3,0.8383470177650452
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,50% per patient,3,0.5639660954475403
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,50% per patient,3,0.9213702082633972
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,50% per patient,3,0.9128409624099731
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,50% per patient,3,0.8886572122573853
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,50% per patient,3,0.8533480763435364
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,50% per patient,3,0.6484965682029724
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,50% per patient,4,0.9094011187553406
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,50% per patient,4,0.6508786678314209
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,50% per patient,4,0.5622953772544861
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,50% per patient,4,0.8755484223365784
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,50% per patient,4,0.9050922989845276
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,50% per patient,4,0.9201714992523193
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,50% per patient,4,0.8019211292266846
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,50% per patient,4,0.7577171325683594
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,50% per patient,5,0.9189595580101013
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,50% per patient,5,0.6728067994117737
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,50% per patient,5,0.7512746453285217
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,50% per patient,5,0.9417992234230042
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,50% per patient,5,0.9039103984832764
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,50% per patient,5,0.8616190552711487
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,50% per patient,5,0.6091452836990356
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,50% per patient,5,0.7831394672393799
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,75% per patient,1,0.9358841776847839
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,75% per patient,1,0.7826008200645447
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,75% per patient,1,0.8000747561454773
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,75% per patient,1,0.9500001668930054
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,75% per patient,1,0.9078078269958496
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,75% per patient,1,0.8818795680999756
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,75% per patient,1,0.9176747798919678
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,75% per patient,1,0.7908704280853271
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,75% per patient,2,0.8679019212722778
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,75% per patient,2,0.7948867678642273
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,75% per patient,2,0.7865128517150879
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,75% per patient,2,0.9780242443084717
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,75% per patient,2,0.8971282839775085
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,75% per patient,2,0.9092749357223511
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,75% per patient,2,0.6860715746879578
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,75% per patient,2,0.7554065585136414
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,75% per patient,3,0.9179979562759399
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,75% per patient,3,0.808861494064331
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,75% per patient,3,0.7954530119895935
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,75% per patient,3,0.9426212310791016
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,75% per patient,3,0.8438493609428406
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,75% per patient,3,0.8833926320075989
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,75% per patient,3,0.9557861089706421
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,75% per patient,3,0.7903384566307068
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,75% per patient,4,0.8928523659706116
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,75% per patient,4,0.6994051933288574
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,75% per patient,4,0.8511205315589905
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,75% per patient,4,0.8478636145591736
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,75% per patient,4,0.9020484685897827
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,75% per patient,4,0.8558098673820496
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,75% per patient,4,0.7001284956932068
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,75% per patient,4,0.6457825899124146
+WU_GSE176078,WU_GSE176078_C01,cell_subsample,75% per patient,5,0.9561546444892883
+WU_GSE176078,WU_GSE176078_C02,cell_subsample,75% per patient,5,0.6043592691421509
+WU_GSE176078,WU_GSE176078_C03,cell_subsample,75% per patient,5,0.5700066685676575
+WU_GSE176078,WU_GSE176078_C04,cell_subsample,75% per patient,5,0.9347621202468872
+WU_GSE176078,WU_GSE176078_C05,cell_subsample,75% per patient,5,0.8669654130935669
+WU_GSE176078,WU_GSE176078_C06,cell_subsample,75% per patient,5,0.9205417037010193
+WU_GSE176078,WU_GSE176078_C07,cell_subsample,75% per patient,5,0.8636094927787781
+WU_GSE176078,WU_GSE176078_C08,cell_subsample,75% per patient,5,0.701421320438385
+WU_GSE176078,WU_GSE176078_C01,adjacent_rank,rank=7,1,0.9338539838790894
+WU_GSE176078,WU_GSE176078_C02,adjacent_rank,rank=7,1,0.726180911064148
+WU_GSE176078,WU_GSE176078_C03,adjacent_rank,rank=7,1,0.0
+WU_GSE176078,WU_GSE176078_C04,adjacent_rank,rank=7,1,0.9386715292930603
+WU_GSE176078,WU_GSE176078_C05,adjacent_rank,rank=7,1,0.9068006873130798
+WU_GSE176078,WU_GSE176078_C06,adjacent_rank,rank=7,1,0.8787222504615784
+WU_GSE176078,WU_GSE176078_C07,adjacent_rank,rank=7,1,0.8304518461227417
+WU_GSE176078,WU_GSE176078_C08,adjacent_rank,rank=7,1,0.7262567281723022
+WU_GSE176078,WU_GSE176078_C01,adjacent_rank,rank=9,1,0.9386950135231018
+WU_GSE176078,WU_GSE176078_C02,adjacent_rank,rank=9,1,0.8144886493682861
+WU_GSE176078,WU_GSE176078_C03,adjacent_rank,rank=9,1,0.7674074172973633
+WU_GSE176078,WU_GSE176078_C04,adjacent_rank,rank=9,1,0.9512887597084045
+WU_GSE176078,WU_GSE176078_C05,adjacent_rank,rank=9,1,0.8746614456176758
+WU_GSE176078,WU_GSE176078_C06,adjacent_rank,rank=9,1,0.8637588620185852
+WU_GSE176078,WU_GSE176078_C07,adjacent_rank,rank=9,1,0.8965426087379456
+WU_GSE176078,WU_GSE176078_C08,adjacent_rank,rank=9,1,0.7960822582244873
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,1,0.6444584131240845
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,1,0.9132169485092163
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,1,0.8658697009086609
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,1,0.648521363735199
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,1,0.8760683536529541
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,2,0.7190739512443542
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,2,0.9291749596595764
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,2,0.7817552089691162
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,2,0.5821117162704468
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,2,0.7224790453910828
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,3,0.8467990756034851
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,3,0.9666046500205994
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,3,0.8553519248962402
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,3,0.6540725231170654
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,3,0.9265806674957275
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,4,0.6671358346939087
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,4,0.914903461933136
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,4,0.4669666290283203
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,4,0.5443914532661438
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,4,0.8203776478767395
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,5,0.7714582681655884
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,5,0.9173684120178223
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,5,0.9488333463668823
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,5,0.5130032896995544
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,5,0.9325478076934814
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,6,0.8328445553779602
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,6,0.9442395567893982
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,6,0.7975345253944397
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,6,0.6108994483947754
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,6,0.865902304649353
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,7,0.30200377106666565
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,7,0.8249176144599915
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,7,0.823220431804657
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,7,0.5310779809951782
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,7,0.7209451794624329
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,8,0.7672992944717407
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,8,0.977388858795166
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,8,0.9383621215820312
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,8,0.4710950553417206
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,8,0.816650927066803
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,9,0.8351309895515442
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,9,0.8949935436248779
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,9,0.9371286034584045
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,9,0.5850318670272827
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,9,0.906651496887207
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,10,0.8137518763542175
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,10,0.9047839045524597
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,10,0.8809764385223389
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,10,0.5301461815834045
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,10,0.8348473310470581
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,11,0.8154712319374084
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,11,0.9680721759796143
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,11,0.9815968871116638
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,11,0.5967533588409424
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,11,0.8904560208320618
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,12,0.8226593732833862
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,12,0.9332672953605652
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,12,0.774088442325592
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,12,0.3803521990776062
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,12,0.710902214050293
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,13,0.7209994792938232
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,13,0.7021722793579102
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,13,0.9230377078056335
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,13,0.5603159666061401
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,13,0.6418829560279846
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,14,0.8081210255622864
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,14,0.887331485748291
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,14,0.9216554164886475
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,14,0.5790156722068787
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,14,0.8785747289657593
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,15,0.599610447883606
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,15,0.8501313328742981
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,15,0.8762398958206177
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,15,0.4081577956676483
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,15,0.8141357898712158
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,16,0.8325462937355042
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,16,0.6704439520835876
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,16,0.3765101730823517
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,16,0.6380363702774048
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,16,0.7712386250495911
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,17,0.2341473251581192
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,17,0.8969858884811401
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,17,0.8698689937591553
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,17,0.44657471776008606
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,17,0.9093502759933472
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,18,0.7888363003730774
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,18,0.9236531257629395
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,18,0.922015368938446
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,18,0.5337953567504883
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,18,0.8675547242164612
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,19,0.6188235282897949
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,19,0.8732090592384338
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,19,0.9181658625602722
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,19,0.5381319522857666
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,19,0.8910713791847229
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,patient_bootstrap,100% patients with replacement,20,0.7150893807411194
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,patient_bootstrap,100% patients with replacement,20,0.6174342036247253
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,patient_bootstrap,100% patients with replacement,20,0.8220884203910828
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,patient_bootstrap,100% patients with replacement,20,0.5482949614524841
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,patient_bootstrap,100% patients with replacement,20,0.7437872886657715
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,25% per patient,1,0.8199685215950012
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,25% per patient,1,0.9082915186882019
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,25% per patient,1,0.6939589977264404
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,25% per patient,1,0.4830259382724762
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,25% per patient,1,0.8259224891662598
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,25% per patient,2,0.7494431138038635
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,25% per patient,2,0.8221155405044556
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,25% per patient,2,0.9021096229553223
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,25% per patient,2,0.5158184170722961
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,25% per patient,2,0.7929114103317261
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,25% per patient,3,0.859234094619751
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,25% per patient,3,0.9178774952888489
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,25% per patient,3,0.8553915619850159
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,25% per patient,3,0.5153650045394897
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,25% per patient,3,0.8692176938056946
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,25% per patient,4,0.7182483077049255
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,25% per patient,4,0.885089635848999
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,25% per patient,4,0.8846592307090759
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,25% per patient,4,0.3383895456790924
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,25% per patient,4,0.8166518807411194
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,25% per patient,5,0.6730034947395325
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,25% per patient,5,0.8431020975112915
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,25% per patient,5,0.8003019690513611
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,25% per patient,5,0.5295609831809998
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,25% per patient,5,0.8717448115348816
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,50% per patient,1,0.8526098132133484
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,50% per patient,1,0.9640655517578125
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,50% per patient,1,0.844849169254303
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,50% per patient,1,0.5942386388778687
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,50% per patient,1,0.9069308638572693
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,50% per patient,2,0.7953939437866211
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,50% per patient,2,0.9426360130310059
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,50% per patient,2,0.9564236998558044
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,50% per patient,2,0.3961699306964874
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,50% per patient,2,0.8878769874572754
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,50% per patient,3,0.7328372001647949
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,50% per patient,3,0.8585613965988159
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,50% per patient,3,0.8579093217849731
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,50% per patient,3,0.5420879125595093
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,50% per patient,3,0.9207112789154053
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,50% per patient,4,0.860997200012207
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,50% per patient,4,0.962684690952301
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,50% per patient,4,0.9761375188827515
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,50% per patient,4,0.5075395107269287
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,50% per patient,4,0.7883999347686768
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,50% per patient,5,0.7579268217086792
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,50% per patient,5,0.9518967270851135
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,50% per patient,5,0.9649065732955933
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,50% per patient,5,0.5788405537605286
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,50% per patient,5,0.8541982173919678
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,75% per patient,1,0.719490647315979
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,75% per patient,1,0.9318843483924866
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,75% per patient,1,0.8897201418876648
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,75% per patient,1,0.48797810077667236
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,75% per patient,1,0.9267399311065674
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,75% per patient,2,0.8832492828369141
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,75% per patient,2,0.9686925411224365
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,75% per patient,2,0.7749444246292114
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,75% per patient,2,0.6057823896408081
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,75% per patient,2,0.8893044590950012
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,75% per patient,3,0.8609817028045654
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,75% per patient,3,0.97845458984375
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,75% per patient,3,0.9050626158714294
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,75% per patient,3,0.5585206151008606
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,75% per patient,3,0.9399999976158142
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,75% per patient,4,0.872222900390625
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,75% per patient,4,0.9555628299713135
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,75% per patient,4,0.8356010913848877
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,75% per patient,4,0.6082409024238586
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,75% per patient,4,0.91318678855896
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,cell_subsample,75% per patient,5,0.8520336151123047
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,cell_subsample,75% per patient,5,0.9680018424987793
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,cell_subsample,75% per patient,5,0.8246332406997681
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,cell_subsample,75% per patient,5,0.6318630576133728
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,cell_subsample,75% per patient,5,0.9055981040000916
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,adjacent_rank,rank=4,1,0.8906283378601074
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,adjacent_rank,rank=4,1,0.9295570850372314
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,adjacent_rank,rank=4,1,0.9878969788551331
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,adjacent_rank,rank=4,1,0.0
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,adjacent_rank,rank=4,1,0.9043245911598206
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C01,adjacent_rank,rank=6,1,0.8085405230522156
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C02,adjacent_rank,rank=6,1,0.9551309943199158
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C03,adjacent_rank,rank=6,1,0.9130747318267822
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C04,adjacent_rank,rank=6,1,0.5395150184631348
+KARAAYVAZ_GSE118389,KARAAYVAZ_GSE118389_C05,adjacent_rank,rank=6,1,0.8314990997314453
