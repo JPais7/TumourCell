@@ -1,0 +1,58 @@
+{
+  "analysis": "digital twin readiness gate v0.1",
+  "date": "2026-09-08",
+  "unit_of_inference": "patient",
+  "outcome": "no residual tumour versus residual tumour in external GSE260693 baseline samples",
+  "no_refitting": true,
+  "threshold_note": "conservative engineering gate; not retrospectively claimed as preregistered",
+  "gates": {
+    "G1_locked_representation_transport": {
+      "status": "partial",
+      "evidence": "100/100 genes for each state and 97.47% of P8 weight in GSE260693; bulk scores are not malignant-cell-specific"
+    },
+    "G2_independent_patient_level_prediction": {
+      "status": "fail",
+      "evidence": {
+        "State_03": {
+          "auc": 0.6129807692307693,
+          "bootstrap_ci95": [
+            0.43028846153846156,
+            0.7860576923076923
+          ],
+          "n_favourable": 16,
+          "n_residual": 26,
+          "locked_direction": "higher score predicts favourable pathological outcome",
+          "level_2_criterion": "external AUROC 95% CI lower bound > 0.50",
+          "passes": false
+        },
+        "P8": {
+          "auc": 0.6466346153846154,
+          "bootstrap_ci95": [
+            0.47115384615384615,
+            0.8173076923076923
+          ],
+          "n_favourable": 16,
+          "n_residual": 26,
+          "locked_direction": "higher score predicts favourable pathological outcome",
+          "level_2_criterion": "external AUROC 95% CI lower bound > 0.50",
+          "passes": false
+        }
+      }
+    },
+    "G3_treatment_conditioned_transition_model": {
+      "status": "blocked",
+      "evidence": "NeoTRIP treatment arm and pCR are unavailable; GSE260693 regimens are heterogeneous and has 19 pairs"
+    },
+    "G4_clone_resolved_dynamics": {
+      "status": "blocked",
+      "evidence": "no matched clone-resolved longitudinal validation in the analysed cohorts"
+    },
+    "G5_spatial_external_validation": {
+      "status": "blocked",
+      "evidence": "no adequate multi-patient whole-transcriptome spatial TNBC response cohort is currently available"
+    }
+  },
+  "virtual_perturbation_allowed": false,
+  "patient_specific_treatment_recommendation_allowed": false,
+  "permitted_next_artifact": "observational molecular state card with uncertainty and explicit missingness"
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dynamic-tumour-cell.local/molecular-state-card.schema.json",
+  "title": "TNBC observational molecular state card",
+  "description": "Non-causal patient representation. It is not a treatment recommendation or a validated digital twin.",
+  "type": "object",
+  "required": ["patient_id", "sample_id", "timepoint", "assay", "program_scores", "reference_percentiles", "uncertainty", "missing_modalities", "allowed_uses"],
+  "properties": {
+    "patient_id": {"type": "string"},
+    "sample_id": {"type": "string"},
+    "timepoint": {"type": "string"},
+    "assay": {"enum": ["bulk_rna", "scrna", "snrna", "spatial_rna"]},
+    "treatment_context": {"type": ["string", "null"]},
+    "program_scores": {
+      "type": "object",
+      "required": ["State_01", "State_02", "State_03", "State_04", "P8"],
+      "additionalProperties": false,
+      "properties": {
+        "State_01": {"type": ["number", "null"]},
+        "State_02": {"type": ["number", "null"]},
+        "State_03": {"type": ["number", "null"]},
+        "State_04": {"type": ["number", "null"]},
+        "P8": {"type": ["number", "null"]}
+      }
+    },
+    "reference_percentiles": {
+      "description": "Within-dataset and same-timepoint empirical percentiles; descriptive, not clinical cut-offs.",
+      "type": "object",
+      "required": ["State_01", "State_02", "State_03", "State_04", "P8"],
+      "additionalProperties": false,
+      "properties": {
+        "State_01": {"type": "number", "minimum": 0, "maximum": 100},
+        "State_02": {"type": "number", "minimum": 0, "maximum": 100},
+        "State_03": {"type": "number", "minimum": 0, "maximum": 100},
+        "State_04": {"type": "number", "minimum": 0, "maximum": 100},
+        "P8": {"type": "number", "minimum": 0, "maximum": 100}
+      }
+    },
+    "uncertainty": {
+      "type": "object",
+      "required": ["measurement", "domain_shift", "biological"],
+      "properties": {
+        "measurement": {"type": "string"},
+        "domain_shift": {"type": "string"},
+        "biological": {"type": "string"}
+      }
+    },
+    "missing_modalities": {
+      "type": "array",
+      "items": {"enum": ["clinical", "treatment", "outcome", "cnv", "mutation", "clone", "spatial", "ctdna", "imaging"]},
+      "uniqueItems": true
+    },
+    "allowed_uses": {
+      "const": ["observational_state_description", "cohort_level_research"]
+    }
+  },
+  "additionalProperties": false
+}

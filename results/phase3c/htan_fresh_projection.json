@@ -1,0 +1,74 @@
+{
+  "analysis": "frozen program projection into strict TNBC malignant donor pseudobulks",
+  "no_refitting": true,
+  "thresholds_optimized": false,
+  "eligibility": "ER-/PR-/HER2-, Malignant, malignant cell",
+  "n_donors": 5,
+  "n_malignant_cells": 16724,
+  "state_score": "unweighted mean log1p(CPM) over each frozen 100-gene state set",
+  "p8_score": "sum(log1p(CPM_gene) / discovery_gene_sd * P8_weight); P8 weights sum to one",
+  "p8_present_genes": 1838,
+  "summary": {
+    "State_01": {
+      "mean": 3.686659635681432,
+      "sd_between_donors": 0.9400749455274097,
+      "range": [
+        2.5359571984424534,
+        4.766819810111915
+      ],
+      "bootstrap_patient_mean_ci95": [
+        2.969183165141905,
+        4.404136106220959
+      ]
+    },
+    "State_02": {
+      "mean": 4.038170528445613,
+      "sd_between_donors": 0.9744781273837609,
+      "range": [
+        3.027743776533933,
+        5.3619401028513884
+      ],
+      "bootstrap_patient_mean_ci95": [
+        3.305539843186245,
+        4.844643594901182
+      ]
+    },
+    "State_03": {
+      "mean": 4.563621764791876,
+      "sd_between_donors": 0.7436696815640059,
+      "range": [
+        3.7599784965546625,
+        5.359247258130726
+      ],
+      "bootstrap_patient_mean_ci95": [
+        3.9828045007866186,
+        5.144439028797135
+      ]
+    },
+    "State_04": {
+      "mean": 4.0098599727204345,
+      "sd_between_donors": 0.7789146349827282,
+      "range": [
+        2.7664914829674996,
+        4.770426873452514
+      ],
+      "bootstrap_patient_mean_ci95": [
+        3.3611464435878498,
+        4.563507677878858
+      ]
+    },
+    "P8": {
+      "mean": 5.158059966170831,
+      "sd_between_donors": 0.894207769323885,
+      "range": [
+        4.208428293213048,
+        6.129577813778659
+      ],
+      "bootstrap_patient_mean_ci95": [
+        4.4456102156947805,
+        5.870509716646883
+      ]
+    }
+  },
+  "interpretation_limit": "descriptive recurrence/domain-shift projection; no clinical endpoint in this object"
+}

@@ -1,0 +1,21 @@
+{
+  "dataset": "BioKey / EGAS00001004809 / EGAD00001006608",
+  "audit_date": "2026-09-08",
+  "scientific_role": "independent longitudinal single-cell audit of frozen TNBC malignant programs during anti-PD1",
+  "official_processed_data_page": "https://apps.lambrechtslab.sites.vib.be/en/single-cell",
+  "access_state": "authenticated access completed",
+  "download_performed": true,
+  "downloaded_files": 4,
+  "integrity_manifest": "data/manifests/biokey_downloads.sha256",
+  "matrix_dimensions": {"cohort_1": [22889, 175942], "cohort_2": [22889, 50693]},
+  "total_cells": 226635,
+  "tnbc_patients_with_malignant_cells": 19,
+  "tnbc_malignant_cells": 33872,
+  "paired_tnbc_patients_by_minimum_malignant_cells_per_timepoint": {
+    "20": {"cohort_1": 13, "cohort_2": 5, "total": 18},
+    "50": {"cohort_1": 11, "cohort_2": 3, "total": 14},
+    "100": {"cohort_1": 11, "cohort_2": 2, "total": 13}
+  },
+  "unit_of_inference": "patient",
+  "endpoint_limit": "T-cell expansion status is pharmacodynamic and is not a clinical response or survival endpoint."
+}

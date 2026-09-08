@@ -1,0 +1,38 @@
+sampleid,donor_id,receptors_biopsy,site_biopsy,assay,suspension_type,tissue,Phase,n_cells,n_malignant,tnbc_eligible
+HTAPP-211-SMP-6751,HTAPP-211,ER-/PR-/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,16109,2161,True
+HTAPP-213-SMP-6752,HTAPP-213,ER-/PR-/HER2-,Chest wall,10x 3' v3,nucleus,chest wall,G1|G2M|S,9799,3426,True
+HTAPP-223-SMP-6755,HTAPP-223,ER-/PR-/HER2+,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,14912,1056,False
+HTAPP-223-SMP-7537,HTAPP-223,ER-/PR-/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,12994,9433,True
+HTAPP-225-SMP-6756,HTAPP-225,ER+/PR+/HER2-,Breast,10x 3' v3,nucleus,breast,G1|G2M|S,3068,1301,False
+HTAPP-226-SMP-6757,HTAPP-226,ER-/PR-/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,23712,15810,True
+HTAPP-231-SMP-6758,HTAPP-231,ER-low/PR-/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,21103,10667,False
+HTAPP-232-SMP-6759,HTAPP-232,ER+/PR-/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,12431,33,False
+HTAPP-262-SMP-610,HTAPP-262,ER+/PR-/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,5334,4813,False
+HTAPP-514-SMP-6760,HTAPP-514,ER-/PR-/HER2-,Axilla,10x 3' v3,nucleus,axilla,G1|G2M|S,20916,12062,True
+HTAPP-516-SMP-6761,HTAPP-516,ER-/PR-/HER2-,Chest wall,10x 3' v3,nucleus,chest wall,G1|G2M|S,3940,1725,True
+HTAPP-519-SMP-6762,HTAPP-519,ER-/PR-/HER2-,Axilla,10x 3' v3,nucleus,axilla,G1|G2M|S,6703,4317,True
+HTAPP-521-SMP-6763,HTAPP-521,ER-/PR-/HER2-,Skin,10x 3' v3,nucleus,skin epidermis,G1|G2M|S,9050,6669,True
+HTAPP-525-SMP-6765,HTAPP-525,ER-/PR-/HER2-,Chest wall,10x 3' v3,nucleus,chest wall,G1|G2M|S,5606,4305,True
+HTAPP-589-SMP-2851,HTAPP-589,ER+/PR-/HER2+,Brain,10x 3' v2,nucleus,brain,G1|G2M|S,7629,6846,False
+HTAPP-589-SMP-2860,HTAPP-589,ER+/PR-/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,9935,0,False
+HTAPP-752-SMP-4051,HTAPP-752,ER+/PR-/HER2-,Liver,10x 3' v2,nucleus,liver,G1|G2M|S,11704,11237,False
+HTAPP-806-SMP-6789,HTAPP-806,ER+/PR+/HER2-,Breast,10x 3' v3,nucleus,breast,G1|G2M|S,9497,7124,False
+HTAPP-814-SMP-6879,HTAPP-814,ER+/PR-/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,10875,6156,False
+HTAPP-835-SMP-6999,HTAPP-835,ER+/PR-/HER2-,Axilla,10x 3' v3,nucleus,axilla,G1|G2M|S,13875,5206,False
+HTAPP-861-SMP-7028,HTAPP-861,ER+/PR-/HER2-,Bone,10x 3' v3,nucleus,bone spine,G1|G2M|S,5631,2666,False
+HTAPP-862-SMP-7059,HTAPP-862,ER+/PR-/HER2-,Breast,10x 3' v3,nucleus,breast,G1|G2M|S,11432,8953,False
+HTAPP-862-SMP-7060,HTAPP-862,ER+/PR-/HER2-,Breast,10x 3' v3,nucleus,breast,G1|G2M|S,10167,8307,False
+HTAPP-870-SMP-7089,HTAPP-870,ER+/PR-/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,8069,0,False
+HTAPP-873-SMP-7119,HTAPP-873,ER-/PR-/HER2+,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,8200,0,False
+HTAPP-878-SMP-7149,HTAPP-878,ER+/PR-/HER2-,Axilla,10x 3' v3,nucleus,axilla,G1|G2M|S,10623,3254,False
+HTAPP-880-SMP-7179,HTAPP-880,ER+/PR+/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,10918,10221,False
+HTAPP-887-SMP-7239,HTAPP-887,ER+/PR-/HER2-,Axilla,10x 3' v3,nucleus,axilla,G1|G2M|S,10361,5536,False
+HTAPP-887-SMP-7250,HTAPP-887,ER-/PR-/HER2-,Axilla,10x 3' v3,nucleus,axilla,G1|G2M|S,5498,4638,True
+HTAPP-889-SMP-7269,HTAPP-889,ER+/PR+/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,11100,0,False
+HTAPP-889-SMP-7270,HTAPP-889,ER+/PR-/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,11655,3021,False
+HTAPP-890-SMP-7299,HTAPP-890,ER+/PR-low/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,11064,10370,False
+HTAPP-895-SMP-7359,HTAPP-895,ER+/PR+/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,9958,6913,False
+HTAPP-944-SMP-7479,HTAPP-944,ER+/PR-/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,10016,3833,False
+HTAPP-947-SMP-7509,HTAPP-947,ER+/PR-/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,10503,7963,False
+HTAPP-963-SMP-4741,HTAPP-963,ER-/PR-/HER2-,Liver,10x 3' v2,nucleus,liver,G1|G2M|S,7889,3943,True
+HTAPP-997-SMP-7789,HTAPP-997,ER+/PR-/HER2-,Liver,10x 3' v3,nucleus,liver,G1|G2M|S,12258,7038,False

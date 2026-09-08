@@ -1,0 +1,507 @@
+{
+  "analysis": "BioKey longitudinal TNBC malignant pseudobulk projection",
+  "unit_of_inference": "patient",
+  "no_refitting": true,
+  "thresholds_optimized": false,
+  "primary_minimum_cells_per_timepoint": 50,
+  "sensitivity_thresholds": [
+    20,
+    100
+  ],
+  "cohort_interpretation": {
+    "1": "treatment-naive anti-PD1 context",
+    "2": "prior chemotherapy/neoadjuvant chemotherapy plus anti-PD1 context"
+  },
+  "n_tnbc_malignant_cells": 33872,
+  "n_tnbc_patients": 19,
+  "score_definition": "patient-timepoint summed malignant counts; log1p(CPM); frozen state means and frozen scaled P8 weighted score",
+  "analyses": {
+    "20": {
+      "cohort_1": {
+        "n_paired_patients": 13,
+        "metrics": {
+          "State_01": {
+            "mean_delta_on_minus_pre": -0.03084689422770255,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.29757310422290867,
+              0.21105067217247941
+            ],
+            "wilcoxon_p_two_sided": 1.0,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 7,
+              "mean_delta_E": 0.15845162571190646,
+              "mean_delta_NE": -0.20788433271677528,
+              "mannwhitney_p_two_sided": 0.3434343434343435
+            }
+          },
+          "State_02": {
+            "mean_delta_on_minus_pre": -0.048267065752383424,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.29633958344579836,
+              0.1799556736159419
+            ],
+            "wilcoxon_p_two_sided": 1.0,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 7,
+              "mean_delta_E": 0.19247817343256113,
+              "mean_delta_NE": -0.1760498823331582,
+              "mannwhitney_p_two_sided": 0.4318181818181819
+            }
+          },
+          "State_03": {
+            "mean_delta_on_minus_pre": -0.05436134412287368,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.2818959787911882,
+              0.1609392067631384
+            ],
+            "wilcoxon_p_two_sided": 0.946044921875,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 7,
+              "mean_delta_E": 0.17903645691652487,
+              "mean_delta_NE": -0.15320138412454476,
+              "mannwhitney_p_two_sided": 0.26767676767676774
+            }
+          },
+          "State_04": {
+            "mean_delta_on_minus_pre": 0.08973724758123117,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.15042619454716497,
+              0.3117852688244961
+            ],
+            "wilcoxon_p_two_sided": 0.375732421875,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 7,
+              "mean_delta_E": 0.06191216249907914,
+              "mean_delta_NE": 0.0034320498304110103,
+              "mannwhitney_p_two_sided": 0.8762626262626263
+            }
+          },
+          "P8": {
+            "mean_delta_on_minus_pre": -0.11692971990503423,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.3625297830632667,
+              0.11406978751458524
+            ],
+            "wilcoxon_p_two_sided": 0.587890625,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 7,
+              "mean_delta_E": 0.15198177121697984,
+              "mean_delta_NE": -0.21714817728892477,
+              "mannwhitney_p_two_sided": 0.3434343434343435
+            }
+          }
+        }
+      },
+      "cohort_2": {
+        "n_paired_patients": 5,
+        "metrics": {
+          "State_01": {
+            "mean_delta_on_minus_pre": 0.21363247096687984,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.6949919902711554,
+              1.3141130823153844
+            ],
+            "wilcoxon_p_two_sided": 0.8125,
+            "expansion_subgroup": {
+              "n_E": 3,
+              "n_NE": 2,
+              "mean_delta_E": 0.7628808275908923,
+              "mean_delta_NE": -0.6102400639691388,
+              "mannwhitney_p_two_sided": 0.4
+            }
+          },
+          "State_02": {
+            "mean_delta_on_minus_pre": 0.3110049481679512,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.6271519741249287,
+              1.3780321176154289
+            ],
+            "wilcoxon_p_two_sided": 1.0,
+            "expansion_subgroup": {
+              "n_E": 3,
+              "n_NE": 2,
+              "mean_delta_E": 0.9855603140025161,
+              "mean_delta_NE": -0.7008281005838961,
+              "mannwhitney_p_two_sided": 0.4
+            }
+          },
+          "State_03": {
+            "mean_delta_on_minus_pre": 0.23822308371405124,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.6269215201784981,
+              1.1982463326012578
+            ],
+            "wilcoxon_p_two_sided": 0.8125,
+            "expansion_subgroup": {
+              "n_E": 3,
+              "n_NE": 2,
+              "mean_delta_E": 0.8551915349001985,
+              "mean_delta_NE": -0.6872295930651697,
+              "mannwhitney_p_two_sided": 0.2
+            }
+          },
+          "State_04": {
+            "mean_delta_on_minus_pre": 0.40622609723306463,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.13710718931612087,
+              1.30888490504707
+            ],
+            "wilcoxon_p_two_sided": 0.8125,
+            "expansion_subgroup": {
+              "n_E": 3,
+              "n_NE": 2,
+              "mean_delta_E": 0.7299489552088997,
+              "mean_delta_NE": -0.07935818973068787,
+              "mannwhitney_p_two_sided": 0.8
+            }
+          },
+          "P8": {
+            "mean_delta_on_minus_pre": 0.477864535977311,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.41200763756615116,
+              1.8347389655938493
+            ],
+            "wilcoxon_p_two_sided": 0.8125,
+            "expansion_subgroup": {
+              "n_E": 3,
+              "n_NE": 2,
+              "mean_delta_E": 1.1033406016233618,
+              "mean_delta_NE": -0.46034956249176506,
+              "mannwhitney_p_two_sided": 0.2
+            }
+          }
+        }
+      }
+    },
+    "50": {
+      "cohort_1": {
+        "n_paired_patients": 11,
+        "metrics": {
+          "State_01": {
+            "mean_delta_on_minus_pre": -0.006111138999375886,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.2409463519914893,
+              0.19904919311446231
+            ],
+            "wilcoxon_p_two_sided": 0.8310546875,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 5,
+              "mean_delta_E": 0.15845162571190646,
+              "mean_delta_NE": -0.22428064661008573,
+              "mannwhitney_p_two_sided": 0.2222222222222222
+            }
+          },
+          "State_02": {
+            "mean_delta_on_minus_pre": 0.03051794587294543,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.16610644515802664,
+              0.23554555625303833
+            ],
+            "wilcoxon_p_two_sided": 0.7646484375,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 5,
+              "mean_delta_E": 0.19247817343256113,
+              "mean_delta_NE": -0.0538359833897446,
+              "mannwhitney_p_two_sided": 0.5476190476190477
+            }
+          },
+          "State_03": {
+            "mean_delta_on_minus_pre": -0.03603845519810254,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.22195152334038346,
+              0.14278324597962688
+            ],
+            "wilcoxon_p_two_sided": 0.9658203125,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 5,
+              "mean_delta_E": 0.17903645691652487,
+              "mean_delta_NE": -0.15242704449071667,
+              "mannwhitney_p_two_sided": 0.15079365079365079
+            }
+          },
+          "State_04": {
+            "mean_delta_on_minus_pre": 0.12785749332213686,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.06046449377958394,
+              0.3310219394217155
+            ],
+            "wilcoxon_p_two_sided": 0.240234375,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 5,
+              "mean_delta_E": 0.06191216249907914,
+              "mean_delta_NE": 0.05277451136007549,
+              "mannwhitney_p_two_sided": 0.8412698412698413
+            }
+          },
+          "P8": {
+            "mean_delta_on_minus_pre": -0.08240402227007827,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.3448008770997517,
+              0.17004646623267677
+            ],
+            "wilcoxon_p_two_sided": 0.7646484375,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 5,
+              "mean_delta_E": 0.15198177121697984,
+              "mean_delta_NE": -0.1812790254455779,
+              "mannwhitney_p_two_sided": 0.5476190476190477
+            }
+          }
+        }
+      },
+      "cohort_2": {
+        "n_paired_patients": 3,
+        "metrics": {
+          "State_01": {
+            "mean_delta_on_minus_pre": 0.04914035700150521,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.12720006721800292,
+              0.24524090296803092
+            ],
+            "wilcoxon_p_two_sided": 0.75,
+            "expansion_subgroup": {
+              "n_E": 2,
+              "n_NE": 1,
+              "mean_delta_E": 0.059020417875014,
+              "mean_delta_NE": 0.02938023525448763,
+              "mannwhitney_p_two_sided": null
+            }
+          },
+          "State_02": {
+            "mean_delta_on_minus_pre": 0.2811260205569129,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.06443593910569323,
+              0.9616122448105324
+            ],
+            "wilcoxon_p_two_sided": 1.0,
+            "expansion_subgroup": {
+              "n_E": 2,
+              "n_NE": 1,
+              "mean_delta_E": 0.4485881528524196,
+              "mean_delta_NE": -0.053798244034100495,
+              "mannwhitney_p_two_sided": null
+            }
+          },
+          "State_03": {
+            "mean_delta_on_minus_pre": 0.14735957768844266,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.13667280610830002,
+              0.5633703059609347
+            ],
+            "wilcoxon_p_two_sided": 0.75,
+            "expansion_subgroup": {
+              "n_E": 2,
+              "n_NE": 1,
+              "mean_delta_E": 0.289375769586814,
+              "mean_delta_NE": -0.13667280610830002,
+              "mannwhitney_p_two_sided": null
+            }
+          },
+          "State_04": {
+            "mean_delta_on_minus_pre": -0.012636337501016115,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.2092851179916373,
+              0.22184315381401065
+            ],
+            "wilcoxon_p_two_sided": 1.0,
+            "expansion_subgroup": {
+              "n_E": 2,
+              "n_NE": 1,
+              "mean_delta_E": 0.0062790179111866795,
+              "mean_delta_NE": -0.050467048325421704,
+              "mannwhitney_p_two_sided": null
+            }
+          },
+          "P8": {
+            "mean_delta_on_minus_pre": 0.04142881723383537,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.1444431838545821,
+              0.1942615038818385
+            ],
+            "wilcoxon_p_two_sided": 0.75,
+            "expansion_subgroup": {
+              "n_E": 2,
+              "n_NE": 1,
+              "mean_delta_E": 0.1343648177780441,
+              "mean_delta_NE": -0.1444431838545821,
+              "mannwhitney_p_two_sided": null
+            }
+          }
+        }
+      }
+    },
+    "100": {
+      "cohort_1": {
+        "n_paired_patients": 11,
+        "metrics": {
+          "State_01": {
+            "mean_delta_on_minus_pre": -0.006111138999375886,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.2405513657450664,
+              0.20023832861868074
+            ],
+            "wilcoxon_p_two_sided": 0.8310546875,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 5,
+              "mean_delta_E": 0.15845162571190646,
+              "mean_delta_NE": -0.22428064661008573,
+              "mannwhitney_p_two_sided": 0.2222222222222222
+            }
+          },
+          "State_02": {
+            "mean_delta_on_minus_pre": 0.03051794587294543,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.16841292573149644,
+              0.2367544697532405
+            ],
+            "wilcoxon_p_two_sided": 0.7646484375,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 5,
+              "mean_delta_E": 0.19247817343256113,
+              "mean_delta_NE": -0.0538359833897446,
+              "mannwhitney_p_two_sided": 0.5476190476190477
+            }
+          },
+          "State_03": {
+            "mean_delta_on_minus_pre": -0.03603845519810254,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.2251960479747986,
+              0.15108303877418633
+            ],
+            "wilcoxon_p_two_sided": 0.9658203125,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 5,
+              "mean_delta_E": 0.17903645691652487,
+              "mean_delta_NE": -0.15242704449071667,
+              "mannwhitney_p_two_sided": 0.15079365079365079
+            }
+          },
+          "State_04": {
+            "mean_delta_on_minus_pre": 0.12785749332213686,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.06907609444700755,
+              0.3254109982477547
+            ],
+            "wilcoxon_p_two_sided": 0.240234375,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 5,
+              "mean_delta_E": 0.06191216249907914,
+              "mean_delta_NE": 0.05277451136007549,
+              "mannwhitney_p_two_sided": 0.8412698412698413
+            }
+          },
+          "P8": {
+            "mean_delta_on_minus_pre": -0.08240402227007827,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.34521481080465416,
+              0.16822508362042227
+            ],
+            "wilcoxon_p_two_sided": 0.7646484375,
+            "expansion_subgroup": {
+              "n_E": 5,
+              "n_NE": 5,
+              "mean_delta_E": 0.15198177121697984,
+              "mean_delta_NE": -0.1812790254455779,
+              "mannwhitney_p_two_sided": 0.5476190476190477
+            }
+          }
+        }
+      },
+      "cohort_2": {
+        "n_paired_patients": 2,
+        "metrics": {
+          "State_01": {
+            "mean_delta_on_minus_pre": -0.048909915981757646,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.12720006721800292,
+              0.02938023525448763
+            ],
+            "wilcoxon_p_two_sided": null,
+            "expansion_subgroup": {
+              "n_E": 1,
+              "n_NE": 1,
+              "mean_delta_E": -0.12720006721800292,
+              "mean_delta_NE": 0.02938023525448763,
+              "mannwhitney_p_two_sided": null
+            }
+          },
+          "State_02": {
+            "mean_delta_on_minus_pre": -0.05911709156989686,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.06443593910569323,
+              -0.053798244034100495
+            ],
+            "wilcoxon_p_two_sided": null,
+            "expansion_subgroup": {
+              "n_E": 1,
+              "n_NE": 1,
+              "mean_delta_E": -0.06443593910569323,
+              "mean_delta_NE": -0.053798244034100495,
+              "mannwhitney_p_two_sided": null
+            }
+          },
+          "State_03": {
+            "mean_delta_on_minus_pre": -0.060645786447803385,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.13667280610830002,
+              0.015381233212693246
+            ],
+            "wilcoxon_p_two_sided": null,
+            "expansion_subgroup": {
+              "n_E": 1,
+              "n_NE": 1,
+              "mean_delta_E": 0.015381233212693246,
+              "mean_delta_NE": -0.13667280610830002,
+              "mannwhitney_p_two_sided": null
+            }
+          },
+          "State_04": {
+            "mean_delta_on_minus_pre": -0.1298760831585295,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.2092851179916373,
+              -0.050467048325421704
+            ],
+            "wilcoxon_p_two_sided": null,
+            "expansion_subgroup": {
+              "n_E": 1,
+              "n_NE": 1,
+              "mean_delta_E": -0.2092851179916373,
+              "mean_delta_NE": -0.050467048325421704,
+              "mannwhitney_p_two_sided": null
+            }
+          },
+          "P8": {
+            "mean_delta_on_minus_pre": -0.0349875260901662,
+            "bootstrap_patient_mean_delta_ci95": [
+              -0.1444431838545821,
+              0.0744681316742497
+            ],
+            "wilcoxon_p_two_sided": null,
+            "expansion_subgroup": {
+              "n_E": 1,
+              "n_NE": 1,
+              "mean_delta_E": 0.0744681316742497,
+              "mean_delta_NE": -0.1444431838545821,
+              "mannwhitney_p_two_sided": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "interpretation_limit": "Expansion is an immune pharmacodynamic subgroup, not pathological response or survival; results do not authorize treatment simulation."
+}

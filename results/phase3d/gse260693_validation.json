@@ -1,0 +1,164 @@
+{
+  "analysis": "GSE260693 frozen signatures; log1p(TPM); no refitting",
+  "samples": 73,
+  "unique_patients": 54,
+  "baseline": 42,
+  "post_treatment": 31,
+  "complete_pairs": 19,
+  "baseline_no_residual": 16,
+  "baseline_residual": 26,
+  "coverage": {
+    "State_01": {
+      "present": 100,
+      "total": 100
+    },
+    "State_02": {
+      "present": 100,
+      "total": 100
+    },
+    "State_03": {
+      "present": 100,
+      "total": 100
+    },
+    "State_04": {
+      "present": 100,
+      "total": 100
+    },
+    "P8": {
+      "present": 1886,
+      "total": 2000,
+      "weight_present": 0.9746786124410781
+    }
+  },
+  "outcome_contrast": "residual tumour yes minus no at baseline",
+  "baseline_outcome_tests": {
+    "State_01": {
+      "n_group_1": 26,
+      "n_group_0": 16,
+      "mean_difference": -0.017999800874501037,
+      "bootstrap_ci95": [
+        -0.12084711572522167,
+        0.0845165645635822
+      ],
+      "hedges_g": -0.10117547624598826,
+      "mann_whitney_p_two_sided": 0.765812434126265,
+      "bh_fdr": 0.9483718690213016
+    },
+    "State_02": {
+      "n_group_1": 26,
+      "n_group_0": 16,
+      "mean_difference": -0.03395887494886907,
+      "bootstrap_ci95": [
+        -0.15174406518823383,
+        0.08701601854515881
+      ],
+      "hedges_g": -0.15791907152535037,
+      "mann_whitney_p_two_sided": 0.38557506263256414,
+      "bh_fdr": 0.6426251043876069
+    },
+    "State_03": {
+      "n_group_1": 26,
+      "n_group_0": 16,
+      "mean_difference": -0.0644817697952651,
+      "bootstrap_ci95": [
+        -0.18062093685420658,
+        0.052676463435933164
+      ],
+      "hedges_g": -0.32917661085735694,
+      "mann_whitney_p_two_sided": 0.22844365160309732,
+      "bh_fdr": 0.5711091290077432
+    },
+    "State_04": {
+      "n_group_1": 26,
+      "n_group_0": 16,
+      "mean_difference": -0.0014777315204623775,
+      "bootstrap_ci95": [
+        -0.12150284514519702,
+        0.11993534717762185
+      ],
+      "hedges_g": -0.006817387384897837,
+      "mann_whitney_p_two_sided": 0.9483718690213016,
+      "bh_fdr": 0.9483718690213016
+    },
+    "P8": {
+      "n_group_1": 26,
+      "n_group_0": 16,
+      "mean_difference": -0.12323549822482782,
+      "bootstrap_ci95": [
+        -0.28246091228152226,
+        0.0365546629158269
+      ],
+      "hedges_g": -0.4310569687133219,
+      "mann_whitney_p_two_sided": 0.11711797397377186,
+      "bh_fdr": 0.5711091290077432
+    }
+  },
+  "paired_change_tests": {
+    "State_01": {
+      "n_pairs": 19,
+      "mean_delta_later_minus_baseline": 0.01438926114064015,
+      "median_delta": 0.08588088081326184,
+      "bootstrap_mean_ci95": [
+        -0.15617699506743143,
+        0.16860943575383844
+      ],
+      "wilcoxon_p_two_sided": 0.5677604675292969,
+      "paired_t_p_two_sided": 0.8684932682056229,
+      "bh_fdr": 0.7097005844116211
+    },
+    "State_02": {
+      "n_pairs": 19,
+      "mean_delta_later_minus_baseline": -0.09989865168843003,
+      "median_delta": -0.022933894786511644,
+      "bootstrap_mean_ci95": [
+        -0.2560627624560682,
+        0.040402221371660524
+      ],
+      "wilcoxon_p_two_sided": 0.4180412292480469,
+      "paired_t_p_two_sided": 0.21498263252171906,
+      "bh_fdr": 0.6967353820800781
+    },
+    "State_03": {
+      "n_pairs": 19,
+      "mean_delta_later_minus_baseline": -0.05507433135811823,
+      "median_delta": 0.045309878988072594,
+      "bootstrap_mean_ci95": [
+        -0.23837618339252806,
+        0.10616669189897963
+      ],
+      "wilcoxon_p_two_sided": 0.9217147827148438,
+      "paired_t_p_two_sided": 0.5508580634610925,
+      "bh_fdr": 0.9217147827148438
+    },
+    "State_04": {
+      "n_pairs": 19,
+      "mean_delta_later_minus_baseline": 0.10944693180054976,
+      "median_delta": 0.17295568299649178,
+      "bootstrap_mean_ci95": [
+        -0.020840239334410246,
+        0.22458261987462033
+      ],
+      "wilcoxon_p_two_sided": 0.05457305908203125,
+      "paired_t_p_two_sided": 0.10636544969010824,
+      "bh_fdr": 0.13643264770507812
+    },
+    "P8": {
+      "n_pairs": 19,
+      "mean_delta_later_minus_baseline": -0.3070364413122862,
+      "median_delta": -0.3166924684715502,
+      "bootstrap_mean_ci95": [
+        -0.5118412325963035,
+        -0.11445961845118913
+      ],
+      "wilcoxon_p_two_sided": 0.0061798095703125,
+      "paired_t_p_two_sided": 0.00826950394404524,
+      "bh_fdr": 0.0308990478515625
+    }
+  },
+  "limitations": [
+    "bulk tissue composition",
+    "heterogeneous NAC regimens",
+    "19 complete pairs",
+    "outcome is residual tumour rather than centrally adjudicated pCR"
+  ]
+}

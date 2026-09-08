@@ -1,0 +1,38 @@
+{
+  "patient_id": "pat01",
+  "sample_id": "pre_pat01_ACT_1",
+  "timepoint": "pre",
+  "assay": "bulk_rna",
+  "treatment_context": "ACT",
+  "program_scores": {
+    "State_01": 2.6421856951339966,
+    "State_02": 2.3902397768749415,
+    "State_03": 2.6580021245574805,
+    "State_04": 2.2429269841109924,
+    "P8": 4.176290606262622
+  },
+  "reference_percentiles": {
+    "State_01": 3.571428571428571,
+    "State_02": 5.952380952380952,
+    "State_03": 5.952380952380952,
+    "State_04": 5.952380952380952,
+    "P8": 5.952380952380952
+  },
+  "uncertainty": {
+    "measurement": "single tissue sample; percentile referenced to 42 GSE260693 samples at the same timepoint",
+    "domain_shift": "bulk RNA-seq; scores mix malignant and microenvironmental expression",
+    "biological": "selection, plasticity and sampling-region effects cannot be separated"
+  },
+  "missing_modalities": [
+    "cnv",
+    "mutation",
+    "clone",
+    "spatial",
+    "ctdna",
+    "imaging"
+  ],
+  "allowed_uses": [
+    "observational_state_description",
+    "cohort_level_research"
+  ]
+}

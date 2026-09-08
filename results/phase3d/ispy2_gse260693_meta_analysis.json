@@ -1,0 +1,102 @@
+{
+  "analysis": "fixed-effect meta-analysis of two independent pretreatment TNBC cohorts",
+  "cohorts": [
+    "I-SPY2",
+    "GSE260693"
+  ],
+  "no_refitting": true,
+  "effect_orientation": "favourable pathological outcome minus residual disease",
+  "signatures": {
+    "State_01": {
+      "orientation": "pCR/no residual minus residual disease",
+      "cohort_hedges_g": {
+        "ISPY2": 0.17608875384422637,
+        "GSE260693": 0.10117547624598826
+      },
+      "fixed_effect_hedges_g": 0.16835900485822494,
+      "standard_error": 0.10213069996364245,
+      "ci95": [
+        -0.03181349036531558,
+        0.3685315000817655
+      ],
+      "p_two_sided": 0.09925704516685914,
+      "cochran_q": 0.04978695716737938,
+      "heterogeneity_p": 0.8234343995406226,
+      "i2_percent": 0.0,
+      "bh_fdr": 0.12407130645857392
+    },
+    "State_02": {
+      "orientation": "pCR/no residual minus residual disease",
+      "cohort_hedges_g": {
+        "ISPY2": 0.2595326229806823,
+        "GSE260693": 0.15791907152535037
+      },
+      "fixed_effect_hedges_g": 0.24902419716230476,
+      "standard_error": 0.10233882593219375,
+      "ci95": [
+        0.04844378253293857,
+        0.44960461179167094
+      ],
+      "p_two_sided": 0.014960633886375264,
+      "cochran_q": 0.09141124281370254,
+      "heterogeneity_p": 0.7623906609498761,
+      "i2_percent": 0.0,
+      "bh_fdr": 0.028135953113672518
+    },
+    "State_03": {
+      "orientation": "pCR/no residual minus residual disease",
+      "cohort_hedges_g": {
+        "ISPY2": 0.3281626816814674,
+        "GSE260693": 0.32917661085735694
+      },
+      "fixed_effect_hedges_g": 0.32826702562405974,
+      "standard_error": 0.10261281365601524,
+      "ci95": [
+        0.12714960491956148,
+        0.529384446328558
+      ],
+      "p_two_sided": 0.0013786492210146628,
+      "cochran_q": 9.013790317857114e-06,
+      "heterogeneity_p": 0.9976045167713152,
+      "i2_percent": 0.0,
+      "bh_fdr": 0.006893246105073313
+    },
+    "State_04": {
+      "orientation": "pCR/no residual minus residual disease",
+      "cohort_hedges_g": {
+        "ISPY2": -0.05886559958479303,
+        "GSE260693": 0.006817387384897837
+      },
+      "fixed_effect_hedges_g": -0.05210060624112144,
+      "standard_error": 0.10197329885660084,
+      "ci95": [
+        -0.25196460096130024,
+        0.14776338847905734
+      ],
+      "p_two_sided": 0.6094042715908266,
+      "cochran_q": 0.03833031467450147,
+      "heterogeneity_p": 0.8447813527651953,
+      "i2_percent": 0.0,
+      "bh_fdr": 0.6094042715908266
+    },
+    "P8": {
+      "orientation": "pCR/no residual minus residual disease",
+      "cohort_hedges_g": {
+        "ISPY2": 0.22348286209256807,
+        "GSE260693": 0.4310569687133219
+      },
+      "fixed_effect_hedges_g": 0.24453454933122298,
+      "standard_error": 0.10234667473980318,
+      "ci95": [
+        0.04393875132149938,
+        0.4451303473409466
+      ],
+      "p_two_sided": 0.01688157186820351,
+      "cochran_q": 0.3748611863973667,
+      "heterogeneity_p": 0.5403663556561626,
+      "i2_percent": 0.0,
+      "bh_fdr": 0.028135953113672518
+    }
+  },
+  "caution": "only two cohorts; report individual effects and heterogeneity alongside pooled estimates"
+}

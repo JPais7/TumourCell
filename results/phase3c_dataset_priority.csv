@@ -1,0 +1,14 @@
+priority,dataset,accession,role,independence,access,decision,key_reason,next_action
+1,HTAN_HTAPP_MBC,"SCP2702;CELLxGENE_a96133de-e951-4e2d-ace6-59db8b3bfb1d;phs002371",metastatic_single_cell_validation,independent,processed_public_raw_controlled,COMPLETED,"5 fresh plus 11 frozen TNBC donors with 85213 malignant cells; frozen projection completed",retain_compact_results
+2,Metastatic_spatial_atlas,SCP3851,spatial_context,partially_independent,public,FORMAL_VALIDATION_REJECTED,"only 22-29 of 100 genes per state and 27.2 percent P8 weight on Xenium panel",exploratory_gene_level_followup_only
+3,ISPY2_990,"GSE194040;GSE196093;GSE196096",clinical_pseudobulk_validation,independent,public,COMPLETED,"362 TNBC with pCR; State_03 confirmed after multiple-testing correction",retain_compact_results
+4,Bassez_anti_PD1,EGAS00001004809,treatment_dynamics,independent,controlled,REQUEST_ACCESS,"paired pre/on anti-PD1 single-cell breast tumors",audit_TNBC_paired_malignant_counts
+4,HRA_TNBC_immunotherapy,HRA002137,treatment_dynamics,independent,controlled,REQUEST_ACCESS,"62578 cells from seven TNBC patients across treatment",request_DAC_access
+5,MPE_metastatic,GSE208532,metastatic_niche_exploration,independent,public,EXPLORATORY,"metastatic pleural effusions but only two TNBC patients",download_only_if_HTAN_complete
+5,Chung_legacy,GSE75688,cross_platform_stress_test,independent,public,EXPLORATORY,"older full-length platform and only about 205 TNBC cells",use_as_nondecisive_sensitivity
+5,StageIV_serial,GSE264205,longitudinal_case_study,independent,public,EXPLORATORY,"primary and metastatic serial samples from one patient",case_study_only
+NA,Wu_atlas,GSE176078,construction_reference,not_independent,local,DO_NOT_CALL_EXTERNAL_VALIDATION,"already used in atlas construction",retain_for_sensitivity_only
+NA,Shiao_pembro_RT,GSE246613,longitudinal_construction,not_independent,local,DO_NOT_CALL_EXTERNAL_VALIDATION,"already used and radiotherapy added at third timepoint",retain_for_internal_dynamics
+NA,Zhang_CD45,GSE169246,immune_context,orthogonal,local,IMMUNE_ONLY,"CD45-positive compartment with no adequate malignant cells",link_only_to_immune_hypotheses
+NA,HMLE_TGFb,GSE252315,mechanistic_perturbation,not_clinical,public,MECHANISTIC_ONLY,"bulk HMLE TGF-beta time course rather than patient scRNA",score_frozen_programs_without_clinical_claim
+NA,CytoTRACE_breast,GSE138536,developmental_reference,weak,public,EXCLUDE_PRIMARY_VALIDATION,"only two basal-like tumors and sorted epithelial subpopulations",no_priority_download

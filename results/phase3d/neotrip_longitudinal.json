@@ -1,0 +1,99 @@
+{
+  "analysis": "NeoTRIP GSE319641 frozen signature longitudinal projection; no refitting",
+  "samples": 401,
+  "unique_patients": 251,
+  "baseline": 241,
+  "d1c2": 160,
+  "complete_pairs": 150,
+  "coverage": {
+    "State_01": {
+      "present": 100,
+      "total": 100
+    },
+    "State_02": {
+      "present": 100,
+      "total": 100
+    },
+    "State_03": {
+      "present": 100,
+      "total": 100
+    },
+    "State_04": {
+      "present": 100,
+      "total": 100
+    },
+    "P8": {
+      "present": 1848,
+      "total": 2000,
+      "weight_present": 0.967638288781205
+    }
+  },
+  "paired_change_tests": {
+    "State_01": {
+      "n_pairs": 150,
+      "mean_delta_later_minus_baseline": -4.463798922448413,
+      "median_delta": -2.1802637942256453,
+      "bootstrap_mean_ci95": [
+        -7.993032365396676,
+        -0.9818705523318486
+      ],
+      "wilcoxon_p_two_sided": 0.03737100470650358,
+      "paired_t_p_two_sided": 0.014325515669962556,
+      "bh_fdr": 0.062285007844172624
+    },
+    "State_02": {
+      "n_pairs": 150,
+      "mean_delta_later_minus_baseline": 1.3379004294161603,
+      "median_delta": 4.53629962296219,
+      "bootstrap_mean_ci95": [
+        -3.548623938604103,
+        5.970171557401682
+      ],
+      "wilcoxon_p_two_sided": 0.23905971867005904,
+      "paired_t_p_two_sided": 0.5787858353956422,
+      "bh_fdr": 0.29882464833757383
+    },
+    "State_03": {
+      "n_pairs": 150,
+      "mean_delta_later_minus_baseline": 4.35097383901275,
+      "median_delta": 7.793076867433506,
+      "bootstrap_mean_ci95": [
+        -0.3831791408566933,
+        9.041200897617868
+      ],
+      "wilcoxon_p_two_sided": 0.02116880256310414,
+      "paired_t_p_two_sided": 0.07333592164857039,
+      "bh_fdr": 0.05292200640776035
+    },
+    "State_04": {
+      "n_pairs": 150,
+      "mean_delta_later_minus_baseline": -5.45727203018599,
+      "median_delta": -4.37323006929779,
+      "bootstrap_mean_ci95": [
+        -9.755441761290482,
+        -1.1952236727429237
+      ],
+      "wilcoxon_p_two_sided": 0.0018480770711382028,
+      "paired_t_p_two_sided": 0.013856029454506542,
+      "bh_fdr": 0.009240385355691013
+    },
+    "P8": {
+      "n_pairs": 150,
+      "mean_delta_later_minus_baseline": 1.1986979185358493,
+      "median_delta": 4.652975837196195,
+      "bootstrap_mean_ci95": [
+        -4.513211594542811,
+        6.93651937646414
+      ],
+      "wilcoxon_p_two_sided": 0.3025438240787578,
+      "paired_t_p_two_sided": 0.683446556711722,
+      "bh_fdr": 0.3025438240787578
+    }
+  },
+  "clinical_endpoint_tested": false,
+  "limitations": [
+    "clinical pCR and treatment arm are not public",
+    "bulk tissue composition",
+    "ComBat-adjusted TPM supplied by authors"
+  ]
+}
