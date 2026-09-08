@@ -1,0 +1,10 @@
+"""Explicit non-cascading digital-twin evidence gates."""
+from enum import Enum
+class GateStatus(str,Enum):
+    PASSED="PASSED"; PARTIALLY_PASSED="PARTIALLY_PASSED"; NOT_PASSED="NOT_PASSED"; NOT_TESTED="NOT_TESTED"
+GATES={"G1":"representation transport","G2":"external prediction","G3":"treatment-conditioned transition","G4":"clone-resolved dynamics","G5":"spatial validation","G6":"counterfactual calibration","G7":"patient-informed state estimation","G8":"prospective prediction"}
+def evaluate_gates(evidence):
+    result={g:GateStatus(evidence.get(g,GateStatus.NOT_TESTED)) for g in GATES}
+    simulation_enabled=all(result[g] is GateStatus.PASSED for g in ("G1","G2","G3","G6","G7","G8"))
+    return {"gates":{g:{"name":GATES[g],"status":result[g].value} for g in GATES},"simulation_enabled":simulation_enabled,
+            "clinical_recommendations_enabled":False}

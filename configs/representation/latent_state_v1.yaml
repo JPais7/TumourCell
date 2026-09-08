@@ -1,0 +1,25 @@
+encoder:
+  version: latent_state_v1
+  normalization: log1p_CPM
+  transformation: weighted_mean_present_genes
+  reference: frozen_phase2_phase3_definitions
+  minimum_gene_coverage: 0.80
+  minimum_cells: 50
+  maximum_uncertainty: 2.0
+expected_modalities: [scRNA-seq, snRNA-seq, bulk RNA-seq, scATAC, spatial transcriptomics, IMC, Xenium, CNV, mutation, proteomics, clinical, imaging]
+programs:
+  - {name: proliferation, genes: [MKI67, TOP2A, UBE2C], role: continuous_dimension}
+  - {name: IFN, genes: [IFIT1, IFIT3, ISG15], role: continuous_dimension}
+  - {name: antigen_presentation, genes: [B2M, HLA-A, TAP1], role: continuous_dimension}
+  - {name: hypoxia, genes: [CA9, VEGFA, LDHA], role: continuous_dimension}
+  - {name: EMT, genes: [VIM, ZEB1, SNAI1], role: continuous_dimension}
+  - {name: stress, genes: [FOS, JUN, DDIT3], role: continuous_dimension}
+  - {name: stemness, genes: [SOX2, KLF4, ALDH1A1], role: continuous_dimension}
+  - {name: inflammatory, genes: [NFKB1, IL6, CXCL8], role: continuous_dimension}
+  - {name: metabolic, genes: [GAPDH, ENO1, PKM], role: continuous_dimension}
+  - {name: DNA_damage_response, genes: [TP53, GADD45A, CHEK1], role: continuous_dimension}
+  - {name: P8, genes: [GBP1, GBP2, GBP4, GBP5, IFI6, IFI44L], role: candidate_feature}
+  - {name: State_01, genes: [MGP, VIM, FOS, TACSTD2], role: candidate_feature}
+  - {name: State_02, genes: [EPCAM, KRT8, KRT18, KRT19], role: candidate_feature}
+  - {name: State_03, genes: [B2M, HLA-A, TAP1, STAT1], role: candidate_feature}
+  - {name: State_04, genes: [MKI67, TOP2A, UBE2C, STMN1], role: candidate_feature}

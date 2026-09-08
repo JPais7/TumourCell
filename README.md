@@ -22,7 +22,7 @@ Which malignant-cell programs change from baseline to pembrolizumab and from pem
 
 ## Repository layout
 
-`data/`, `src/`, `notebooks/`, `experiments/`, `results/`, `figures/`, `docs/`, `tests/`, and `configs/` are reserved for Phase 1. Raw biological files are excluded from version control; manifests and provenance remain tracked.
+`data/`, `src/`, `experiments/`, `results/`, `figures/`, `docs/`, `tests/`, and `configs/` contain the reproducible pipeline. `notebooks/` is intentionally empty: scripts are the source of truth. Raw biological files are excluded from version control; manifests and provenance remain tracked. The versioned continuous representation is defined in `src/representation/` and `configs/representation/latent_state_v1.yaml`.
 
 ## Status
 

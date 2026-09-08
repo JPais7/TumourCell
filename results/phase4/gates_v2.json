@@ -1,0 +1,15 @@
+{
+  "version": "gates_v2",
+  "G1": {"name": "representation transport", "status": "PARTIALLY_PASSED"},
+  "G2": {"name": "external prediction", "status": "NOT_PASSED"},
+  "G3": {"name": "treatment-conditioned transition", "status": "PARTIALLY_PASSED"},
+  "G4": {"name": "clone-resolved dynamics", "status": "NOT_TESTED"},
+  "G5": {"name": "spatial validation", "status": "NOT_PASSED"},
+  "G6": {"name": "counterfactual calibration", "status": "NOT_TESTED"},
+  "G7": {"name": "patient-informed state estimation", "status": "PARTIALLY_PASSED"},
+  "G8": {"name": "prospective prediction", "status": "NOT_TESTED"},
+  "simulation_enabled": false,
+  "clinical_recommendations_enabled": false,
+  "selection_status": "NOT_IDENTIFIABLE",
+  "plasticity_status": "NOT_IDENTIFIABLE"
+}
