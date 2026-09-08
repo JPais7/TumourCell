@@ -1,0 +1,22 @@
+{
+  "experiment_id": "20260909_representation_v1",
+  "config": "configs/representation/latent_state_v1.yaml",
+  "git_commit": "937fe3acf22dd8325ccaf551935a555b27712f17",
+  "dataset_manifest": "data/manifests/biokey_downloads.sha256",
+  "input_hashes": {
+    "configs/representation/latent_state_v1.yaml": "94a1f8ffd90d18033691d19fc7a6766abb5c592794ec6b556a75dadb35a3abbb",
+    "results/phase2/p8_definition_frozen.json": "185cde59ee15f1fac893b8367cfd1320dd6e1559d8e4894ab060cebfc4ed744e",
+    "results/phase3/state_atlas_v1.json": "af13be95eaa1b4291f927035e6c8ea6535e92ab41c48cef6cb6ebee123f645de"
+  },
+  "model_version": "latent_state_v1",
+  "random_seed": 20260908,
+  "software_environment": {
+    "python": "3.14.6",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
+  },
+  "output_hashes": {
+    "results/phase4/old_vs_new_representation.json": "2fba64e19f411638fd0897c0f63a19b5219e76bff4ccd2d36e23f7616f4d46b9",
+    "results/phase4/gates_v2.json": "8d66f910c89003b9395175e4a9173054b877e95fba64e05948628cb03b7724d2"
+  },
+  "timestamp": "2026-09-08T23:52:29.524201+00:00"
+}
