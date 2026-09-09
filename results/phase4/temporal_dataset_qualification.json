@@ -11,5 +11,7 @@
   ],
   "summary":{"datasets_evaluated":6,"continuous_time_observable":[],"ordered_phase_only":["GSE246613","SRP114962","EGAS50000001362"],"longitudinal_but_insufficient":[],"not_longitudinal":["ARTEMIS","GSE176078"],"unknown":["HTAN_metastatic_breast_cancer"]},
   "gate":{"name":"TEMPORAL_DATASET_GATE","passed":false,"reason":"No dataset is verified to contain elapsed time, repeated patient samples, treatment metadata and malignant compartment simultaneously."},
-  "phase5_ready":false,"simulation_allowed":false,"clinical_recommendations_enabled":false
+  "phase5_ready":false,"simulation_allowed":false,"clinical_recommendations_enabled":false,
+  "metadata_audit":"results/phase4/longitudinal_metadata_audit.json",
+  "sample_level_elapsed_time_verified":false
 }
