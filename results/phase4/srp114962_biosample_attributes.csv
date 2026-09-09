@@ -1,0 +1,6 @@
+source_accession,attribute_name,attribute_value,evidence_level,interpretation
+SAMN09909196,treatment,post,DIRECT_SAMPLE_METADATA,technical treatment-phase attribute; no elapsed time
+SAMN09909195,treatment,post,DIRECT_SAMPLE_METADATA,technical treatment-phase attribute; no elapsed time
+SAMN09909424,treatment,post,DIRECT_SAMPLE_METADATA,technical treatment-phase attribute; no elapsed time
+ALL_6633,treatment,pre|mid|post|preTX|midTX|postTX|blood|operative|2cycleschemo,DIRECT_SAMPLE_METADATA,aggregate values counted from all BioSample XML records
+ALL_6633,sample_type,tumor,DIRECT_SAMPLE_METADATA,829 records carry sample_type=tumor

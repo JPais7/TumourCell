@@ -1,0 +1,6 @@
+{
+  "phase":"4.5.5","dataset":"SRP114962","sources_consulted":["ENA filereport API SRP114962","NCBI E-utilities BioSample efetch for 6633 SAMN accessions","SRA/PRJNA396019 study metadata","publication-level longitudinal description"],
+  "run_count":6633,"experiment_count":6633,"unique_sample_count":6633,"unique_biosample_count":6633,"verified_biological_sample_count":829,"verified_patient_count":0,"patients_with_repeated_samples":0,"verified_biopsy_count":0,"verified_timepoint_count":0,"direct_biological_time_records":0,"valid_intervals":0,"invalid_intervals":0,"unresolved_identity_conflicts":0,"unresolved_time_conflicts":0,"treatment_anchors":0,
+  "sample_to_patient_mapping_verified":false,"sample_to_biopsy_mapping_verified":false,"sample_to_timepoint_mapping_verified":false,"supplementary_mapping_found":false,"supplementary_mapping_records":0,"artificial_delta_t_found":false,"artificial_delta_t_locations":[],"tests_collected":90,"tests_passed":90,"tests_failed":0,
+  "continuous_time_observable":false,"final_temporal_class":"ORDERED_PHASE_ONLY","phase5_ready":false,"simulation_allowed":false,"clinical_recommendations_enabled":false
+}
