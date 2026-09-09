@@ -1,0 +1,7 @@
+{
+  "candidates":["NEOLETEXE","SRP114962","ARTEMIS","GSE176078","HTAN_MBC","GSE246613"],"candidate_count":6,
+  "continuous_time_candidates":[],"discrete_longitudinal_candidates":[],"ordered_phase_only_candidates":["SRP114962","GSE246613"],"access_controlled_candidates":["NEOLETEXE"],"selected_candidate":null,"selected_candidate_level":"NO_PUBLIC_LONGITUDINAL_DATASET_VERIFIED",
+  "selection_reason":"No candidate currently provides authoritative public patient linkage plus repeated biological samples and verified biological time or sample-level discrete time mapping.",
+  "rejected_candidates":{"NEOLETEXE":"controlled sample metadata","SRP114962":"no patient mapping despite public BioSamples","ARTEMIS":"serial material is PDX/clinical rather than verified repeated patient molecular samples","GSE176078":"cross-sectional","HTAN_MBC":"insufficient provenance","GSE246613":"ordered phases only"},
+  "unresolved_access_dependencies":["EGAS50000001362 sample manifest","ARTEMIS patient-level serial molecular mapping","HTAN study-level provenance"],"phase5_ready":false,"simulation_allowed":false,"clinical_recommendations_enabled":false
+}
