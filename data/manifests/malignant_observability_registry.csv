@@ -1,0 +1,7 @@
+dataset_id,accession,modality,tumour_sample,cell_level_annotation,cnv_or_dna,clone_data,spatial,patient_linkage,treatment,malignant_observability,evidence_level,source,scientific_role,limitations
+GSE205472,GSE205472,scRNA-seq,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,MALIGNANT_NOT_OBSERVABLE,E3,GEO SOFT and matrix links,DISCRETE_TRANSITION_VALIDATION,no cell-level malignant labels or CNV released
+GSE176078,GSE176078,scRNA+spatial+bulk,TRUE,PARTIAL,PARTIAL,FALSE,TRUE,FALSE,UNKNOWN,MALIGNANT_PARTIAL,E3,GEO record and study annotations,REPRESENTATION_VALIDATION,atlas cell types do not establish malignancy ground truth
+GSE246613,GSE246613,scRNA/pseudobulk,TRUE,UNKNOWN,UNKNOWN,UNKNOWN,FALSE,TRUE,TRUE,MALIGNANT_NOT_OBSERVABLE,E3,local processed malignant pseudobulk provenance,ORDERED_PHASE_CONTROL,no cell-level public annotation in processed pathway
+SRP114962,SRP114962,scRNA/snRNA/scDNA,TRUE,UNKNOWN,PARTIAL,PARTIAL,FALSE,FALSE,TRUE,MALIGNANT_PARTIAL,E3,E NA/BioSample attributes and study description,CLONE_STATE_CONTROL,patient/sample mapping unresolved
+NEOLETEXE,EGAS50000001362,scRNA+scTCR+scBCR,TRUE,PARTIAL,UNKNOWN,PARTIAL,FALSE,UNKNOWN,TRUE,MALIGNANT_PARTIAL,E1,EGA/OUH study description,DISCOVERY_ONLY,controlled sample metadata and annotations
+ARTEMIS,NCT02276443,scRNA/spatial/bulk+PDX,TRUE,PARTIAL,PARTIAL,PARTIAL,TRUE,FALSE,TRUE,MALIGNANT_PARTIAL,E2,ARTEMIS reports and PDX material,NEGATIVE_CONTROL,PDX is not repeated patient malignant-cell ground truth
