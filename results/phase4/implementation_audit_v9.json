@@ -1,32 +1,9 @@
 {
-  "phase": "4.4.1",
-  "title": "Correct real temporal semantics and forecast baselines",
-  "status": "PASS_WITH_DATA_LIMITATION",
-  "authoritative_artifact": "results/phase4/gse246613_real_forecasting_benchmark_corrected_v1.json",
-  "dataset": "GSE246613",
-  "schema_findings": {
-    "observations": 99,
-    "patients": 34,
-    "available_time": "ordered clinical phases only",
-    "exact_dates_or_days": false,
-    "response_predictor": false
-  },
-  "corrections": [
-    "Explicit history/target sample and treatment fields",
-    "Adjacent strictly-forward transitions only",
-    "Duplicate/non-forward observations rejected",
-    "delta_t marked NOT_AVAILABLE rather than set to one",
-    "Continuous probabilistic dynamics disabled",
-    "Persistence directional metric marked NOT_APPLICABLE",
-    "50/80/95 interval coverage marked NOT_ESTIMABLE without covariance recalibration"
-  ],
-  "result": {
-    "transitions": 65,
-    "persistence_MAE": 0.9272538899566909,
-    "persistence_RMSE": 1.3508372243554625,
-    "dynamics": "NOT_ESTIMABLE"
-  },
-  "previous_results_preserved": true,
-  "simulation": false,
-  "phase5_started": false
+  "audit_version": "4.4.1-v9", "tests_collected": 67, "tests_passed": 67, "tests_failed": 0, "tests_skipped": 0, "tests_xfailed": 0,
+  "temporal_semantics": "ORDERED_PHASE_ONLY", "temporal_ordering": "strictly_forward_adjacent", "duplicate_timepoint_control": "REJECTED_WITH_AUDIT_REASON", "future_row_exclusion": "ENFORCED", "treatment_time_separation": true,
+  "persistence_baseline": "MAE_RMSE_ONLY; directional_accuracy NOT_APPLICABLE; intervals NOT_ESTIMABLE", "continuous_time_dynamics": "NOT_ESTIMABLE", "forward_temporal_validation": "NOT_ESTIMABLE", "joint_patient_temporal_validation": "NOT_IMPLEMENTED",
+  "representation_frozen": true, "response_label_leakage": false, "real_cohort_forecasting": "PATIENT_HELD_OUT_ORDERED_PHASE_BENCHMARK", "causal_treatment_effect": "NOT_IMPLEMENTED", "mechanism_identification": "NOT_IDENTIFIABLE",
+  "phase5_ready": false, "simulation_allowed": false, "clinical_recommendations_enabled": false, "previous_benchmark_status": "INVALIDATED_BY_TEMPORAL_SEMANTICS_CORRECTION",
+  "limitations": ["No actual collection dates or elapsed intervals in GSE246613 NPZ", "No prospective boundary with estimable historical treatment transitions", "No joint patient-plus-future validation claim"],
+  "real_cohort_counts": {"patients": 34, "observations": 99, "valid_transitions": 65, "excluded": 0, "phase_transitions": {"Base->PD1": 31, "PD1->RTPD1": 31, "Base->RTPD1": 3}, "treatment_at_history": {"Base": 34, "PD1": 31}}
 }

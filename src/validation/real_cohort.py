@@ -37,6 +37,11 @@ def temporal_transitions(observations):
     for row in observations: by_patient.setdefault(row['patient_id'],[]).append(row)
     transitions=[]; failures=[]
     for patient,rows in sorted(by_patient.items()):
+        invalid=[r for r in rows if r.get('time_value') is None or r.get('timepoint_id') in (None,'')]
+        if invalid:
+            for r in invalid:
+                failures.append({'patient_id':patient,'status':'MISSING_TIMEPOINT' if r.get('timepoint_id') in (None,'') else 'UNKNOWN_TIMEPOINT','timepoint_id':r.get('timepoint_id')})
+            continue
         rows=sorted(rows,key=lambda r:(r['time_value'],r['row_index']))
         seen={}
         for r in rows:

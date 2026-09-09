@@ -19,10 +19,16 @@ Cobertura de intervalos 50/80/95 é `NOT_ESTIMABLE` sem um modelo de incerteza
 válido.
 
 O benchmark numérico anterior foi **superseded**: usava `delta_t = 1` para
-categorias clínicas e não é considerado autoridade científica.
+categorias clínicas e é formalmente **INVALIDATED_BY_TEMPORAL_SEMANTICS_CORRECTION**.
+
+O benchmark actual é um `PATIENT_HELD_OUT_ORDERED_PHASE_BENCHMARK`, não uma
+validação de dinâmica temporal contínua. As etiquetas de resposta são mantidas
+apenas como metadados e não entram em estados, preditores, splits ou selecção.
 
 ## Limitação e próximo requisito
 
 Para estimar dinâmica contínua e forecasting prospectivo são necessários dias
 desde a biópsia/tratamento (ou timestamps harmonizados) por amostra. Não se
-inicia a Fase 5 com os dados atuais.
+inicia a Fase 5 com os dados atuais. Também serão necessários observações
+repetidas suficientes, metadados de tratamento e, idealmente, resolução clonal e
+espacial/contextual.
