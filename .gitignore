@@ -6,3 +6,7 @@ tmp/
 # Large biological inputs are tracked through manifests and checksums, not Git.
 data/raw/
 data/processed/
+
+# Derived alignment intermediates are reproducible from the tracked manifests
+# and scripts but too large for the repository.
+results/kim_pilot_quantification/bam/

@@ -1,0 +1,21 @@
+patient_id,clinical_id,age_years,histology,er_baseline,pr_baseline,her2_baseline,her2_fish,ki67_percent,stage_after_surgery,tumor_grade
+P1,KTN126,44,IDC,<10%,<10%,0 or 1+,,40,ypT1/Tis N0,Not done
+P2,KTN129,46,IDC,<10%,<10%,0 or 1+,,90,ypT1 N0,3
+P3,KTN612,49,Other,<10%,<10%,0 or 1+,,35,ypTX/Tis N1,Not done
+P4,KTN304,61,IDC,<10%,<10%,0 or 1+,,25,ypT0 N3,3
+P5,KTN147,47,IDC,<10%,<10%,0 or 1+,,60,ypT0 N0,2
+P6,KTN206,40,IDC,<10%,<10%,0 or 1+,,60,ypT1 N1,Not done
+P7,KTN317,51,IDC,<10%,<10%,0 or 1+,,40,ypT0 N0,3
+P8,KTN210,34,IDC,<10%,<10%,0 or 1+,,10,ypT1 N0,2
+P9,KTN302,40,IDC,<10%,<10%,0 or 1+,,40,ypT1 N0,2
+P10,KTN215,59,Not done,<10%,<10%,2+,FISH not amplified,45,ypT0 N0,Not done
+P11,KTN102,58,IDC,<10%,<10%,0 or 1+,,30,ypT3/Tis N3,3
+P12,KTN132,40,IDC,<10%,<10%,2+,5-6 copies,10,ypT0/Tis N0,3
+P13,KTN134,38,IDC,<10%,<10%,0 or 1+,,30,ypT0 N0,3
+P14,KTN152,38,IDC,<10%,<10%,2+,FISH not amplified,90,ypT2 N2,3
+P15,KTN615,39,Other,<10%,<10%,0 or 1+,,31,ypT1/Tis N0,Not done
+P16,KTN316,48,IDC,<10%,<10%,0 or 1+,,40,ypT2/Tis N0,Not done
+P17,KTN310,33,IDC,<10%,<10%,0 or 1+,,50,ypTX N1,3
+P18,KTN115,48,IDC,<10%,<10%,0 or 1+,,50,ypT1 N0,2
+P19,KTN501,59,IDC,<10%,<10%,0 or 1+,FISH not amplified,N/A,ypT1 N0,3
+P20,KTN155,47,IDC,<10%,<10%,0 or 1+,,50,ypT1 N1,3

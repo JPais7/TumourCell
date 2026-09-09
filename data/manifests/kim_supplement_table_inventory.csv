@@ -1,0 +1,7 @@
+study,table,description,fields_relevant_to_tumour_twin,usable_now,limitation,source
+KIM_2018,S1,Clinical data on TNBC patient cohort,patient number;clinical trial identifier;age;histology;ER;PR;HER2;FISH;Ki67;TNM stage;timepoint;response,PARTIAL,PDF text layer is not reliably tabular; numeric rows require visual/table extraction,mmc1.pdf
+KIM_2018,S2,Exome sequencing data,patient identifier;timepoint;coverage depth;coverage breadth,PARTIAL,PDF text layer is not reliably tabular; numeric rows require visual/table extraction,mmc1.pdf
+KIM_2018,S3,Somatic indels identified by exome sequencing,patient;chromosome;start;end;gene;reference;variant;type;pre/mid/post MAF;blood MAF,PARTIAL,PDF text layer is not reliably tabular; numeric rows require visual/table extraction,mmc1.pdf
+KIM_2018,S4,Tumor purity and histopathological cellularity,patient;timepoint;ThetA purity;histopathological cellularity;exome classification,PARTIAL,PDF text layer is not reliably tabular; numeric rows require visual/table extraction,mmc1.pdf
+KIM_2018,S5,De novo mutations in post-treatment tumor samples,patient;gene;chromosome;position;reference;variant;mutation type;validation status,PARTIAL,PDF text layer is not reliably tabular; numeric rows require visual/table extraction,mmc1.pdf
+KIM_2018,S6,Targeted amplicon deep-sequencing of chemoresistance-associated mutations,patient;gene;variant;pre-treatment frequency;deep-sequencing result;matched blood control,PARTIAL,PDF text layer is not reliably tabular; numeric rows require visual/table extraction,mmc1.pdf
