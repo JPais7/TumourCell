@@ -1,0 +1,15 @@
+from src.malignant.observability import qualify_observability, phase5_eligible
+def test_epithelial_only_rejected(): assert qualify_observability(epithelial_only=True)=='MALIGNANT_PARTIAL'
+def test_tumour_like_rejected(): assert qualify_observability(author_annotation=True,author_annotation_type='tumour_like')=='MALIGNANT_PARTIAL'
+def test_generic_author_rejected(): assert qualify_observability(author_annotation=True)=='MALIGNANT_PARTIAL'
+def test_unvalidated_malignant_rejected(): assert qualify_observability(author_annotation=True,author_annotation_type='malignant')=='MALIGNANT_PARTIAL'
+def test_sample_tumour_not_cell_ground_truth(): assert qualify_observability()=='MALIGNANT_NOT_OBSERVABLE'
+def test_outcome_leakage_fails(): assert qualify_observability(cnv_reproducible=True,cnv_pipeline_supported=True,outcome_used=True)=='MALIGNANT_NOT_OBSERVABLE'
+def test_treatment_leakage_fails(): assert qualify_observability(cnv_reproducible=True,cnv_pipeline_supported=True,treatment_used=True)=='MALIGNANT_NOT_OBSERVABLE'
+def test_unsupported_cnv_partial(): assert qualify_observability(cnv_reproducible=True,cnv_pipeline_supported=False)=='MALIGNANT_PARTIAL'
+def test_cnv_without_reference_partial(): assert qualify_observability(cnv_reproducible=True,cnv_pipeline_supported=False)=='MALIGNANT_PARTIAL'
+def test_supported_cnv_is_e4_not_e5(): assert qualify_observability(cell_metadata=True,cnv_reproducible=True,cnv_pipeline_supported=True)=='MALIGNANT_REPRODUCIBLE_INFERENCE'
+def test_patient_genotype_without_cell_link_partial(): assert qualify_observability()== 'MALIGNANT_NOT_OBSERVABLE'
+def test_pathology_without_cell_link_partial(): assert qualify_observability()== 'MALIGNANT_NOT_OBSERVABLE'
+def test_clustering_only_not_observable(): assert qualify_observability()== 'MALIGNANT_NOT_OBSERVABLE'
+def test_pdx_not_patient_ground_truth(): assert phase5_eligible('MALIGNANT_PARTIAL') is False
