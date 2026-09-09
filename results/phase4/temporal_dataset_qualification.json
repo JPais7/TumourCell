@@ -1,0 +1,15 @@
+{
+  "phase": "4.5",
+  "purpose": "Temporal dataset discovery and qualification",
+  "datasets": [
+    {"dataset_id":"GSE246613","classification":"ORDERED_PHASE_ONLY","continuous_time_observable":false,"evidence":"34 patients and 99 observations; Base/PD1/RTPD1 phases without elapsed intervals","next_action":"retain descriptive benchmark only"},
+    {"dataset_id":"SRP114962","classification":"ORDERED_PHASE_ONLY","continuous_time_observable":false,"evidence":"matched longitudinal TNBC samples before/mid/after NAC; exact intervals not verified","next_action":"audit sample-level ENA metadata"},
+    {"dataset_id":"EGAS50000001362","classification":"ORDERED_PHASE_ONLY","continuous_time_observable":false,"evidence":"25 patients with three neoadjuvant biopsy timepoints; controlled EGA access","next_action":"request metadata and verify biopsy dates"},
+    {"dataset_id":"ARTEMIS","classification":"NOT_LONGITUDINAL","continuous_time_observable":false,"evidence":"public scRNA cohort is pretreatment; serial PDX/imaging is not repeated patient molecular sampling","next_action":"separate PDX and imaging use-cases"},
+    {"dataset_id":"GSE176078","classification":"NOT_LONGITUDINAL","continuous_time_observable":false,"evidence":"26 primary tumours with no repeated patient timepoints","next_action":"use only atlas/external representation validation"},
+    {"dataset_id":"HTAN_metastatic_breast_cancer","classification":"UNKNOWN","continuous_time_observable":false,"evidence":"local metadata insufficient to establish repeated timed samples","next_action":"obtain study-level provenance"}
+  ],
+  "summary":{"datasets_evaluated":6,"continuous_time_observable":[],"ordered_phase_only":["GSE246613","SRP114962","EGAS50000001362"],"longitudinal_but_insufficient":[],"not_longitudinal":["ARTEMIS","GSE176078"],"unknown":["HTAN_metastatic_breast_cancer"]},
+  "gate":{"name":"TEMPORAL_DATASET_GATE","passed":false,"reason":"No dataset is verified to contain elapsed time, repeated patient samples, treatment metadata and malignant compartment simultaneously."},
+  "phase5_ready":false,"simulation_allowed":false,"clinical_recommendations_enabled":false
+}

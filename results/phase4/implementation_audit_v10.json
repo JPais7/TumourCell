@@ -1,0 +1,9 @@
+{
+  "audit_version":"4.5-v10","phase":"4.5","purpose":"Temporal dataset discovery and qualification","datasets_evaluated":6,
+  "continuous_time_observable":[],"ordered_phase_only":["GSE246613","SRP114962","EGAS50000001362"],"longitudinal_but_insufficient":[],"not_longitudinal":["ARTEMIS","GSE176078"],"unknown":["HTAN_metastatic_breast_cancer"],
+  "temporal_dataset_gate":{"passed":false,"reason":"No verified dataset has elapsed time plus repeated patients, treatment and malignant compartment."},
+  "real_continuous_time_forecasting":{"status":"NOT_IMPLEMENTED"},"phase5_ready":false,"simulation_allowed":false,"clinical_recommendations_enabled":false,
+  "tests":{"status":"PASS","collected":76,"passed":76,"failed":0,"skipped":0,"xfailed":0},
+  "limitations":["SRP114962 and NeoLetExe require sample-level date/interval verification","EGA access is controlled","public ARTEMIS scRNA is not established as repeated patient molecular sampling","HTAN provenance remains unknown"],
+  "frozen_representation_unchanged":true
+}
