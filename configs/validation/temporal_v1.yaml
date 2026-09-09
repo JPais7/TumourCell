@@ -1,0 +1,8 @@
+version: temporal_contract_v1
+split: strict_historical_before_prediction
+minimum_patients: 3
+minimum_transitions_per_treatment: 3
+delta_t_required: true
+allow_equal_time_training: false
+future_holdout_required: true
+validation: leave_one_patient_out_or_forward_time

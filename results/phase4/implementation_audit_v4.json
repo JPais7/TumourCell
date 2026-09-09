@@ -1,0 +1,21 @@
+{
+  "audit_version": "phase4.3_temporal_forecasting_v4",
+  "tests_collected": 52,
+  "tests_passed": 52,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "tests_xfailed": 0,
+  "temporal_leakage_control": "UNIT_TESTED",
+  "preprocessing_leakage_control": "UNIT_TESTED",
+  "temporal_forecasting": "SYNTHETICALLY_VALIDATED",
+  "real_cohort_forecasting": "NOT_IMPLEMENTED",
+  "mechanism_identification": "NOT_IDENTIFIABLE",
+  "causal_treatment_effect": "NOT_IMPLEMENTED",
+  "phase5_ready": false,
+  "simulation_allowed": false,
+  "clinical_recommendations_enabled": false,
+  "temporal_contract": {"strict_historical_before_prediction": true,"patient_level": true,"delta_t_positive": true,"future_rows_in_training": false},
+  "synthetic_benchmarks": ["stationary_linear","irregular_delta_t","future_leakage_trap_contract"],
+  "known_methodological_risks": ["Gaussian predictive intervals remain model assumptions", "synthetic forecasting is not tumour biology", "no compatible real patient-level transition table has been fitted", "treatment remains observational and non-causal"],
+  "phase5_block_reason": "No real-cohort dynamics were fitted; readiness requires valid ordered patient transitions, frozen preprocessing, future holdout and leakage-safe validation."
+}
