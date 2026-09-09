@@ -1,0 +1,23 @@
+{
+  "audit_version": "phase4.3.2_temporal_selection_leakage_v7",
+  "feature_selection_leakage": "NOT_IMPLEMENTED",
+  "threshold_leakage": "NOT_IMPLEMENTED",
+  "model_selection_leakage": "NOT_IMPLEMENTED",
+  "joint_patient_temporal_generalization": "NOT_IMPLEMENTED",
+  "frozen_encoder_future_mutation": "UNIT_TESTED",
+  "normalization_leakage_control": "UNIT_TESTED",
+  "temporal_contract": "UNIT_TESTED",
+  "tests_collected": 59,
+  "tests_passed": 59,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "tests_xfailed": 0,
+  "real_cohort_forecasting": "NOT_IMPLEMENTED",
+  "mechanism_identification": "NOT_IDENTIFIABLE",
+  "causal_treatment_effect": "NOT_IMPLEMENTED",
+  "phase5_ready": false,
+  "simulation_allowed": false,
+  "clinical_recommendations_enabled": false,
+  "limitations": ["No Phase 4 feature-selection API exists", "No learned threshold API exists", "No model-family/hyperparameter selection API exists", "Historical Phase 1 discovery remains a frozen outcome-blind artefact and was not re-tuned"],
+  "scientific_interpretation": "The absence of these APIs is reported honestly; no leakage safety claim is made for hypothetical trainable selectors."
+}
