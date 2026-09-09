@@ -1,0 +1,22 @@
+{
+  "dataset": "GSE246613",
+  "input": "data/processed/GSE246613/malignant_pseudobulk_counts.npz",
+  "representation": "frozen Phase 2/3 state definitions and P8",
+  "representation_hash_source": ["results/phase2/p8_definition_frozen.json", "results/phase3/state_atlas_v1.json"],
+  "patients": 34,
+  "valid_transitions": 65,
+  "excluded_transitions": 0,
+  "treatment_counts": {"Base": 34, "PD1": 31},
+  "response_used_as_predictor": false,
+  "patient_held_out": {
+    "status": "REAL_COHORT_BENCHMARK_OBSERVATIONAL",
+    "persistence": {"MAE": 0.9272538899566909, "RMSE": 1.3508372243554625, "directional_accuracy": 0.0, "predictive_interval_coverage_95": 0.88},
+    "probabilistic_dynamics": {"MAE": 1.121843518385204, "RMSE": 1.4993095063502682, "directional_accuracy": 0.5538461538461539, "directional_accuracy_per_feature": [0.5846153846153846,0.5692307692307692,0.5076923076923077,0.5846153846153846,0.5230769230769231], "predictive_interval_coverage_95": 0.8461538461538461},
+    "model_vs_persistence": "MODEL_WORSE_ON_MAE_AND_RMSE",
+    "interpretation": "predictive comparison only; no causal treatment interpretation"
+  },
+  "forward_temporal": {"status":"NOT_ESTIMABLE","reason":"first strict boundary has no historical PD1-conditioned transitions; avoiding pooling prevents future leakage"},
+  "externality_status": "EXTERNALITY_LIMITED",
+  "phase5_ready": false,
+  "simulation_allowed": false
+}
