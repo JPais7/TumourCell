@@ -1,0 +1,11 @@
+patient_id,sample_id,timepoint,total_cells,malignant_cells_original,malignant_cells_cnv,epithelial_cells,tumour_like_cells,malignant_rule,malignant_fraction,median_library_size,median_genes_detected,cnv_available,annotation_source,evidence_level,verification_status,notes
+P01,GSM6213322,Pre-treatment,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNRESOLVED,UNKNOWN,UNKNOWN,UNKNOWN,FALSE,GEO matrix only,E3,NOT_VERIFIED,no cell-level malignant annotation inspected
+P01,GSM6213330,Post-treatment,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNRESOLVED,UNKNOWN,UNKNOWN,UNKNOWN,FALSE,GEO matrix only,E3,NOT_VERIFIED,no cell-level malignant annotation inspected
+P02,GSM6213323,Pre-treatment,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNRESOLVED,UNKNOWN,UNKNOWN,UNKNOWN,FALSE,GEO matrix only,E3,NOT_VERIFIED,no cell-level malignant annotation inspected
+P02,GSM6213331,Post-treatment,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNRESOLVED,UNKNOWN,UNKNOWN,UNKNOWN,FALSE,GEO matrix only,E3,NOT_VERIFIED,no cell-level malignant annotation inspected
+P04,GSM6213325,Pre-treatment,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNRESOLVED,UNKNOWN,UNKNOWN,UNKNOWN,FALSE,GEO matrix only,E3,NOT_VERIFIED,no cell-level malignant annotation inspected
+P04,GSM6213332,Post-treatment,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNRESOLVED,UNKNOWN,UNKNOWN,UNKNOWN,FALSE,GEO matrix only,E3,NOT_VERIFIED,no cell-level malignant annotation inspected
+P05,GSM6213326,Pre-treatment,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNRESOLVED,UNKNOWN,UNKNOWN,UNKNOWN,FALSE,GEO matrix only,E3,NOT_VERIFIED,no cell-level malignant annotation inspected
+P05,GSM6213333,Post-treatment,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNRESOLVED,UNKNOWN,UNKNOWN,UNKNOWN,FALSE,GEO matrix only,E3,NOT_VERIFIED,no cell-level malignant annotation inspected
+P07,GSM6213328,Pre-treatment,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNRESOLVED,UNKNOWN,UNKNOWN,UNKNOWN,FALSE,GEO matrix only,E3,NOT_VERIFIED,no cell-level malignant annotation inspected
+P07,GSM6213334,Post-treatment,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNRESOLVED,UNKNOWN,UNKNOWN,UNKNOWN,FALSE,GEO matrix only,E3,NOT_VERIFIED,no cell-level malignant annotation inspected
