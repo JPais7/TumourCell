@@ -1,0 +1,7 @@
+version: probabilistic_transition_v1
+minimum_patient_transitions: 3
+delta_t_required: true
+unknown_delta_t_mode: forbidden
+covariance_jitter: 1.0e-8
+validation: leave_one_patient_out
+simulation_mode: research_only

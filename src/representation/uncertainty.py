@@ -1,6 +1,18 @@
 """Explicit measurement uncertainty for latent scores."""
 from __future__ import annotations
 import math
+from dataclasses import dataclass
+from typing import Tuple
+
+@dataclass(frozen=True)
+class UncertaintyComponents:
+    measurement_uncertainty: float
+    sampling_uncertainty: float
+    coverage_penalty: float
+    extrapolation_flag: bool
+    missing_required_modalities: Tuple[str,...]
+    overall_quality: str
+    uncertainty_score: float
 
 
 def uncertainty_score(base_se: float, n_cells: int, gene_coverage: float,
@@ -19,6 +31,14 @@ def uncertainty_components(base_se, n_cells, gene_coverage, modality_coverage, *
     return {"measurement_uncertainty": float(base_se), "coverage_penalty": penalty,
             "sampling_uncertainty": sampling, "extrapolation_flag": bool(extrapolated),
             "uncertainty_score": float(base_se * penalty * max(1., (500 / max(n_cells,1)) ** .5))}
+
+def build_uncertainty(base_se,n_cells,gene_coverage,modality_coverage,missing_required_modalities=(),maximum=2.0):
+    parts=uncertainty_components(base_se,n_cells,gene_coverage,modality_coverage,extrapolated=bool(missing_required_modalities))
+    score=parts["uncertainty_score"]
+    if n_cells<1 or gene_coverage<=0 or modality_coverage<=0 or missing_required_modalities: quality="INSUFFICIENT"
+    elif score>maximum: quality="LOW_CONFIDENCE"
+    else: quality="PASS"
+    return UncertaintyComponents(parts["measurement_uncertainty"],parts["sampling_uncertainty"],parts["coverage_penalty"],parts["extrapolation_flag"],tuple(missing_required_modalities),quality,score)
 
 
 def quality_label(value: float, maximum: float) -> str:

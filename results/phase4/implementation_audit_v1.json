@@ -1,0 +1,48 @@
+{
+  "audit_version": "implementation_audit_v1",
+  "files_changed": [
+    "src/representation/uncertainty.py",
+    "src/representation/encoder.py",
+    "src/representation/latent_state.py",
+    "src/dynamics/discrete.py",
+    "src/dynamics/validation.py",
+    "src/spatial/representation.py",
+    "src/observation/interface.py",
+    "src/validation/gates.py",
+    "tests/test_extended.py",
+    "configs/dynamics/dynamics_v1.yaml",
+    "docs/leakage_and_validation.md"
+  ],
+  "tests_passed": 30,
+  "tests_failed": 0,
+  "new_components": [
+    "typed uncertainty decomposition",
+    "ProbabilisticTransition Gaussian predictive distribution",
+    "patient-level leave-one-patient-out transition validation",
+    "SpatialObservation and kNN/radius neighbourhood summaries",
+    "spatial confounding descriptive decomposition",
+    "minimal ObservationModel interface",
+    "G9 synthetic model validation and G10 observation-model validation gates"
+  ],
+  "scientific_assumptions": [
+    "transition rows are already aggregated to one patient x transition",
+    "Gaussian residuals are a first interpretable model assumption, not a biological truth",
+    "spatial neighbourhood summaries are descriptive and non-causal",
+    "uncertainty_score is a heuristic quality score, not a calibrated confidence interval",
+    "selection and plasticity require clone identity, temporal overlap, abundance and QC evidence"
+  ],
+  "known_limitations": [
+    "no validated counterfactual treatment simulator",
+    "no clone-resolved human longitudinal dataset currently passes all criteria",
+    "spatial confounding is represented but not causally identified",
+    "observation model is an interface only",
+    "full real-cohort probabilistic transition fitting is NOT_IMPLEMENTED pending compatible patient-level transition tables"
+  ],
+  "gate_status": {
+    "G1": "PARTIALLY_PASSED", "G2": "NOT_PASSED", "G3": "PARTIALLY_PASSED", "G4": "NOT_TESTED",
+    "G5": "NOT_PASSED", "G6": "NOT_TESTED", "G7": "PARTIALLY_PASSED", "G8": "NOT_TESTED",
+    "G9": "PARTIALLY_PASSED", "G10": "NOT_TESTED"
+  },
+  "simulation_allowed": false,
+  "clinical_recommendations_enabled": false
+}

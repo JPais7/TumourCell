@@ -8,6 +8,8 @@
   "G6": {"name": "counterfactual calibration", "status": "NOT_TESTED"},
   "G7": {"name": "patient-informed state estimation", "status": "PARTIALLY_PASSED"},
   "G8": {"name": "prospective prediction", "status": "NOT_TESTED"},
+  "G9": {"name": "synthetic model validation", "status": "PARTIALLY_PASSED"},
+  "G10": {"name": "observation-model validation", "status": "NOT_TESTED"},
   "simulation_enabled": false,
   "clinical_recommendations_enabled": false,
   "selection_status": "NOT_IDENTIFIABLE",
