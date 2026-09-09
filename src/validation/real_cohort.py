@@ -1,11 +1,65 @@
-"""Minimal real-cohort benchmark using frozen GSE246613 pseudobulks."""
+"""Real-cohort validation using the frozen GSE246613 representation.
+
+Temporal semantics are deliberately conservative: this cohort provides ordered
+clinical phases, but no elapsed days.  Ordered phases are therefore suitable
+for descriptive transitions and persistence, not for continuous-time dynamics.
+"""
 from __future__ import annotations
 import json
 from pathlib import Path
 import numpy as np
-from src.dynamics.discrete import ProbabilisticTransition
 
 ORDER={'Base':0,'PD1':1,'RTPD1':2}
+
+def temporal_observations(npz_path):
+    """Return an explicit, provenance-preserving temporal observation table.
+
+    ``time_value`` is an ordinal clinical phase only.  It is never interpreted
+    as a number of days; ``delta_t`` consequently remains ``None``.
+    """
+    x=np.load(npz_path,allow_pickle=True)
+    out=[]
+    for i,(patient,treatment) in enumerate(zip(x['patient'],x['treatment'])):
+        patient=str(patient); treatment=str(treatment)
+        phase=ORDER.get(treatment)
+        out.append({'row_index':int(i),'patient_id':patient,
+                    'sample_id':f'{patient}:observation_{i:03d}',
+                    'timepoint_id':treatment,'time_value':phase,
+                    'time_value_type':'ordered_clinical_phase',
+                    'treatment':treatment,'state_row_index':int(i),
+                    'response_label':str(x['response_group'][i]) if 'response_group' in x else None,
+                    'temporal_status':'ORDERED_PHASE_ONLY'})
+    return out
+
+def temporal_transitions(observations):
+    """Construct only adjacent, strictly forward patient transitions."""
+    by_patient={}
+    for row in observations: by_patient.setdefault(row['patient_id'],[]).append(row)
+    transitions=[]; failures=[]
+    for patient,rows in sorted(by_patient.items()):
+        rows=sorted(rows,key=lambda r:(r['time_value'],r['row_index']))
+        seen={}
+        for r in rows:
+            if r['time_value'] in seen:
+                failures.append({'patient_id':patient,'status':'DUPLICATE_TIMEPOINT',
+                                 'timepoint_id':r['timepoint_id']});
+            seen[r['time_value']]=r
+        if any(f['patient_id']==patient and f['status']=='DUPLICATE_TIMEPOINT' for f in failures):
+            continue
+        for history,target in zip(rows[:-1],rows[1:]):
+            if target['time_value']<=history['time_value']:
+                failures.append({'patient_id':patient,'status':'NON_FORWARD_OR_AMBIGUOUS'}); continue
+            transitions.append({'patient_id':patient,
+              'history_sample_id':history['sample_id'],'target_sample_id':target['sample_id'],
+              'history_time':history['timepoint_id'],'target_time':target['timepoint_id'],
+              'history_time_value':history['time_value'],'target_time_value':target['time_value'],
+              'treatment_at_history':str(history['treatment']),'treatment_between':str(history['treatment'])+' -> '+str(target['treatment']),
+              'delta_t':None,'delta_t_status':'NOT_AVAILABLE',
+              'temporal_status':'ORDERED_PHASE_ONLY'})
+    return transitions,failures
+
+def _direction(value, epsilon=1e-8):
+    return 'increase' if value>epsilon else ('decrease' if value<-epsilon else 'no_change')
 def frozen_scores(npz_path, atlas_path, p8_path):
     x=np.load(npz_path,allow_pickle=True); genes=list(x['genes']); gi={g:i for i,g in enumerate(genes)}
     log=np.log1p(x['counts']/np.maximum(x['counts'].sum(1)[:,None],1)*1e6)
@@ -24,33 +78,33 @@ def _metrics(pred,true,start,covs):
     return {'MAE':float(np.mean(np.abs(err))),'RMSE':float(np.sqrt(np.mean(err**2))),'directional_accuracy':float(np.mean(np.sign(delta_true)==np.sign(delta_pred))),'directional_accuracy_per_feature':(np.sign(delta_true)==np.sign(delta_pred)).mean(0).tolist(),'predictive_interval_coverage_95':float(np.mean(np.abs(err)<=1.96*sd))}
 
 def run_patient_held_out(npz_path,atlas_path,p8_path):
-    x,z,names,coverage=frozen_scores(npz_path,atlas_path,p8_path); rows=[]; failures=[]
-    for patient in sorted(set(x['patient'])):
-        idx=[i for i,p in enumerate(x['patient']) if p==patient]; idx.sort(key=lambda i:ORDER.get(str(x['treatment'][i]),99))
-        train_idx=[i for i,p in enumerate(x['patient']) if p!=patient]; transitions=[]
-        for i,j in zip(idx[:-1],idx[1:]):
-            if ORDER.get(str(x['treatment'][i]),99)>=ORDER.get(str(x['treatment'][j]),99): continue
-            transitions.append((i,j))
-        if not transitions: continue
-        tr=[]
-        for i in train_idx:
-            for j in train_idx:
-                if x['patient'][i]!=x['patient'][j] or ORDER.get(str(x['treatment'][i]),99)+1!=ORDER.get(str(x['treatment'][j]),99): continue
-                tr.append((i,j))
-        if not tr: failures.append({'patient_id':str(patient),'reason':'no_training_transitions'}); continue
-        z0=np.asarray([z[i] for i,j in tr]); z1=np.asarray([z[j] for i,j in tr]); tt=np.asarray([str(x['treatment'][i]) for i,j in tr]); dt=np.ones(len(tr)); pid=np.asarray([str(x['patient'][i]) for i,j in tr])
-        if any(sum(tt==t)<3 for t in set(tt)): failures.append({'patient_id':str(patient),'reason':'treatment_transition_count_below_3'}); continue
-        try: model=ProbabilisticTransition().fit(z0,z1,tt,dt,pid)
-        except ValueError as e: failures.append({'patient_id':str(patient),'reason':str(e)}); continue
-        for i,j in transitions:
-            treatment=str(x['treatment'][i]);
-            if treatment not in model.treatment_levels: failures.append({'patient_id':str(patient),'reason':'unseen_treatment'}); continue
-            dist=model.predict_distribution(z[i],treatment,1.0); pred=dist['mean'][0]
-            rows.append({'patient_id':str(patient),'treatment':treatment,'history_time':str(x['treatment'][i]),'target_time':str(x['treatment'][j]),'predicted':pred,'observed':z[j],'history':z[i],'covariance':dist['covariance']})
-    if not rows: return {'status':'NOT_ESTIMABLE','reason':'no eligible patient-held-out transitions','coverage':coverage,'failures':failures}
-    pred=np.asarray([r['predicted'] for r in rows]); true=np.asarray([r['observed'] for r in rows]); start=np.asarray([r['history'] for r in rows]); cov=[r['covariance'] for r in rows]
-    persistence=_metrics(start,true,start,cov); dynamics=_metrics(pred,true,start,cov)
-    return {'status':'SYNTHETICALLY_UNVALIDATED_REAL_BENCHMARK','n_patients':len(set(r['patient_id'] for r in rows)),'n_transitions':len(rows),'failures':failures,'coverage':coverage,'persistence':persistence,'probabilistic_dynamics':dynamics,'treatment_counts':{t:sum(r['treatment']==t for r in rows) for t in set(r['treatment'] for r in rows)},'response_used_as_predictor':False,'interpretation':'predictive benchmark only; no causal treatment interpretation'}
+    x,z,names,coverage=frozen_scores(npz_path,atlas_path,p8_path)
+    observations=temporal_observations(npz_path); transitions,failures=temporal_transitions(observations)
+    rows=[]
+    for tr in transitions:
+        i=int(tr['history_sample_id'].split('_')[-1])
+        j=int(tr['target_sample_id'].split('_')[-1])
+        rows.append({**tr,'history':z[i],'observed':z[j],
+                     'persistence_predicted':z[i],
+                     'observed_delta_direction':[ _direction(v) for v in (z[j]-z[i]) ]})
+    if not rows:
+        return {'status':'NOT_ESTIMABLE','reason':'no eligible ordered transitions','coverage':coverage,'failures':failures}
+    start=np.asarray([r['history'] for r in rows]); true=np.asarray([r['observed'] for r in rows])
+    persistence=_metrics(start,true,start,[np.zeros((start.shape[1],start.shape[1])) for _ in rows])
+    persistence['directional_accuracy']='NOT_APPLICABLE'
+    persistence['directional_accuracy_per_feature']='NOT_APPLICABLE'
+    persistence['predictive_interval_coverage_95']='NOT_ESTIMABLE'
+    persistence['predicted_delta_direction']='no_change'
+    return {'status':'ORDERED_PHASE_ONLY_NOT_CONTINUOUSLY_ESTIMABLE',
+      'n_patients':len(set(r['patient_id'] for r in rows)),'n_observations':len(observations),
+      'n_transitions':len(rows),'failures':failures,'coverage':coverage,
+      'temporal_semantics':{'time_value_type':'ordered_clinical_phase','delta_t':'NOT_AVAILABLE',
+                            'continuous_dynamics_fit':False,'duplicate_policy':'reject'},
+      'persistence':persistence,
+      'probabilistic_dynamics':{'status':'NOT_ESTIMABLE','reason':'exact elapsed time is unavailable'},
+      'interval_coverage':{'50':'NOT_ESTIMABLE','80':'NOT_ESTIMABLE','95':'NOT_ESTIMABLE'},
+      'response_used_as_predictor':False,
+      'interpretation':'descriptive ordered-phase forecast only; no causal treatment interpretation'}
 
 def forward_temporal_readiness(npz_path):
     """Assess, without fitting, whether a strict forward boundary has estimable treatments."""

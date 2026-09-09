@@ -1,0 +1,39 @@
+{
+  "benchmark_id": "GSE246613_phase4_4_1_corrected",
+  "status": "ORDERED_PHASE_ONLY_NOT_CONTINUOUSLY_ESTIMABLE",
+  "n_patients": 34,
+  "n_observations": 99,
+  "n_transitions": 65,
+  "temporal_semantics": {
+    "time_value_type": "ordered_clinical_phase",
+    "phase_order": ["Base", "PD1", "RTPD1"],
+    "delta_t": "NOT_AVAILABLE",
+    "continuous_dynamics_fit": false,
+    "duplicate_timestamp_policy": "reject",
+    "adjacency_only": true
+  },
+  "frozen_representation": true,
+  "response_used_as_predictor": false,
+  "persistence": {
+    "MAE": 0.9272538899566909,
+    "RMSE": 1.3508372243554625,
+    "directional_accuracy": "NOT_APPLICABLE",
+    "predictive_interval_coverage_95": "NOT_ESTIMABLE"
+  },
+  "probabilistic_dynamics": {
+    "status": "NOT_ESTIMABLE",
+    "reason": "The source schema has ordered clinical phases but no exact elapsed time; equal intervals are not assumed."
+  },
+  "interval_coverage": {
+    "50": "NOT_ESTIMABLE",
+    "80": "NOT_ESTIMABLE",
+    "95": "NOT_ESTIMABLE"
+  },
+  "previous_benchmark": {
+    "artifact": "results/phase4/gse246613_real_forecasting_benchmark.json",
+    "status": "SUPERSEDED",
+    "reason": "It used unit delta_t for categorical phases."
+  },
+  "simulation": false,
+  "clinical_recommendation": false
+}

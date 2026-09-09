@@ -1,0 +1,32 @@
+{
+  "phase": "4.4.1",
+  "title": "Correct real temporal semantics and forecast baselines",
+  "status": "PASS_WITH_DATA_LIMITATION",
+  "authoritative_artifact": "results/phase4/gse246613_real_forecasting_benchmark_corrected_v1.json",
+  "dataset": "GSE246613",
+  "schema_findings": {
+    "observations": 99,
+    "patients": 34,
+    "available_time": "ordered clinical phases only",
+    "exact_dates_or_days": false,
+    "response_predictor": false
+  },
+  "corrections": [
+    "Explicit history/target sample and treatment fields",
+    "Adjacent strictly-forward transitions only",
+    "Duplicate/non-forward observations rejected",
+    "delta_t marked NOT_AVAILABLE rather than set to one",
+    "Continuous probabilistic dynamics disabled",
+    "Persistence directional metric marked NOT_APPLICABLE",
+    "50/80/95 interval coverage marked NOT_ESTIMABLE without covariance recalibration"
+  ],
+  "result": {
+    "transitions": 65,
+    "persistence_MAE": 0.9272538899566909,
+    "persistence_RMSE": 1.3508372243554625,
+    "dynamics": "NOT_ESTIMABLE"
+  },
+  "previous_results_preserved": true,
+  "simulation": false,
+  "phase5_started": false
+}
