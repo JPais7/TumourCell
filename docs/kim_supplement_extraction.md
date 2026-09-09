@@ -31,11 +31,11 @@ Cell-level clone identifiers and RNA-to-DNA linkage remain unresolved.
 
 Alias-level timepoint audit: the eight-patient RNA-seq subset contains
 `0cell` aliases in all eight patients, `2cell` aliases in KTN132, KTN302 and
-KTN615, and `OPcell` aliases in the remaining records. No aliases explicitly
-state `pre`, `mid`, or `post`. The strings `0cell` and `2cell` are compatible
-with the paper's 0-cycle and 2-cycle phases, but are not promoted to formal
-timepoint labels without an independent key. The post-treatment phase is not
-identified by ENA aliases. The full audit is in
+KTN615, and `OPcell` aliases in the remaining records. In the paper's naming
+convention, `OP` denotes the operative/post-treatment sample. Therefore the
+conservative manifest now labels `0cell` as `pre_candidate`, `2cell` as
+`mid_candidate`, and `OPcell` as `post_candidate` with high confidence for
+the operative interpretation. The full audit is in
 `data/manifests/kim_8patient_timepoint_reconciliation.csv`.
 
 For downstream selection, a conservative labelled manifest was generated at
