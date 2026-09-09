@@ -37,8 +37,9 @@ def assess_observed_shift(*, expression_before_after=False, clone_evidence=False
                           clone_frequency_changed=False, within_clone_state_change=False,
                           environment_measured=False, sampling_problem=False, technical_problem=False):
     reasons=[]; evidence={"expression_before_after":expression_before_after,"clone_evidence":clone_evidence}
-    selection = MechanismStatus.SUPPORTED.value if (clone_evidence and assignment_quality>=.8 and temporal_overlap and abundance_sufficient and sampling_comparable and clone_frequency_changed) else (MechanismStatus.INDETERMINATE.value if clone_evidence else MechanismStatus.NOT_IDENTIFIABLE.value)
-    plasticity = MechanismStatus.SUPPORTED.value if (clone_evidence and temporal_overlap and within_clone_state_change and sampling_comparable) else (MechanismStatus.INDETERMINATE.value if clone_evidence else MechanismStatus.NOT_IDENTIFIABLE.value)
+    adequate_clone = clone_evidence and assignment_quality>=.8 and temporal_overlap and sampling_comparable
+    selection = MechanismStatus.SUPPORTED.value if (adequate_clone and abundance_sufficient and clone_frequency_changed) else (MechanismStatus.NOT_SUPPORTED.value if adequate_clone and not clone_frequency_changed else (MechanismStatus.INDETERMINATE.value if clone_evidence else MechanismStatus.NOT_IDENTIFIABLE.value))
+    plasticity = MechanismStatus.SUPPORTED.value if (adequate_clone and within_clone_state_change) else (MechanismStatus.NOT_SUPPORTED.value if adequate_clone and not within_clone_state_change else (MechanismStatus.INDETERMINATE.value if clone_evidence else MechanismStatus.NOT_IDENTIFIABLE.value))
     environmental = MechanismStatus.SUPPORTED.value if environment_measured else MechanismStatus.NOT_IDENTIFIABLE.value
     sampling = MechanismStatus.SUPPORTED.value if sampling_problem else MechanismStatus.NOT_SUPPORTED.value
     technical = MechanismStatus.SUPPORTED.value if technical_problem else MechanismStatus.NOT_SUPPORTED.value

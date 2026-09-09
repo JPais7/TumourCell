@@ -3,11 +3,12 @@ from __future__ import annotations
 import numpy as np
 def validate_transition_model(model, current_state, next_state, treatment, delta_t, patient_id):
     z=np.asarray(current_state,float); y=np.asarray(next_state,float); pid=np.asarray(patient_id)
-    predictions=[]; truths=[]; starts=[]; rows=[]; ll=[]; covs=[]
+    predictions=[]; truths=[]; starts=[]; rows=[]; ll=[]; covs=[]; fold_meta=[]
     for patient in dict.fromkeys(pid):
         train=pid!=patient
         if train.sum()<5: continue
         fitted=type(model)().fit(z[train],y[train],np.asarray(treatment)[train],np.asarray(delta_t)[train],pid[train])
+        fold_meta.append({'fold_id':str(patient),'train_patients':sorted(set(map(str,pid[train]))),'test_patients':[str(patient)],'train_n':int(train.sum()),'test_n':int((~train).sum())})
         idx=np.flatnonzero(~train)
         for i in idx:
             dist=fitted.predict_distribution(z[i],treatment[i],float(delta_t[i])); pred=dist['mean'][0]
@@ -18,4 +19,4 @@ def validate_transition_model(model, current_state, next_state, treatment, delta
     sd=np.asarray([np.sqrt(np.diag(c)) for c in covs]); coverage=float(np.mean(np.abs(err)<=1.96*sd))
     true_delta=truth-starts; pred_delta=p-starts; directional=np.sign(pred_delta)==np.sign(true_delta)
     per_feature=directional.mean(axis=0).tolist()
-    return {"n_held_out_patients":len(set(r['patient_id'] for r in rows)),"n_held_out_transitions":len(p),"fold_count":len(rows),"MAE":mae,"RMSE":rmse,"mean_predictive_log_likelihood":float(np.mean(ll)),"predictive_interval_coverage_95":coverage,"directional_accuracy":float(directional.mean()),"directional_accuracy_per_feature":per_feature,"zero_change_rule":"zero/zero counts as correct; zero/nonzero as incorrect","split":"leave_one_patient_out","unit":"patient","fold_predictions":rows}
+    return {"n_held_out_patients":len(set(r['patient_id'] for r in rows)),"n_held_out_transitions":len(p),"fold_count":len(rows),"MAE":mae,"RMSE":rmse,"mean_predictive_log_likelihood":float(np.mean(ll)),"predictive_interval_coverage_95":coverage,"directional_accuracy":float(directional.mean()),"directional_accuracy_per_feature":per_feature,"zero_change_rule":"zero/zero counts as correct; zero/nonzero as incorrect","split":"leave_one_patient_out","unit":"patient","folds":fold_meta,"fold_predictions":rows}

@@ -1,0 +1,24 @@
+{
+  "audit_version": "phase4.2_adversarial_validation_v3",
+  "tests_collected": 45,
+  "tests_passed": 45,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "tests_xfailed": 0,
+  "component_status": {
+    "loo_patient_separation": {"implementation":"IMPLEMENTED","unit_tests":"UNIT_TESTED","synthetic_validation":"SYNTHETICALLY_VALIDATED","real_cohort_validation":"NOT_IMPLEMENTED"},
+    "fold_specific_predictive_intervals": {"implementation":"IMPLEMENTED","unit_tests":"UNIT_TESTED","synthetic_validation":"SYNTHETICALLY_VALIDATED","real_cohort_validation":"NOT_IMPLEMENTED"},
+    "directional_accuracy_on_delta": {"implementation":"IMPLEMENTED","unit_tests":"UNIT_TESTED","synthetic_validation":"SYNTHETICALLY_VALIDATED","real_cohort_validation":"NOT_IMPLEMENTED"},
+    "mechanism_identifiability": {"implementation":"IMPLEMENTED","unit_tests":"UNIT_TESTED","synthetic_validation":"SYNTHETICALLY_VALIDATED","real_cohort_validation":"NOT_IDENTIFIABLE"},
+    "spatial_decomposition": {"implementation":"IMPLEMENTED","unit_tests":"UNIT_TESTED","synthetic_validation":"SYNTHETICALLY_VALIDATED","real_cohort_validation":"NOT_IDENTIFIABLE"},
+    "leakage_controls": {"implementation":"IMPLEMENTED","unit_tests":"UNIT_TESTED","synthetic_validation":"SYNTHETICALLY_VALIDATED"},
+    "gate_policy": {"implementation":"IMPLEMENTED","unit_tests":"UNIT_TESTED","simulation":"DISABLED"}
+  },
+  "adversarial_tests": {"temporal_leakage":"PASSED","duplicate_transitions":"PASSED","treatment_imbalance":"PASSED","degenerate_covariance":"PASSED","directional_delta":"PASSED","spatial_edge_cases":"PASSED","gate_exhaustion":"PASSED"},
+  "leakage_controls": {"patient_level_loo":true,"random_cell_split":false,"holdout_affects_encoder":false,"outcome_defines_states":false,"synthetic_truth_tunes_real_thresholds":false},
+  "gate_status": {"G1":"PARTIALLY_PASSED","G2":"NOT_PASSED","G3":"PARTIALLY_PASSED","G4":"NOT_TESTED","G5":"NOT_PASSED","G6":"NOT_TESTED","G7":"PARTIALLY_PASSED","G8":"NOT_TESTED","G9":"PARTIALLY_PASSED","G10":"NOT_TESTED"},
+  "simulation_allowed": false,
+  "clinical_recommendations_enabled": false,
+  "real_cohort_validation": {"probabilistic_dynamics":"NOT_IMPLEMENTED","mechanism_decomposition":"NOT_IDENTIFIABLE","spatial_causality":"NOT_IDENTIFIABLE"},
+  "known_methodological_risks": ["Gaussian intervals are model assumptions, not empirical calibration", "spatial decomposition is descriptive, not causal", "synthetic validation does not establish tumour biology", "no compatible real patient-level transition table has been fitted"]
+}

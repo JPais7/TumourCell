@@ -13,6 +13,7 @@ class SpatialContext:
     neighbours: tuple[int,...]; composition: dict[str,float]; niche: str; uncertainty: float
 def radius_graph(coordinates, radius):
     if coordinates is None: raise ValueError("cell coordinates are required for spatial analysis")
+    if radius is None or radius <= 0: raise ValueError("radius must be positive")
     x=np.asarray(coordinates,float)
     if x.ndim != 2 or x.shape[1] not in (2,3): raise ValueError("coordinates must be n x 2 or n x 3")
     return [tuple(j for j in js if j != i) for i,js in enumerate(cKDTree(x).query_ball_point(x,radius))]
@@ -48,6 +49,8 @@ def spatial_confounding(global_before, global_after, regions_before, regions_aft
     """Descriptive decomposition; never assigns causality."""
     a=np.asarray(global_after,float); b=np.asarray(global_before,float)
     rb={k:np.asarray(v,float) for k,v in regions_before.items()}; ra={k:np.asarray(v,float) for k,v in regions_after.items()}
+    if any(v.size == 0 for v in list(rb.values())+list(ra.values())):
+        return {"global_state_shift":(a-b).tolist(),"within_region_shift":None,"between_region_composition_shift":None,"identifiability_status":"NOT_IDENTIFIABLE","evidence":{},"reasons":["empty region supplied"]}
     common=set(rb)&set(ra)
     if not common: return {"global_state_shift":(a-b).tolist(),"within_region_shift":None,"between_region_composition_shift":None,"identifiability_status":"NOT_IDENTIFIABLE","evidence":{},"reasons":["no overlapping regions"]}
     before_means={k:v.mean(0) for k,v in rb.items()}; after_means={k:v.mean(0) for k,v in ra.items()}
