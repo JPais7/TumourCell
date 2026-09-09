@@ -1,14 +1,16 @@
 encoder:
   version: latent_state_v1
-  normalization: log1p_CPM
-  transformation: weighted_mean_present_genes
+  normalization: library_size_CPM
+  transformation: log1p_CPM
   reference: frozen_phase2_phase3_definitions
   minimum_gene_coverage: 0.80
   minimum_cells: 50
   maximum_uncertainty: 2.0
-expected_modalities: [scRNA-seq, snRNA-seq, bulk RNA-seq, scATAC, spatial transcriptomics, IMC, Xenium, CNV, mutation, proteomics, clinical, imaging]
+prototype: true
+required_modalities: [expression]
+optional_modalities: [scRNA-seq, snRNA-seq, bulk RNA-seq, scATAC, spatial transcriptomics, IMC, Xenium, CNV, mutation, proteomics, clinical, imaging]
 programs:
-  - {name: proliferation, genes: [MKI67, TOP2A, UBE2C], role: continuous_dimension}
+  - {name: proliferation, genes: [MKI67, TOP2A, UBE2C], role: continuous_dimension, provenance: prototype_only, biological_rationale: prototype_cell_cycle_axis}
   - {name: IFN, genes: [IFIT1, IFIT3, ISG15], role: continuous_dimension}
   - {name: antigen_presentation, genes: [B2M, HLA-A, TAP1], role: continuous_dimension}
   - {name: hypoxia, genes: [CA9, VEGFA, LDHA], role: continuous_dimension}

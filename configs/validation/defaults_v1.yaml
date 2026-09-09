@@ -6,6 +6,10 @@ permutation_iterations: 10000
 confidence_level: 0.95
 missingness_threshold: 0.20
 uncertainty_threshold: 2.0
+rare_state_threshold: 0.05
+transition_minimum_patients: 2
+transition_alpha: 1.0
+validation_auroc_threshold: 0.70
 sensitivity_cell_thresholds: [20, 50, 100]
 external_prediction_null: 0.50
 gse246613_historical_minimum_cells: 50

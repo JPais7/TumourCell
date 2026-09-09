@@ -13,7 +13,7 @@ atlas=json.loads((ROOT/'results/phase3/state_atlas_v1.json').read_text())
 p8=json.loads((ROOT/'results/phase2/p8_definition_frozen.json').read_text())
 specs=[ProgramSpec(s['state_id'],tuple(s['top_genes']),tuple([1.0]*len(s['top_genes']))) for s in atlas['states']]
 specs.append(ProgramSpec('P8',tuple(p8['genes']),tuple(p8['weights']),weight_normalization='sum_present',gene_scale=tuple(p8['gene_scale'])))
-encoder=VersionedEncoder(EncoderConfig('historical_frozen_bridge_v1','log1p_CPM','weighted_mean_present_genes','Phase2/3 frozen files',0.0,1,float('inf'),('scRNA-seq',),tuple(specs)))
+encoder=VersionedEncoder(EncoderConfig('historical_frozen_bridge_v1','library_size_CPM','log1p_CPM','Phase2/3 frozen files',0.0,1,float('inf'),('expression',),('scRNA-seq',),tuple(specs)))
 wanted=list(dict.fromkeys(g for p in specs for g in p.genes)); rows=[]
 for cohort in (1,2):
  info,counts,present=process_cohort(cohort,ROOT/'data/raw/BIOKEY',wanted)

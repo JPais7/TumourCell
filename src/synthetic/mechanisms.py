@@ -10,6 +10,15 @@ def generate(mechanism,n_patients=40,seed=0):
     if mechanism=="sampling_depth": follow+=rng.normal(scale=1/np.sqrt(rng.integers(5,500,n_patients)))
     if mechanism=="spatial_environment": follow+=env
     return {"baseline_state":state,"followup_state":follow,"baseline_clone":clone,"followup_clone":clone_follow,"environment":env,"truth":mechanism}
+
+def clonal_selection(seed=0):
+    rng=np.random.default_rng(seed); baseline=np.array([0]*70+[1]*30); follow=np.array([0]*20+[1]*80)
+    return {"baseline_clone":rng.permutation(baseline),"followup_clone":rng.permutation(follow),"truth":"selection"}
+def transcriptional_plasticity(seed=0):
+    rng=np.random.default_rng(seed); clones=rng.integers(0,2,100)
+    return {"baseline_clone":clones,"followup_clone":clones.copy(),"baseline_state":rng.normal(size=100),"followup_state":rng.normal(size=100)+1,"truth":"plasticity"}
+def selection_plus_plasticity(seed=0):
+    d=clonal_selection(seed); rng=np.random.default_rng(seed); d.update(baseline_state=rng.normal(size=100),followup_state=rng.normal(size=100)+1); d["truth"]="selection_plus_plasticity"; return d
 def recover(data):
     clone_change=float(np.mean(data["baseline_clone"]!=data["followup_clone"]))
     state_change=float(np.mean(data["followup_state"]-data["baseline_state"]))

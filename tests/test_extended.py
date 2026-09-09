@@ -7,10 +7,11 @@ from src.experiments import sha256
 from src.observation.model import LinearGaussianObservation
 from src.perturbations import Perturbation
 from src.representation.latent_state import TumourStateDistribution
-from src.spatial.representation import radius_graph,neighbourhood_context
+from src.spatial.representation import radius_graph,neighbourhood_context,validate_coordinates
 from src.validation.adjustment import three_way_adjustment
 from src.validation.patient_level import cell_threshold_sensitivity
-from src.validation.permutation import negative_controls
+from src.validation.permutation import negative_controls,permutation_test
+from src.synthetic.mechanisms import clonal_selection,transcriptional_plasticity,selection_plus_plasticity
 
 class ExtendedTests(unittest.TestCase):
  def test_checksum(self):
@@ -20,6 +21,8 @@ class ExtendedTests(unittest.TestCase):
   d=TumourStateDistribution.from_states(np.array([[0,1],[2,3]]),['a','b']); self.assertEqual(d.mean,[1,2]); self.assertGreater(d.entropy,0)
  def test_spatial(self):
   g=radius_graph([[0,0],[0,1],[10,10]],2); self.assertEqual(g[0],(1,)); self.assertEqual(neighbourhood_context(g,['a','b','c'],2).niche,'UNRESOLVED')
+  def test_spatial_missing_coordinates(self):
+   with self.assertRaises(ValueError): validate_coordinates([[0,0],[float('nan'),1]])
  def test_observation(self):
   m=LinearGaussianObservation('bulk',np.eye(2),np.ones(2)); self.assertEqual(m.reconstruction_error([1,2],[1,2]),0)
  def test_posterior(self):
@@ -29,8 +32,14 @@ class ExtendedTests(unittest.TestCase):
   import pandas as pd
   self.assertEqual(cell_threshold_sensitivity(pd.DataFrame({'patient_id':['a','b'],'n_cells':[20,60]}),[50])[50],['b'])
  def test_negative_controls(self): self.assertEqual(len(negative_controls()),6)
+ def test_permutation_validation(self):
+  with self.assertRaises(ValueError): permutation_test([1,2],[0,1],lambda x,y:0,10)
  def test_adjustment_reports_three_results(self):
   r=three_way_adjustment([1,2,3,4],[1,2,3,4],[0,1,0,1]); self.assertTrue({'unadjusted','adjusted','residualized'} <= r.keys())
  def test_perturbations_cannot_claim_validation(self):
   with self.assertRaises(ValueError): Perturbation('pathway inhibition','IFN','down','VALIDATED')
+ def test_synthetic_known_proportions(self):
+  d=clonal_selection(); self.assertAlmostEqual(np.mean(d['baseline_clone']==0),.7); self.assertAlmostEqual(np.mean(d['followup_clone']==0),.2)
+  p=transcriptional_plasticity(); self.assertTrue(np.array_equal(p['baseline_clone'],p['followup_clone']))
+  self.assertEqual(selection_plus_plasticity()['truth'],'selection_plus_plasticity')
 if __name__=='__main__': unittest.main()

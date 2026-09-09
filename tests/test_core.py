@@ -20,7 +20,7 @@ class CoreTests(unittest.TestCase):
   a=e.encode({'MKI67':2,'TOP2A':1},sample_id='s',patient_id='p',cohort_id='c',timepoint='t',n_cells=10,available_modalities=['scRNA-seq'])
   b=e.encode({'MKI67':2,'TOP2A':1},sample_id='s',patient_id='p',cohort_id='c',timepoint='t',n_cells=10,available_modalities=['scRNA-seq'])
   self.assertEqual(e.encoder_hash,b.encoder_hash); self.assertEqual(a.features['proliferation'],b.features['proliferation'])
-  self.assertIn('CNV',a.missing_modalities); self.assertEqual(a.features['proliferation'].qc,'LOW_CONFIDENCE')
+  self.assertIn('CNV',a.missing_modalities); self.assertEqual(a.missing_required_modalities,()); self.assertEqual(a.features['proliferation'].qc,'INSUFFICIENT')
  def test_uncertainty_increases(self):
   self.assertGreater(coverage_adjusted_uncertainty(1,10,.5,.5),coverage_adjusted_uncertainty(1,500,1,1))
  def test_patient_aggregation(self):
@@ -32,7 +32,8 @@ class CoreTests(unittest.TestCase):
   stat=lambda x,y:np.mean(x[y==1])-np.mean(x[y==0])
   self.assertEqual(permutation_test(np.arange(6),[0,0,0,1,1,1],stat,100,3),permutation_test(np.arange(6),[0,0,0,1,1,1],stat,100,3))
  def test_no_clone_is_not_identifiable(self):
-  x=identify_mechanisms(has_clone_data=False); self.assertEqual(x['selection_status'],NOT_IDENTIFIABLE); self.assertEqual(x['plasticity_status'],NOT_IDENTIFIABLE)
+  x=identify_mechanisms(has_clone_data=True,assignment_quality=.95,clones_by_timepoint={'Pre':{'A':.7,'B':.3},'On':{'A':.2,'B':.8}},temporal_overlap=True,sampling_qc=True); self.assertEqual(x['selection_status'],'ESTIMABLE')
+  y=identify_mechanisms(has_clone_data=True); self.assertEqual(y['selection_status'],NOT_IDENTIFIABLE); self.assertEqual(y['plasticity_status'],NOT_IDENTIFIABLE)
  def test_transition_and_treatment(self):
   self.assertTrue(np.allclose(transition_matrix([0,0],[1,1],2).sum(1),1))
   m=GaussianTransition().fit([[0],[0]],[[1],[2]],['a','b']); self.assertEqual(float(m.predict([0],'a')[0]),1)
@@ -46,4 +47,15 @@ class CoreTests(unittest.TestCase):
  def test_config_schema_fields(self):
   e=VersionedEncoder.from_yaml(ROOT/'configs/representation/latent_state_v1.yaml'); d=e.as_dict()
   self.assertIn('encoder_hash',d); self.assertEqual(len(d['programs']),15)
+ def test_raw_counts_transform_and_modalities(self):
+  e=VersionedEncoder.from_yaml(ROOT/'configs/representation/latent_state_v1.yaml')
+  raw={'MKI67':10,'TOP2A':20,'UBE2C':30}
+  a=e.encode_counts(raw,sample_id='s',patient_id='p',cohort_id='c',timepoint='t',n_cells=100,available_modalities=['scRNA-seq'])
+  total=sum(raw.values()); transformed={k:np.log1p(v/total*1e6) for k,v in raw.items()}
+  b=e.encode(transformed,sample_id='s',patient_id='p',cohort_id='c',timepoint='t',n_cells=100,available_modalities=['scRNA-seq'])
+  self.assertAlmostEqual(a.features['proliferation'].value,b.features['proliferation'].value)
+  self.assertEqual(a.features['proliferation'].modality_coverage,1.0)
+ def test_incompatible_modality_fails(self):
+  e=VersionedEncoder.from_yaml(ROOT/'configs/representation/latent_state_v1.yaml')
+  with self.assertRaises(ValueError): e.encode({'MKI67':1},sample_id='s',patient_id='p',cohort_id='c',timepoint='t',n_cells=50,available_modalities=['foobar'])
 if __name__=='__main__': unittest.main()

@@ -7,9 +7,15 @@ from scipy.spatial import cKDTree
 class SpatialContext:
     neighbours: tuple[int,...]; composition: dict[str,float]; niche: str; uncertainty: float
 def radius_graph(coordinates, radius):
+    if coordinates is None: raise ValueError("cell coordinates are required for spatial analysis")
     x=np.asarray(coordinates,float)
     if x.ndim != 2 or x.shape[1] not in (2,3): raise ValueError("coordinates must be n x 2 or n x 3")
     return [tuple(j for j in js if j != i) for i,js in enumerate(cKDTree(x).query_ball_point(x,radius))]
+def validate_coordinates(coordinates):
+    x=np.asarray(coordinates,float)
+    if not np.isfinite(x).all(): raise ValueError("coordinates contain missing or non-finite values")
+    if x.ndim != 2 or x.shape[1] not in (2,3): raise ValueError("coordinates must be n x 2 or n x 3")
+    return x
 def neighbourhood_context(graph, labels, index, minimum_neighbours=5):
     neighbours=graph[index]; counts={k:sum(labels[j]==k for j in neighbours) for k in set(labels)}
     n=len(neighbours); comp={k:v/n for k,v in counts.items()} if n else {}
