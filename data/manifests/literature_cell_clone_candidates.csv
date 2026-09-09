@@ -1,0 +1,6 @@
+dataset,accession,publication,repository,RNA,DNA,clone,RNA_barcode,genomic_barcode,cell_clone_mapping,mapping_level,mapping_type,mapping_reproducible,malignant_identity,malignant_evidence_level,temporal_design,clone_observability,selection_identifiable,plasticity_identifiable,tier,critical_failure,evidence_level
+SRP114962,SRP114962,Kim TNBC evolution,SRA/ENA,TRUE,TRUE,PARTIAL,TRUE,TRUE,FALSE,L2,INDIRECT,FALSE,PARTIAL,E3,longitudinal,PARTIAL,FALSE,FALSE,B,no public barcode mapping,E3
+GSE176078,GSE176078,Wu atlas,GEO,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,L2,INFERRED,FALSE,PARTIAL,E3,cross-sectional,NOT_AVAILABLE,FALSE,FALSE,C,no clone artifact,E3
+GSE246613,GSE246613,Shiao TNBC,GEO,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,L1,INDIRECT,FALSE,PARTIAL,E3,cross-sectional,NOT_AVAILABLE,FALSE,FALSE,C,no genomic evidence,E3
+NEOLETEXE,EGAS50000001362,NeoLetExe,EGA,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,L1,MISSING,FALSE,PARTIAL,E3,longitudinal,NOT_AVAILABLE,FALSE,FALSE,C,controlled and no mapping,E3
+GSE205472,GSE205472,HR+ atlas,GEO,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,L0,MISSING,FALSE,UNKNOWN,E0,cross-sectional,NOT_AVAILABLE,FALSE,FALSE,D,no malignant evidence,E0
