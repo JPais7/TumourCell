@@ -47,9 +47,15 @@ def neighbourhood_features(latent_state, graph, labels=None, distances=None):
 def spatial_confounding(global_before, global_after, regions_before, regions_after):
     """Descriptive decomposition; never assigns causality."""
     a=np.asarray(global_after,float); b=np.asarray(global_before,float)
-    rb={k:np.mean(np.asarray(v),axis=0) for k,v in regions_before.items()}; ra={k:np.mean(np.asarray(v),axis=0) for k,v in regions_after.items()}
-    common=set(rb)&set(ra); within=np.mean([ra[k]-rb[k] for k in common],axis=0) if common else None
-    result={"global_state_shift":(a-b).tolist(),"within_region_shift":None if within is None else within.tolist(),"between_region_composition_shift":None,"identifiability_status":"NOT_IDENTIFIABLE" if not common else "INDETERMINATE"}
+    rb={k:np.asarray(v,float) for k,v in regions_before.items()}; ra={k:np.asarray(v,float) for k,v in regions_after.items()}
+    common=set(rb)&set(ra)
+    if not common: return {"global_state_shift":(a-b).tolist(),"within_region_shift":None,"between_region_composition_shift":None,"identifiability_status":"NOT_IDENTIFIABLE","evidence":{},"reasons":["no overlapping regions"]}
+    before_means={k:v.mean(0) for k,v in rb.items()}; after_means={k:v.mean(0) for k,v in ra.items()}
+    within=np.mean([after_means[k]-before_means[k] for k in common],axis=0)
+    # Descriptive composition term: change in region weights applied to baseline region means.
+    bweights=np.array([len(rb[k]) for k in common],float); aweights=np.array([len(ra[k]) for k in common],float); bweights/=bweights.sum(); aweights/=aweights.sum()
+    composition=sum((aweights[i]-bweights[i])*before_means[k] for i,k in enumerate(common))
+    result={"global_state_shift":(a-b).tolist(),"within_region_shift":within.tolist(),"between_region_composition_shift":np.asarray(composition).tolist(),"identifiability_status":"INDETERMINATE","evidence":{"overlapping_regions":sorted(common),"n_regions":len(common)},"reasons":["descriptive decomposition; not causal attribution"]}
     return result
 def neighbourhood_context(graph, labels, index, minimum_neighbours=5):
     neighbours=graph[index]; counts={k:sum(labels[j]==k for j in neighbours) for k in set(labels)}

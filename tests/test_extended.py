@@ -16,6 +16,8 @@ from src.dynamics.validation import validate_transition_model
 from src.spatial.representation import neighbourhood_features,spatial_confounding
 from src.validation.gates import simulation_allowed,evaluate_gates
 from src.representation.uncertainty import build_uncertainty
+from src.dynamics.validation import validate_transition_model
+from src.clones.clone_state import assess_observed_shift,MechanismStatus
 from src.synthetic.mechanisms import clonal_selection,transcriptional_plasticity,selection_plus_plasticity
 
 class ExtendedTests(unittest.TestCase):
@@ -59,6 +61,14 @@ class ExtendedTests(unittest.TestCase):
  def test_probabilistic_duplicate_patient_rejected(self):
   m=ProbabilisticTransition()
   with self.assertRaises(ValueError): m.fit(np.zeros((5,1)),np.ones((5,1)),['A']*5,[1]*5,['p','p','q','r','s'])
+ def test_temporal_loo_fold_covariance_and_delta_direction(self):
+  rng=np.random.default_rng(3); z=rng.normal(size=(8,1)); y=z+0.4+rng.normal(scale=.1,size=(8,1)); t=np.array(['A']*8); dt=np.ones(8); pid=np.array([f'p{i}' for i in range(8)])
+  m=ProbabilisticTransition().fit(z,y,t,dt,pid); report=validate_transition_model(m,z,y,t,dt,pid)
+  self.assertEqual(report['unit'],'patient'); self.assertEqual(len(report['fold_predictions']),8); self.assertIn('predictive_covariance',report['fold_predictions'][0]); self.assertIn('directional_accuracy_per_feature',report)
+ def test_mechanism_classifier_fail_closed(self):
+  a=assess_observed_shift(expression_before_after=True,clone_evidence=True,assignment_quality=.5)
+  self.assertNotEqual(a.selection,MechanismStatus.SUPPORTED.value); self.assertNotEqual(a.plasticity,MechanismStatus.SUPPORTED.value)
+  b=assess_observed_shift(expression_before_after=True); self.assertEqual(b.observed_state_shift,MechanismStatus.SUPPORTED.value); self.assertEqual(b.selection,MechanismStatus.NOT_IDENTIFIABLE.value)
  def test_spatial_summary_and_confounding(self):
   f=neighbourhood_features(np.array([[0.],[1.],[3.]]),[(1,),(0,2),()],["a","a","b"]); self.assertTrue(f[2]['isolated'])
   self.assertIn('identifiability_status',spatial_confounding([0],[1],{'r':[[0]]},{'r':[[1]]}))

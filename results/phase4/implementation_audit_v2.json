@@ -1,0 +1,21 @@
+{
+  "audit_version": "phase4.1_scientific_integrity_v2",
+  "tests_passed": 32,
+  "tests_failed": 0,
+  "component_status": {
+    "uncertainty_decomposition": {"implementation": "IMPLEMENTED", "unit_tests": "UNIT_TESTED", "real_cohort_validation": "NOT_TESTED"},
+    "probabilistic_dynamics": {"implementation": "IMPLEMENTED", "unit_tests": "UNIT_TESTED", "synthetic_validation": "SYNTHETICALLY_VALIDATED", "real_cohort_validation": "NOT_IMPLEMENTED"},
+    "temporal_loo_validation": {"implementation": "IMPLEMENTED", "unit_tests": "UNIT_TESTED", "biological_validation": "NOT_TESTED"},
+    "mechanism_decomposition": {"implementation": "IMPLEMENTED", "unit_tests": "UNIT_TESTED", "synthetic_validation": "SYNTHETICALLY_VALIDATED", "real_cohort_identifiability": "NOT_IDENTIFIABLE"},
+    "spatial_observation": {"implementation": "IMPLEMENTED", "unit_tests": "UNIT_TESTED", "causal_spatial_validation": "NOT_IDENTIFIABLE"},
+    "observation_model": {"implementation": "INTERFACE_ONLY", "unit_tests": "NOT_TESTED", "real_cohort_validation": "NOT_IMPLEMENTED"},
+    "leakage_contract": {"implementation": "IMPLEMENTED", "unit_tests": "UNIT_TESTED"}
+  },
+  "real_cohort_validation": {"probabilistic_dynamics": "NOT_IMPLEMENTED", "spatial_causality": "NOT_IDENTIFIABLE", "mechanism_selection_plasticity": "NOT_IDENTIFIABLE"},
+  "synthetic_validation": {"selection": "SYNTHETICALLY_VALIDATED", "plasticity": "SYNTHETICALLY_VALIDATED", "sampling_confounding": "UNIT_TESTED", "spatial_confounding": "UNIT_TESTED"},
+  "known_methodological_risks": ["Gaussian transition is a model assumption", "spatial decomposition is descriptive, not causal", "uncertainty_score is heuristic", "real patient-level transition table is not yet available"],
+  "gate_status": {"G1":"PARTIALLY_PASSED","G2":"NOT_PASSED","G3":"PARTIALLY_PASSED","G4":"NOT_TESTED","G5":"NOT_PASSED","G6":"NOT_TESTED","G7":"PARTIALLY_PASSED","G8":"NOT_TESTED","G9":"PARTIALLY_PASSED","G10":"NOT_TESTED"},
+  "simulation_allowed": false,
+  "simulation_block_reason": "Independent biological, clone-resolved, counterfactual, prospective and observation-model gates are not all PASSED; simulation_allowed is fail-closed by policy.",
+  "clinical_recommendations_enabled": false
+}
