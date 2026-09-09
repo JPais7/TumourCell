@@ -1,0 +1,4 @@
+dataset,accession,model,modality,barcode_system,rna_cells,barcode_mapping,repeated_phases,state_representation,genomic_clone,public_inputs,controlled_inputs,selection_testable,plasticity_testable,tier,classification,critical_limitation,source_evidence
+ClonMapper-TNBC,GSE291678+GSE291679,MDA-MB-231,scRNA+targeted_barcode,ClonMapper,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,A,LINEAGE_CLONE_STATE_OBSERVABLE,synthetic lineage barcode is not somatic genotype,GEO/article
+CloneTracer-MCF7,GSE326012,MCF7 ER-WT/Y537S,scRNA+DNA barcode,CloneTracer,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,B,LINEAGE_CLONE_STATE_OBSERVABLE,engineered cell-line model,GEO/BioProject
+TNBC-PDX-clonealign,EGAS00001007242,TNBC PDX,scRNA+genomic,clonealign,TRUE,POTENTIAL,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,B,CONTROLLED_CANDIDATE,public metadata but controlled FASTQ required,EGA/paper
