@@ -1,0 +1,21 @@
+{
+  "audit_version": "phase4.3.1_final_encoder_leakage_v6",
+  "encoder_type": "configuration_defined_frozen_encoder",
+  "encoder_leakage_control": "UNIT_TESTED",
+  "frozen_encoder_future_mutation": "UNIT_TESTED",
+  "trainable_encoder_temporal_leakage": "NOT_IMPLEMENTED",
+  "future_adversarial_signal": "extreme synthetic expression values outside historical scale",
+  "historical_transform_invariance": "UNIT_TESTED",
+  "tests_collected": 57,
+  "tests_passed": 57,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "tests_xfailed": 0,
+  "real_cohort_forecasting": "NOT_IMPLEMENTED",
+  "mechanism_identification": "NOT_IDENTIFIABLE",
+  "causal_treatment_effect": "NOT_IMPLEMENTED",
+  "phase5_ready": false,
+  "simulation_allowed": false,
+  "clinical_recommendations_enabled": false,
+  "limitation": "The repository has no trainable encoder API; therefore leakage safety of a hypothetical future-contaminated fit is not tested. Only immutability of the deployed frozen encoder is established."
+}

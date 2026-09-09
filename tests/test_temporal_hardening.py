@@ -19,6 +19,14 @@ def test_future_normalization_does_not_change_historical_parameters():
  c=HistoricalScaler().fit(historical); c.transform(future); assert np.array_equal(a.mean_,c.mean_)
 def test_encoder_is_frozen_against_future_rows():
  e=VersionedEncoder.from_yaml('configs/representation/latent_state_v1.yaml'); h=e.encoder_hash
+ historical={'MKI67':1.,'TOP2A':2.,'UBE2C':3.}; future={'MKI67':1e12,'TOP2A':-1e12,'UBE2C':1e12}
+ before=e.encode(historical,sample_id='s',patient_id='p',cohort_id='c',timepoint='t',n_cells=100,available_modalities=['scRNA-seq'])
+ _=e.encode(future,sample_id='future',patient_id='p',cohort_id='c',timepoint='t+1',n_cells=100,available_modalities=['scRNA-seq'])
+ after=e.encode(historical,sample_id='s',patient_id='p',cohort_id='c',timepoint='t',n_cells=100,available_modalities=['scRNA-seq'])
+ assert e.encoder_hash==h
+ for name in before.features:
+  assert before.features[name].n_cells==after.features[name].n_cells
+  assert (np.isnan(before.features[name].value) and np.isnan(after.features[name].value)) or before.features[name].value==after.features[name].value
  e2=VersionedEncoder.from_yaml('configs/representation/latent_state_v1.yaml'); assert e2.encoder_hash==h
 def test_future_transitions_do_not_change_historical_covariance():
  z,y,t,dt,p=stationary(12); m=ProbabilisticTransition().fit(z,y,t,dt,p); cov=np.asarray(m.residual_covariance['A'])
